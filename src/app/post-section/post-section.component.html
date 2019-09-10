@@ -42,11 +42,11 @@
                         <div class="single-blog-navigation">
                             <a *ngIf="post.id > 1"
                                 class="btn-custom waves-effect"
-                                href="/post/{{ post.id - 1 }}"
+                                href="./post/{{ post.id - 1 }}"
                                 rel="prev">Prev Post</a>
                             <a *ngIf="post.id < postsLength"
                                 class="btn-custom waves-effect"
-                                href="/post/{{ post.id + 1 }}"
+                                href="./post/{{ post.id + 1 }}"
                                 rel="next">Next Post</a>
                         </div>
                     </div>

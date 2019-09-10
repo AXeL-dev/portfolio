@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:page', component: BlogComponent },
   { path: 'post', component: PostComponent },
-  { path: 'post.html', component: PostComponent }, // handle old 'riotjs-portfolio' post routes also
+  //{ path: 'post.html', component: PostComponent }, // handle old 'riotjs-portfolio' post routes also
   { path: 'post/:id', component: PostComponent },
   { path: '', component: HomeComponent },
   { path: '404', component: Error404Component },

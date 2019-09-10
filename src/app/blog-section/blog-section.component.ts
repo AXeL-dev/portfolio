@@ -28,7 +28,7 @@ export class BlogSectionComponent implements OnInit {
 
     // Generate posts links + clean and cut long posts text
     this.posts.forEach((post) => {
-      post.link = '/post/' + post.id;
+      post.link = './post/' + post.id;
       post.text = post.text.replace(/(<[^>]*>)|(\s\s+)/g, '').trim(); // remove all html tags and outer/double spaces
       if (post.text.length > 200) {
         post.text = post.text.substr(0, 200);
