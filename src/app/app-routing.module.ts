@@ -9,7 +9,7 @@ import { PostComponent } from './post/post.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'portfolio', component: PortfolioComponent },
+  { path: 'all-portfolio', component: PortfolioComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:page', component: BlogComponent },
   { path: 'post', component: PostComponent },
