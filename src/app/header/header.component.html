@@ -1,0 +1,25 @@
+<div class="header shadow-bg"
+    [ngClass]="{'header-visible': isSticky, 'header-hidden': !isSticky}">
+    <div class="site-logo">
+        <a href="#"
+            class="animatescroll-link"
+            onclick="$('html').animatescroll();">{{ title }}</a>
+    </div>
+    <div class="menu-bar waves-effect waves-light"
+        (click)="toggleMenu()"><span class="fa fa-bars"></span></div>
+</div>
+
+<div class="main-nav hero-height"
+    [ngClass]="{'active': showMenu, 'hidden': !showMenu}">
+    <div class="menu-close waves-effect waves-light"
+        (click)="closeMenu()"><span class="fa fa-times"></span></div>
+    <ul>
+        <li *ngFor="let item of menu">
+            <a *ngIf="useLinksInMenu"
+                href="{{ item.link }}">{{ item.name }}</a>
+            <a *ngIf="!useLinksInMenu"
+                href="#{{ item.id }}"
+                (click)="scroll(item.id)">{{ item.name }}</a>
+        </li>
+    </ul>
+</div>

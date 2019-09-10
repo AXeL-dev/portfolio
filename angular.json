@@ -24,9 +24,23 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/font-awesome/css/font-awesome.min.css",
+              "./node_modules/materialize-css/dist/css/materialize.min.css",
+              "./node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+              "./node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
+              "./node_modules/ngx-lightbox/lightbox.css",
+              "src/assets/css/css_002.css",
+              "src/assets/css/css_003.css",
+              "src/assets/css/css.css",
+              "src/assets/css/style.css",
+              "src/assets/css/color.css",
+              "src/assets/css/responsive.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/materialize-css/dist/js/materialize.min.js",
+              "src/assets/js/custom.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -120,6 +134,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "portfolio"
 }

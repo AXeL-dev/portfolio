@@ -1,0 +1,76 @@
+<div id="portfolio-section"
+    [ngClass]="{'portfolio-section': title, 'all-portfolio-section': !title}">
+    <div class="container">
+        <div class="row">
+            <div *ngIf="title"
+                class="col s12 section-title">
+                <h2>{{ title }}</h2>
+            </div>
+            <div class="col s12">
+                <div class="col s12 section-content pd-0">
+                    <ul class="filter"
+                        [ngClass]="{'mgt-0 mgb-50': !title}">
+                        <li><a href="#"
+                                [ngClass]="{'active': currentFilter === '*'}"
+                                (click)="applyFilter('*')">All</a></li>
+                        <li *ngFor="let filter of filters"><a href="#"
+                                [ngClass]="{'active': currentFilter === filter}"
+                                (click)="applyFilter(filter)">{{ filter }}</a></li>
+                    </ul>
+
+                    <ul class="portfolio-items isotope">
+
+                        <!-- Single Portfolio -->
+                        <ng-container *ngFor="let project of projects; let i = index">
+                            <li class="portfolio-content shadow-bg isotope-item"
+                                [ngStyle]="{'display': showItem(project) ? 'inline' : 'none'}">
+                                <!-- [ngStyle] used here instead of *ngIf to avoid deleting buttons tooltips -->
+                                <figure>
+                                    <img src="{{ project.image }}"
+                                        alt="{{ project.name }}" />
+                                    <figcaption>
+                                        <div class="portfolio-intro">
+                                            <div class="portfolio-intro-category">
+                                                <p *ngFor="let category of project.category">{{ category }}</p>
+                                            </div>
+                                            <div class="portfolio-intro-title">
+                                                <a href="{{ project.link }}">{{ project.name }}</a>
+                                            </div>
+                                            <div class="portfolio-intro-image">
+                                                <a class="btn-circle waves-effect portfolio-mfp tooltipped"
+                                                    data-position="top"
+                                                    data-delay="50"
+                                                    data-tooltip="View Photo"
+                                                    (click)="openImageGallery(i)"
+                                                    href="{{ project.image }}"><span class="fa fa-picture-o"></span></a>
+                                            </div>
+                                            <div class="portfolio-intro-detail"
+                                                *ngIf="project.link && project.link != '#'">
+                                                <a class="btn-circle waves-effect tooltipped"
+                                                    data-position="top"
+                                                    data-delay="50"
+                                                    data-tooltip="View Source"
+                                                    href="{{ project.link }}"
+                                                    target="_blank"><span class="fa fa-link"></span></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ng-container>
+                        <!--/ Single Portfolio -->
+
+                    </ul>
+                </div>
+                <div *ngIf="max"
+                    class="col s12 portfolio-all al-center">
+                    <a href="/portfolio"
+                        class="btn-circle waves-effect tooltipped"
+                        data-position="top"
+                        data-delay="50"
+                        data-tooltip="All Portfolio"><span></span><span></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

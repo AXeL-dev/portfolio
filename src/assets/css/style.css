@@ -1818,11 +1818,11 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 	padding: 10px;
 }
 
-.client-carousel .item{
+.client-carousel .owl-item{
 	padding: 25px;
 }
 
-.client-carousel .item img{
+.client-carousel .owl-item img{
 	opacity: 0.7;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -1831,7 +1831,7 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 	transition: all 0.3s;
 }
 
-.client-carousel .item:hover img{
+.client-carousel .owl-item:hover img{
 	opacity: 1;
 }
 
@@ -2233,6 +2233,18 @@ textarea.c-form-input{
 	margin: 25px 0;
 	max-height: 100%;
 	width: auto;
+}
+
+.single-blog-content .bold-text {
+    font-weight: bold;
+}
+
+.single-blog-content ul.disc-list {
+    padding-left: 25px;
+}
+
+.single-blog-content ul.disc-list li {
+    list-style: disc;
 }
 
 .single-blog-category{
@@ -2729,17 +2741,17 @@ ol.children{
 	20. Error Section
  ============================================= */
 
-.error-404-section{
+.error-section{
 	margin-top: 100px;
 }
 
-.error-404-section h2{
+.error-section h2{
 	font-size: 32px;
 	font-weight: 700;
 	letter-spacing: 3px;
 }
 
-.error-404-section a{
+.error-section a{
 	margin-top: 30px;
 	padding: 10px 25px;
 	font-size: 16px;

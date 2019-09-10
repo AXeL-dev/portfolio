@@ -1,4 +1,5 @@
 .backdrop,
+.material-tooltip,
 .header .menu-bar,
 .main-nav .menu-close,
 .header .search-open,
@@ -42,8 +43,8 @@
 .single-blog-navigation a,
 .single-blog-navigation a:hover,
 .search-submit,
-.error-404-section a,
-.error-404-section a:hover,
+.error-section a,
+.error-section a:hover,
 .owl-theme .owl-controls .owl-page span{
 	background-color: #337ab7 !important;
 }

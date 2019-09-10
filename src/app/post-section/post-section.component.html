@@ -1,0 +1,63 @@
+<div class="single-blog-section">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 single-blog-wrapper">
+                <div class="col s12 w-block shadow-bg pd-0">
+                    <div class="col s12 single-blog-thumbnail pd-0">
+                        <img src="{{ post.image }}"
+                            alt="{{ post.title }}" />
+                    </div>
+                    <div class="col s12 pd-50 pd-md-40 pd-sm-30">
+                        <div class="single-blog-title">{{ post.title }}</div>
+                        <div class="blog-data">
+                            <a href="javascript:void(0);"
+                                class="waves-effect"><span class="fa fa-user"></span>{{ post.author }}</a>
+                            <a href="javascript:void(0);"
+                                class="waves-effect"><span
+                                    class="fa fa-calendar"></span>{{ post.date | date: 'fullDate' }}</a>
+                        </div>
+                        <div [innerHTML]="post.text"
+                            class="single-blog-content"></div>
+
+                        <div class="single-blog-taxonomy">
+                            <div *ngIf="post.categories"
+                                class="single-blog-category">
+                                <span class="single-blog-taxonomy-item fa fa-folder"></span>
+                                <div>
+                                    <a *ngFor="let category of post.categories"
+                                        href="javascript:void(0);">{{ category }}</a>
+                                </div>
+                            </div>
+
+                            <div *ngIf="post.tags"
+                                class="single-blog-tags mgt-15">
+                                <span class="single-blog-taxonomy-item fa fa-tags"></span>
+                                <div>
+                                    <a *ngFor="let tag of post.tags"
+                                        href="javascript:void(0);">{{ tag }}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-blog-navigation">
+                            <a *ngIf="post.id > 1"
+                                class="btn-custom waves-effect"
+                                href="/post/{{ post.id - 1 }}"
+                                rel="prev">Prev Post</a>
+                            <a *ngIf="post.id < postsLength"
+                                class="btn-custom waves-effect"
+                                href="/post/{{ post.id + 1 }}"
+                                rel="next">Next Post</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="comment-section"
+                    class="col s12 single-blog-comment comments-area w-block shadow-bg pd-50 pd-md-40 pd-sm-30 mgt-50">
+                    <div class="comment-title"><span class="fa fa-comments"></span> Comments</div>
+                    <disqus [identifier]="disqusIdentifier"></disqus>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

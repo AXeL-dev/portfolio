@@ -19,6 +19,11 @@
     "@angular/platform-browser": "~8.2.4",
     "@angular/platform-browser-dynamic": "~8.2.4",
     "@angular/router": "~8.2.4",
+    "font-awesome": "^4.7.0",
+    "materialize-css": "^1.0.0",
+    "ngx-disqus": "^2.4.3",
+    "ngx-lightbox": "^2.0.0",
+    "ngx-owl-carousel-o": "^2.0.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
