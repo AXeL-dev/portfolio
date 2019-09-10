@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "~8.2.4",
     "@angular/router": "~8.2.4",
     "font-awesome": "^4.7.0",
+    "imagesloaded": "^4.1.4",
     "materialize-css": "^1.0.0",
     "ngx-disqus": "^2.4.3",
     "ngx-lightbox": "^2.0.0",
