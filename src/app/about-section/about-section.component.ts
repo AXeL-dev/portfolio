@@ -8,7 +8,7 @@ import { HomeService } from '../services/home.service';
 })
 export class AboutSectionComponent implements OnInit {
 
-  author: object;
+  author: any;
   socials: any[];
 
   constructor(private homeService: HomeService) { }

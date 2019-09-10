@@ -24,7 +24,7 @@ import { BlogSectionComponent } from './blog-section/blog-section.component';
 import { PostComponent } from './post/post.component';
 import { PostSectionComponent } from './post-section/post-section.component';
 import { DisqusModule } from 'ngx-disqus';
-//import { EscapeHtmlPipe } from './pipes/keep-html.pipe';
+import { EscapeHtmlPipe } from './pipes/keep-html.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LightboxModule } from 'ngx-lightbox';
@@ -48,7 +48,7 @@ import { LightboxModule } from 'ngx-lightbox';
     BlogSectionComponent,
     PostComponent,
     PostSectionComponent,
-    //EscapeHtmlPipe
+    EscapeHtmlPipe
   ],
   imports: [
     BrowserModule,

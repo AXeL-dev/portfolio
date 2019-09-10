@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
     this.menu = this.globalService.menu;
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll')
   checkScroll() {
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     this.isSticky = scrollPosition >= 100;
