@@ -33,7 +33,7 @@ export class BlogSectionComponent implements OnInit {
       post.text = 'Loading...';
       const content = this.markdownService.getSource(post.content);
       content.subscribe((text) => {
-        post.text = text;
+        post.text = this.markdownService.compile(text);
         post.text = post.text.replace(/(<[^>]*>)|(\s\s+)/g, '').trim(); // remove all html tags and outer/double spaces
         if (post.text.length > 200) {
           post.text = post.text.substr(0, 200);

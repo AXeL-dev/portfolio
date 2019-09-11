@@ -2,6 +2,21 @@ export class BlogService {
 
     posts = [
         {
+            id: 16,
+            title: 'Frontend vs Backend',
+            date: '2019/09/11',
+            author: 'AXeL',
+            image: './assets/img/posts/frontend-vs-backend.jpg',
+            content: './assets/blog/frontend-vs-backend.md',
+            categories: [
+                'Comparison'
+            ],
+            tags: [
+                'Front-end',
+                'Back-end'
+            ]
+        },
+        {
             id: 15,
             title: 'I fall in ❤️ with Vue.js',
             date: 'August 3, 2019',
