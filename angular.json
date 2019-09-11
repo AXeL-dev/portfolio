@@ -39,8 +39,7 @@
             ],
             "scripts": [
               "./node_modules/materialize-css/dist/js/materialize.min.js",
-              "./node_modules/imagesloaded/imagesloaded.pkgd.min.js",
-              "src/assets/js/custom.js"
+              "./node_modules/imagesloaded/imagesloaded.pkgd.min.js"
             ]
           },
           "configurations": {
