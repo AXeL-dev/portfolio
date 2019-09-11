@@ -15,16 +15,15 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     let _self = this;
-    // Initialize Materialize tooltips
     document.addEventListener('DOMContentLoaded', function () {
+      // Initialize Materialize tooltips
       const tooltips = document.querySelectorAll('.tooltipped');
       let instances = M.Tooltip.init(tooltips);
-    });
-    // Wait for background images to load before removing the preloader
-    const images = document.querySelectorAll('.image-bg');
-    imagesLoaded(images, { background: true }, function () {
-      //console.log('all images are loaded');
-      _self.isLoading = false;
+      // Wait for background images to load before removing the preloader
+      imagesLoaded('.image-bg', { background: true }, function () {
+        //console.log('all images are loaded');
+        _self.isLoading = false;
+      });
     });
   }
 }

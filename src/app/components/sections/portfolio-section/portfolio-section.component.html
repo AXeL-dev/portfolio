@@ -11,20 +11,19 @@
                     <ul class="filter"
                         [ngClass]="{'mgt-0 mgb-50': !title}">
                         <li><a href="#"
-                                [ngClass]="{'active': currentFilter === '*'}"
-                                (click)="applyFilter('*')">All</a></li>
-                        <li *ngFor="let filter of filters"><a href="#"
-                                [ngClass]="{'active': currentFilter === filter}"
-                                (click)="applyFilter(filter)">{{ filter }}</a></li>
+                                [ngClass]="{'active': currentFilter === 'all'}"
+                                (click)="applyFilter('all')">All</a></li>
+                        <li *ngFor="let item of filters"><a href="#"
+                                [ngClass]="{'active': currentFilter === item.filter}"
+                                (click)="applyFilter(item.filter)">{{ item.name }}</a></li>
                     </ul>
 
-                    <ul class="portfolio-items isotope">
+                    <ul class="portfolio-items">
 
                         <!-- Single Portfolio -->
                         <ng-container *ngFor="let project of projects; let i = index">
-                            <li class="portfolio-content shadow-bg isotope-item"
-                                [ngStyle]="{'display': showItem(project) ? 'inline' : 'none'}">
-                                <!-- [ngStyle] used here instead of *ngIf to avoid deleting buttons tooltips -->
+                            <li class="portfolio-content shadow-bg"
+                                attr.data-groups="{{ project.groups.join(', ') }}">
                                 <figure>
                                     <img src="{{ project.image }}"
                                         alt="{{ project.name }}" />

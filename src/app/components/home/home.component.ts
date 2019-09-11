@@ -22,10 +22,10 @@ export class HomeComponent implements OnInit {
     this.education = this.homeService.education;
     this.experience = this.homeService.experience;
     this.portfolioFilters = [
-      'Python',
-      'PHP',
-      'Javascript',
-      'ASP.Net'
+      { name: 'Python', filter: 'python' },
+      { name: 'PHP', filter: 'php' },
+      { name: 'Javascript', filter: 'js' },
+      { name: 'ASP.Net', filter: 'asp' }
     ];
   }
 

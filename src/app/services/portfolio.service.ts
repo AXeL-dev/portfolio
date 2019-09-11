@@ -293,14 +293,14 @@ export class PortfolioService {
     ];
 
     // List of projects categories
-    categories = [
-        'Python',
-        'C',
-        'C++',
-        'C#',
-        'PHP',
-        'Javascript',
-        //'Blogger',
-        'ASP.Net'
-    ];
+    categories = {
+        'Python': 'python',
+        'C': 'c',
+        'C++': 'cplusplus',
+        'C#': 'csharp',
+        'PHP': 'php',
+        'Javascript': 'js',
+        //'Blogger': 'blogger',
+        'ASP.Net': 'asp'
+    };
 }

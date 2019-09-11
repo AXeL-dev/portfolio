@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { PortfolioService } from '../../../services/portfolio.service';
 import { Lightbox, LightboxConfig } from 'ngx-lightbox';
+import Shuffle from 'shufflejs';
 
 @Component({
   selector: 'app-portfolio-section',
@@ -13,8 +14,9 @@ export class PortfolioSectionComponent implements OnInit {
   @Input() filters: any[];
   @Input() max: number = 0;
   projects: any[];
-  currentFilter: string = '*';
+  currentFilter: string = 'all';
   private _album: any[] = [];
+  private shuffle: any;
 
   constructor(private portfolioService: PortfolioService, private _lightbox: Lightbox, private _lightboxConfig: LightboxConfig) {
     this._lightboxConfig.showImageNumberLabel = true;
@@ -33,10 +35,20 @@ export class PortfolioSectionComponent implements OnInit {
     // Generate filters when not provided
     if (!this.filters) {
       this.filters = [];
-      this.portfolioService.categories.forEach((category) => {
-        this.filters.push(category);
+      Object.keys(this.portfolioService.categories).forEach(function (category) {
+        _self.filters.push({ name: category, filter: _self.portfolioService.categories[category] });
       });
     }
+
+    // Generate projects groups
+    this.projects.forEach(function (project) {
+      project.groups = [];
+      project.category.forEach(function (category) {
+        if (_self.portfolioService.categories[category]) {
+          project.groups.push(_self.portfolioService.categories[category]);
+        }
+      });
+    });
 
     // Generate album (for lightbox gallery)
     this.projects.forEach((project) => {
@@ -47,26 +59,22 @@ export class PortfolioSectionComponent implements OnInit {
       };
       this._album.push(album);
     });
+
+    // Intialize Shuffle
+    document.addEventListener('DOMContentLoaded', function () {
+      _self.shuffle = new Shuffle(document.querySelector('.portfolio-items'), {
+        itemSelector: '.portfolio-content',
+        delimiter: ','
+      });
+    });
   }
 
   applyFilter(filter: string) {
     this.currentFilter = filter;
+    if (this.shuffle) {
+      this.shuffle.filter(this.currentFilter);
+    }
     return false;
-  }
-
-  showItem(item: any) {
-    return this.currentFilter === '*' || this.checkFilter(item);
-  }
-
-  private checkFilter(item: any) {
-    let show = false;
-    item.category.forEach((cat) => {
-      if (cat.toLowerCase() === this.currentFilter.toLowerCase()) {
-        show = true;
-        return;
-      }
-    });
-    return show;
   }
 
   openImageGallery(index: number) {
