@@ -1,5 +1,7 @@
 <!-- Preloader -->
-<div class="preloader">
+<div *ngIf="isLoading"
+    [@fadeOutAnimation]
+    class="preloader">
     <div class="preloader-inner">
         <div class="preloader-wrapper active">
             <div class="spinner-layer">
