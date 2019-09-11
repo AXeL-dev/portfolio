@@ -20,14 +20,11 @@ export class CarouselSectionComponent implements OnInit {
       0: {
         items: 1
       },
-      400: {
-        items: 2
-      },
-      740: {
+      480: {
         items: 3
       },
-      940: {
-        items: 4
+      768: {
+        items: 5
       }
     }
   };
