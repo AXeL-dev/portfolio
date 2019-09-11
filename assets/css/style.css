@@ -2235,16 +2235,20 @@ textarea.c-form-input{
 	width: auto;
 }
 
-.single-blog-content .bold-text {
+.single-blog-content .bold-text, .single-blog-content strong {
     font-weight: bold;
 }
 
-.single-blog-content ul.disc-list {
+.single-blog-content ul {
     padding-left: 25px;
 }
 
-.single-blog-content ul.disc-list li {
+.single-blog-content ul li {
     list-style: disc;
+}
+
+.single-blog-content p, .single-blog-content ul {
+	margin-top: 10px;
 }
 
 .single-blog-category{
