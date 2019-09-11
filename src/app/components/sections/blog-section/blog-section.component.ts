@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { BlogService } from '../services/blog.service';
+import { BlogService } from '../../../services/blog.service';
 import { Router } from '@angular/router';
 
 @Component({

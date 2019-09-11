@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { PortfolioService } from '../services/portfolio.service';
+import { PortfolioService } from '../../../services/portfolio.service';
 import { Lightbox, LightboxConfig } from 'ngx-lightbox';
 
 @Component({
