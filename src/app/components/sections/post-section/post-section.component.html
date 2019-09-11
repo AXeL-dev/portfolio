@@ -16,8 +16,9 @@
                                 class="waves-effect"><span
                                     class="fa fa-calendar"></span>{{ post.date | date: 'fullDate' }}</a>
                         </div>
-                        <div [innerHTML]="post.text"
-                            class="single-blog-content"></div>
+                        <div class="single-blog-content">
+                            <markdown [src]="post.content"></markdown>
+                        </div>
 
                         <div class="single-blog-taxonomy">
                             <div *ngIf="post.categories"
@@ -42,11 +43,11 @@
                         <div class="single-blog-navigation">
                             <a *ngIf="post.id > 1"
                                 class="btn-custom waves-effect"
-                                href="./post/{{ post.id - 1 }}"
+                                href="./blog/post/{{ post.id - 1 }}"
                                 rel="prev">Prev Post</a>
                             <a *ngIf="post.id < postsLength"
                                 class="btn-custom waves-effect"
-                                href="./post/{{ post.id + 1 }}"
+                                href="./blog/post/{{ post.id + 1 }}"
                                 rel="next">Next Post</a>
                         </div>
                     </div>

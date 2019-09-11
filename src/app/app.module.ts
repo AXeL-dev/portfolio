@@ -28,6 +28,10 @@ import { EscapeHtmlPipe } from './pipes/keep-html.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LightboxModule } from 'ngx-lightbox';
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -56,7 +60,9 @@ import { LightboxModule } from 'ngx-lightbox';
     DisqusModule.forRoot('axel-dev'),
     BrowserAnimationsModule,
     CarouselModule,
-    LightboxModule
+    LightboxModule,
+    HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClient })
   ],
   providers: [
     GlobalService,

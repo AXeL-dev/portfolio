@@ -26,7 +26,7 @@ export class PostSectionComponent implements OnInit {
     } else {
       this.titleService.setTitle(this.post.title);
       this.postsLength = this.blogService.posts.length;
-      this.disqusIdentifier = '/post/' + this.post.id; //'/post.html?id=' + this.post.id;
+      this.disqusIdentifier = '/blog/post/' + this.post.id; //'/post.html?id=' + this.post.id;
     }
   }
 

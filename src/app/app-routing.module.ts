@@ -12,9 +12,9 @@ const routes: Routes = [
   { path: 'all-portfolio', component: PortfolioComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:page', component: BlogComponent },
-  { path: 'post', component: PostComponent },
+  { path: 'blog/post', component: PostComponent },
+  { path: 'blog/post/:id', component: PostComponent },
   { path: 'post.html', component: PostComponent }, // handle old 'riotjs-portfolio' post routes also
-  { path: 'post/:id', component: PostComponent },
   { path: '', component: HomeComponent },
   { path: '404', component: Error404Component },
   { path: '**', component: Error404Component }

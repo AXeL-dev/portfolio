@@ -24,6 +24,7 @@
     "materialize-css": "^1.0.0",
     "ngx-disqus": "^2.4.3",
     "ngx-lightbox": "^2.0.0",
+    "ngx-markdown": "^8.1.0",
     "ngx-owl-carousel-o": "^2.0.1",
     "rxjs": "~6.4.0",
     "shufflejs": "^5.2.3",

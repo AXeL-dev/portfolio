@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { BlogService } from '../../../services/blog.service';
 import { Router } from '@angular/router';
+import { MarkdownService } from 'ngx-markdown';
 
 @Component({
   selector: 'app-blog-section',
@@ -16,7 +17,7 @@ export class BlogSectionComponent implements OnInit {
   posts: any[];
   pages: any[] = [];
 
-  constructor(private blogService: BlogService, private router: Router) { }
+  constructor(private blogService: BlogService, private router: Router, private markdownService: MarkdownService) { }
 
   ngOnInit() {
     this.posts = this.blogService.posts;
@@ -28,12 +29,17 @@ export class BlogSectionComponent implements OnInit {
 
     // Generate posts links + clean and cut long posts text
     this.posts.forEach((post) => {
-      post.link = './post/' + post.id;
-      post.text = post.text.replace(/(<[^>]*>)|(\s\s+)/g, '').trim(); // remove all html tags and outer/double spaces
-      if (post.text.length > 200) {
-        post.text = post.text.substr(0, 200);
-      }
-      post.text += '...';
+      post.link = './blog/post/' + post.id;
+      post.text = 'Loading...';
+      const content = this.markdownService.getSource(post.content);
+      content.subscribe((text) => {
+        post.text = text;
+        post.text = post.text.replace(/(<[^>]*>)|(\s\s+)/g, '').trim(); // remove all html tags and outer/double spaces
+        if (post.text.length > 200) {
+          post.text = post.text.substr(0, 200);
+        }
+        post.text += '...';
+      });
     });
 
     // Set pages
