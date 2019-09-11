@@ -21,14 +21,14 @@ export class HomeService {
     ];
 
     skills = [
-        { name: 'C', progress: 80 },
-        { name: 'C++', progress: 60 },
+        { name: 'PHP', progress: 95 },
+        { name: 'SQL', progress: 85 },
         { name: 'Python', progress: 70 },
-        { name: 'Javascript', progress: 80 },
-        { name: 'PHP', progress: 95, position: 'right' },
-        { name: 'SQL', progress: 85, position: 'right' },
+        { name: 'Javascript / ES6', progress: 80 },
+        { name: 'C', progress: 80, position: 'right' },
+        { name: 'C++', progress: 60, position: 'right' },
         { name: 'Java', progress: 40, position: 'right' },
-        { name: '.NET / C#', progress: 60, position: 'right' }
+        { name: '.NET / C#', progress: 50, position: 'right' }
     ];
 
     technologies = [
