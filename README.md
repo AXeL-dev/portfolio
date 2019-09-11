@@ -10,9 +10,25 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Customize
+
+To change the displayed data edit all files in [app/services](src/app/services).
+
+To change the main "blue" color edit [assets/css/color.css](src/assets/css/color.css) file.
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Deploy on github pages
+
+If it's your first deploy on github, you may need to install this package `npm install -g angular-cli-ghpages`.
+
+Once you have the required package, simply run:
+```
+ng build --prod --base-href "/portfolio/"
+ngh --dir=dist/portfolio
+```
 
 ## Running unit tests
 
