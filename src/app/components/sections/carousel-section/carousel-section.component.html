@@ -9,8 +9,7 @@
 
                     <!-- Single Carousel Item -->
                     <owl-carousel-o [options]="options">
-                        <div *ngFor="let item of items"
-                            class="item">
+                        <ng-container *ngFor="let item of items">
                             <ng-template carouselSlide>
                                 <img src="{{ item.image }}"
                                     class="tooltipped"
@@ -19,7 +18,7 @@
                                     attr.data-tooltip="{{ item.name }}"
                                     alt="{{ item.name }}" />
                             </ng-template>
-                        </div>
+                        </ng-container>
                     </owl-carousel-o>
                     <!--/ Single Carousel Item -->
 
