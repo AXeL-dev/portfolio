@@ -1,14 +1,15 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { BlogService } from '../../../services/blog.service';
 import { Router } from '@angular/router';
 import { MarkdownService } from 'ngx-markdown';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-blog-section',
   templateUrl: './blog-section.component.html',
   styleUrls: ['./blog-section.component.css']
 })
-export class BlogSectionComponent implements OnInit {
+export class BlogSectionComponent implements OnInit, OnDestroy {
 
   @Input() title: string;
   @Input() maxPosts: number = 0;
@@ -16,6 +17,7 @@ export class BlogSectionComponent implements OnInit {
   @Input() currentPage: number = 1;
   posts: any[];
   pages: any[] = [];
+  private subscriptions: Subscription[] = [];
 
   constructor(private blogService: BlogService, private router: Router, private markdownService: MarkdownService) { }
 
@@ -32,7 +34,7 @@ export class BlogSectionComponent implements OnInit {
       post.link = './blog/post/' + post.id;
       post.text = 'Loading...';
       const content = this.markdownService.getSource(post.content);
-      content.subscribe((text) => {
+      const subscription = content.subscribe((text) => {
         post.text = this.markdownService.compile(text);
         post.text = post.text.replace(/(<[^>]*>)|(\s\s+)/g, '').trim(); // remove all html tags and outer/double spaces
         if (post.text.length > 200) {
@@ -40,6 +42,7 @@ export class BlogSectionComponent implements OnInit {
         }
         post.text += '...';
       });
+      this.subscriptions.push(subscription);
     });
 
     // Set pages
@@ -63,6 +66,12 @@ export class BlogSectionComponent implements OnInit {
       // Redirect to 404 error page when index <= 0
       this.router.navigate(['404']);
     }
+  }
+
+  ngOnDestroy() {
+    this.subscriptions.forEach((subscription) => {
+      subscription.unsubscribe();
+    });
   }
 
 }
