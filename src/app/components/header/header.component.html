@@ -15,11 +15,13 @@
         (click)="closeMenu()"><span class="fa fa-times"></span></div>
     <ul>
         <li *ngFor="let item of menu">
-            <a *ngIf="useLinksInMenu"
-                href="{{ item.link }}">{{ item.name }}</a>
-            <a *ngIf="!useLinksInMenu"
+            <a *ngIf="isHomePage"
                 href="#{{ item.id }}"
                 (click)="scroll(item.id)">{{ item.name }}</a>
+            <a *ngIf="!isHomePage"
+                [routerLink]="item.link"
+                [fragment]="item.id"
+                (click)="closeMenu()">{{ item.name }}</a>
         </li>
     </ul>
 </div>

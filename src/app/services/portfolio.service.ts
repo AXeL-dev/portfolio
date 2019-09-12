@@ -1,7 +1,7 @@
 export class PortfolioService {
 
     // List of projects
-    projects = [
+    private projects = [
         {
             name: 'Riot Presents',
             image: './assets/img/projects/riot-presents.png',
@@ -303,4 +303,8 @@ export class PortfolioService {
         //'Blogger': 'blogger',
         'ASP.Net': 'asp'
     };
+
+    getProjects() {
+        return this.projects.slice();
+    }
 }

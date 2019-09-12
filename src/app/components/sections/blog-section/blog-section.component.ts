@@ -22,7 +22,7 @@ export class BlogSectionComponent implements OnInit, OnDestroy {
   constructor(private blogService: BlogService, private router: Router, private markdownService: MarkdownService) { }
 
   ngOnInit() {
-    this.posts = this.blogService.posts;
+    this.posts = this.blogService.getPosts();
 
     // Splice posts array if a max value is provided
     if (this.maxPosts > 0) {
@@ -31,7 +31,7 @@ export class BlogSectionComponent implements OnInit, OnDestroy {
 
     // Generate posts links + clean and cut long posts text
     this.posts.forEach((post) => {
-      post.link = './blog/post/' + post.id;
+      post.link = '/blog/post/' + post.id;
       post.text = 'Loading...';
       const content = this.markdownService.getSource(post.content);
       const subscription = content.subscribe((text) => {

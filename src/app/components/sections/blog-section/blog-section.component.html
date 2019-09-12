@@ -33,7 +33,7 @@
                                 <p>{{ post.text }}</p>
                             </div>
                             <div class="blog-more">
-                                <a href="{{ post.link }}"
+                                <a routerLink="{{ post.link }}"
                                     class="btn-custom waves-effect mgt-10 mgb-10">Read More</a>
                             </div>
                         </div>
@@ -45,24 +45,24 @@
 
             <div *ngIf="maxPosts"
                 class="col s12 blog-all al-center">
-                <a href="./blog"
+                <a routerLink="/blog"
                     class="btn-custom waves-effect">All Blog Posts</a>
             </div>
             <div *ngIf="pages.length > maxPosts"
                 class="col s12">
                 <div class="col s12 pagination mgt-60">
                     <a class="prev page-numbers btn-circle waves-effect waves-light"
-                        href="./blog/1"><span class="fa fa-angle-double-left"></span></a>
+                        routerLink="/blog/1"><span class="fa fa-angle-double-left"></span></a>
                     <ng-container *ngFor="let page of pages">
                         <span *ngIf="page == currentPage"
                             aria-current="page"
                             class="page-numbers current btn-circle waves-effect waves-light">{{ page }}</span>
                         <a *ngIf="page != currentPage"
                             class="page-numbers btn-circle waves-effect waves-light"
-                            href="./blog/{{ page }}">{{ page }}</a>
+                            routerLink="/blog/{{ page }}">{{ page }}</a>
                     </ng-container>
                     <a class="next page-numbers btn-circle waves-effect waves-light"
-                        href="./blog/{{ pages.length }}"><span class="fa fa-angle-double-right"></span></a>
+                        routerLink="/blog/{{ pages.length }}"><span class="fa fa-angle-double-right"></span></a>
                 </div>
             </div>
         </div>

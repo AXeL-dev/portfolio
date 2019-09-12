@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
 import { PortfolioService } from '../../../services/portfolio.service';
 import { Lightbox, LightboxConfig } from 'ngx-lightbox';
 import Shuffle from 'shufflejs';
@@ -8,7 +8,7 @@ import Shuffle from 'shufflejs';
   templateUrl: './portfolio-section.component.html',
   styleUrls: ['./portfolio-section.component.css']
 })
-export class PortfolioSectionComponent implements OnInit {
+export class PortfolioSectionComponent implements OnInit, AfterViewInit {
 
   @Input() title: string;
   @Input() filters: any[];
@@ -24,7 +24,7 @@ export class PortfolioSectionComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.projects = this.portfolioService.projects;
+    this.projects = this.portfolioService.getProjects();
     let _self = this;
 
     // Splice projects array if a max value is provided
@@ -59,13 +59,13 @@ export class PortfolioSectionComponent implements OnInit {
       };
       this._album.push(album);
     });
+  }
 
+  ngAfterViewInit() {
     // Intialize Shuffle
-    document.addEventListener('DOMContentLoaded', function () {
-      _self.shuffle = new Shuffle(document.querySelector('.portfolio-items'), {
-        itemSelector: '.portfolio-content',
-        delimiter: ','
-      });
+    this.shuffle = new Shuffle(document.querySelector('.portfolio-items'), {
+      itemSelector: '.portfolio-content',
+      delimiter: ','
     });
   }
 

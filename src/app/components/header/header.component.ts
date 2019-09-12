@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   menu: any[];
   isSticky: boolean = false;
   showMenu: boolean = false;
-  @Input() useLinksInMenu: boolean = true;
+  @Input() isHomePage: boolean = false;
 
   constructor(private globalService: GlobalService) { }
 
@@ -39,7 +39,7 @@ export class HeaderComponent implements OnInit {
     let el = id ? document.getElementById(id) : document.body;
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      this.showMenu = false;
+      this.closeMenu();
       return false; // used to prevent default
     }
   }

@@ -25,7 +25,7 @@ export class PostSectionComponent implements OnInit {
       this.router.navigate(['404']);
     } else {
       this.titleService.setTitle(this.post.title);
-      this.postsLength = this.blogService.posts.length;
+      this.postsLength = this.blogService.getPosts().length;
       this.disqusIdentifier = '/blog/post/' + this.post.id; //'/post.html?id=' + this.post.id;
     }
   }

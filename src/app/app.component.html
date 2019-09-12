@@ -19,4 +19,6 @@
     </div>
 </div>
 <!--/ Preloader -->
-<router-outlet></router-outlet>
+<app-header [isHomePage]="isHomePage"></app-header>
+<router-outlet (activate)="onRouteChange()"></router-outlet>
+<app-footer></app-footer>

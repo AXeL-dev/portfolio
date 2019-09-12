@@ -1,6 +1,6 @@
 export class BlogService {
 
-    posts = [
+    private posts = [
         {
             id: 16,
             title: 'Frontend vs Backend',
@@ -234,6 +234,10 @@ export class BlogService {
     //     url: 'https://axel-dev.github.io/portfolio',
     //     shortname: 'axel-dev'
     // };
+
+    getPosts() {
+        return this.posts.slice();
+    }
 
     getPostById(id: number) {
         return this.posts.find(p => p.id == id);

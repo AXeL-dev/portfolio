@@ -1,17 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AppComponent } from 'src/app/app.component';
 
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.css']
 })
-export class BlogComponent implements OnInit {
+export class BlogComponent implements OnInit, AfterViewInit {
 
   currentPage: number = 1;
 
-  constructor(private titleService: Title, private route: ActivatedRoute) { }
+  constructor(private titleService: Title, private route: ActivatedRoute, private router: Router, private appComponent: AppComponent) {
+    // force route reload whenever params change;
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+  }
 
   ngOnInit() {
     this.titleService.setTitle('Blog');
@@ -19,6 +23,11 @@ export class BlogComponent implements OnInit {
     if (page) {
       this.currentPage = +page; // + is used to convert string to number
     }
+  }
+
+  ngAfterViewInit() {
+    this.appComponent.initTooltips();
+    this.appComponent.disablePreloader();
   }
 
 }
