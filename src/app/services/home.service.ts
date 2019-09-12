@@ -146,9 +146,9 @@ export class HomeService {
     ];
 
     private calculateAge(dateString) {
-        let birthday = new Date(dateString);
-        let ageDifMs = Date.now() - birthday.getTime();
-        let ageDate = new Date(ageDifMs); // miliseconds from epoch
+        const birthday = new Date(dateString);
+        const ageDifMs = Date.now() - birthday.getTime();
+        const ageDate = new Date(ageDifMs); // miliseconds from epoch
         return Math.abs(ageDate.getFullYear() - 1970);
     }
 }
