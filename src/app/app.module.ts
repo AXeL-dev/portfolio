@@ -15,7 +15,7 @@ import { BlogService } from './services/blog.service';
 import { HeaderComponent } from './components/header/header.component';
 import { TopSectionComponent } from './components/sections/top-section/top-section.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SkillsSectionComponent } from './components/sections/skills-section/skills-section.component';
+import { SkillSectionComponent } from './components/sections/skill-section/skill-section.component';
 import { CarouselSectionComponent } from './components/sections/carousel-section/carousel-section.component';
 import { TimelineSectionComponent } from './components/sections/timeline-section/timeline-section.component';
 import { ErrorSectionComponent } from './components/sections/error-section/error-section.component';
@@ -45,7 +45,7 @@ import { ServiceSectionComponent } from './components/sections/service-section/s
     HeaderComponent,
     TopSectionComponent,
     FooterComponent,
-    SkillsSectionComponent,
+    SkillSectionComponent,
     CarouselSectionComponent,
     TimelineSectionComponent,
     ErrorSectionComponent,
