@@ -213,11 +213,6 @@ export class BlogService {
         }
     ];
 
-    // disqus = {
-    //     url: 'https://axel-dev.github.io/portfolio',
-    //     shortname: 'axel-dev'
-    // };
-
     getPosts() {
         return this.posts.slice();
     }

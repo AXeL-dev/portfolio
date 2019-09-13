@@ -24,6 +24,7 @@ import { BlogSectionComponent } from './components/sections/blog-section/blog-se
 import { PostComponent } from './components/post/post.component';
 import { PostSectionComponent } from './components/sections/post-section/post-section.component';
 import { DisqusModule } from 'ngx-disqus';
+import { DisqusConfig } from './services/disqus.service';
 import { EscapeHtmlPipe } from './pipes/keep-html.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -59,7 +60,7 @@ import { ServiceSectionComponent } from './components/sections/service-section/s
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DisqusModule.forRoot('axel-dev'),
+    DisqusModule.forRoot(DisqusConfig.shortname),
     BrowserAnimationsModule,
     CarouselModule,
     LightboxModule,
