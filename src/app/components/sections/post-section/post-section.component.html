@@ -10,11 +10,14 @@
                     <div class="col s12 pd-50 pd-md-40 pd-sm-30">
                         <div class="single-blog-title">{{ post.title }}</div>
                         <div class="blog-data">
-                            <a href="javascript:void(0);"
-                                class="waves-effect"><span class="fa fa-user"></span>{{ post.author }}</a>
-                            <a href="javascript:void(0);"
-                                class="waves-effect"><span
-                                    class="fa fa-calendar"></span>{{ post.date | date: 'fullDate' }}</a>
+                            <div class="chip mgr-10">
+                                <img src="{{ post.author.avatar }}"
+                                    alt="Author">
+                                {{ post.author.name }}
+                            </div>
+                            <div class="chip">
+                                <span class="fa fa-calendar mgr-5"></span>{{ post.date | date: 'fullDate' }}
+                            </div>
                         </div>
                         <div class="single-blog-content">
                             <markdown [src]="post.content"></markdown>

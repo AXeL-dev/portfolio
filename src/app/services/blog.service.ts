@@ -1,11 +1,18 @@
 export class BlogService {
 
+    private authors = {
+        'AXeL': {
+            name: 'AXeL',
+            avatar: './assets/img/avatar.jpg'
+        }
+    };
+
     private posts = [
         {
             id: 16,
             title: 'Frontend vs Backend',
             date: '2019/09/11',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/frontend-vs-backend.jpg',
             content: './assets/blog/frontend-vs-backend.md',
             tags: [
@@ -18,7 +25,7 @@ export class BlogService {
             id: 15,
             title: 'I fall in ❤️ with Vue.js',
             date: 'August 3, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/vuejs.jpg',
             content: './assets/blog/vuejs.md',
             tags: [
@@ -31,7 +38,7 @@ export class BlogService {
             id: 14,
             title: 'Phoenix OS: use Android as a desktop OS',
             date: 'June 29, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/phoenix-os.jpg',
             content: './assets/blog/phoenix-os.md',
             tags: [
@@ -44,7 +51,7 @@ export class BlogService {
             id: 13,
             title: 'osTicket: An open source ticket manager',
             date: 'June 23, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/osticket.png',
             content: './assets/blog/osticket.md',
             tags: [
@@ -55,7 +62,7 @@ export class BlogService {
             id: 12,
             title: 'Discover LDAP',
             date: 'June 22, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/ldap.png',
             content: './assets/blog/ldap.md',
             tags: [
@@ -66,7 +73,7 @@ export class BlogService {
             id: 11,
             title: 'Run Photoshop CS6 on Linux',
             date: 'June 15, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/photoshop.jpg',
             content: './assets/blog/photoshop-on-linux.md',
             tags: [
@@ -80,7 +87,7 @@ export class BlogService {
             id: 10,
             title: 'Gitflow: A successful branching model',
             date: 'May 25, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/gitflow-mini.png',
             content: './assets/blog/gitflow.md',
             tags: [
@@ -92,7 +99,7 @@ export class BlogService {
             id: 9,
             title: 'Why being a freelancer is better !',
             date: 'May 18, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/freelancer.jpg',
             content: './assets/blog/freelancer.md',
             tags: [
@@ -105,7 +112,7 @@ export class BlogService {
             id: 8,
             title: 'PHP vs node.js',
             date: 'March 27, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/php-vs-node.jpg',
             content: './assets/blog/php-vs-node.md',
             tags: [
@@ -118,7 +125,7 @@ export class BlogService {
             id: 7,
             title: 'Magento CMS: Presentation',
             date: 'March 27, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/magento.jpg',
             content: './assets/blog/magento.md',
             tags: [
@@ -131,7 +138,7 @@ export class BlogService {
             id: 6,
             title: 'Is jQuery dying?',
             date: 'March 27, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/jquery.png',
             content: './assets/blog/jquery.md',
             tags: [
@@ -144,7 +151,7 @@ export class BlogService {
             id: 5,
             title: 'CodeIgniter 4: What\'s new',
             date: 'March 26, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/codeigniter.png',
             content: './assets/blog/codeigniter.md',
             tags: [
@@ -158,7 +165,7 @@ export class BlogService {
             id: 4,
             title: 'Riot JS: Simple yet Powerful',
             date: 'March 25, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/riot-js.png',
             content: './assets/blog/riot-js.md',
             tags: [
@@ -172,7 +179,7 @@ export class BlogService {
             id: 3,
             title: 'Dolibarr.. My opinion',
             date: 'March 25, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/dolibarr.png',
             content: './assets/blog/dolibarr.md',
             tags: [
@@ -186,7 +193,7 @@ export class BlogService {
             id: 2,
             title: 'Get a free account on lynda.com',
             date: 'March 25, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/lynda.com.jpg',
             content: './assets/blog/lynda.md',
             tags: [
@@ -197,7 +204,7 @@ export class BlogService {
             id: 1,
             title: 'GitHub: Free unlimited private repos',
             date: 'January 7, 2019',
-            author: 'AXeL',
+            author: this.authors['AXeL'],
             image: './assets/img/posts/github.png',
             content: './assets/blog/github-private-repos.md',
             tags: [

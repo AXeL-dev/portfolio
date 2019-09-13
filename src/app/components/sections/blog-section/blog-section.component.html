@@ -26,8 +26,11 @@
                                 <a routerLink="{{ post.link }}">{{ post.title }}</a>
                             </div>
                             <div class="blog-data">
-                                <a href="javascript:void(0);"
-                                    class="waves-effect"><span class="fa fa-user"></span>{{ post.author }}</a>
+                                <div class="chip">
+                                    <img src="{{ post.author.avatar }}"
+                                        alt="Author">
+                                    {{ post.author.name }}
+                                </div>
                             </div>
                             <div class="blog-content">
                                 <p>{{ post.text }}</p>
