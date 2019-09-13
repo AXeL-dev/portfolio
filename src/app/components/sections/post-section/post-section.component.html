@@ -21,15 +21,6 @@
                         </div>
 
                         <div class="single-blog-taxonomy">
-                            <div *ngIf="post.categories"
-                                class="single-blog-category">
-                                <span class="single-blog-taxonomy-item fa fa-folder"></span>
-                                <div>
-                                    <a *ngFor="let category of post.categories"
-                                        href="javascript:void(0);">{{ category }}</a>
-                                </div>
-                            </div>
-
                             <div *ngIf="post.tags"
                                 class="single-blog-tags mgt-15">
                                 <span class="single-blog-taxonomy-item fa fa-tags"></span>

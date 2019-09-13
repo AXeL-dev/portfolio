@@ -8,10 +8,8 @@ export class BlogService {
             author: 'AXeL',
             image: './assets/img/posts/frontend-vs-backend.jpg',
             content: './assets/blog/frontend-vs-backend.md',
-            categories: [
-                'Comparison'
-            ],
             tags: [
+                'Comparison',
                 'Front-end',
                 'Back-end'
             ]
@@ -23,11 +21,9 @@ export class BlogService {
             author: 'AXeL',
             image: './assets/img/posts/vuejs.jpg',
             content: './assets/blog/vuejs.md',
-            categories: [
-                'Front-end',
-                'Javascript'
-            ],
             tags: [
+                'Front-end',
+                'Javascript',
                 'Vue.js'
             ]
         },
@@ -38,11 +34,9 @@ export class BlogService {
             author: 'AXeL',
             image: './assets/img/posts/phoenix-os.jpg',
             content: './assets/blog/phoenix-os.md',
-            categories: [
-                'OS',
-                'Desktop'
-            ],
             tags: [
+                'OS',
+                'Desktop',
                 'Phoenix OS'
             ]
         },
@@ -75,10 +69,8 @@ export class BlogService {
             author: 'AXeL',
             image: './assets/img/posts/photoshop.jpg',
             content: './assets/blog/photoshop-on-linux.md',
-            categories: [
-                'Software'
-            ],
             tags: [
+                'Software',
                 'Photoshop',
                 'Linux',
                 'Wine'
@@ -91,10 +83,8 @@ export class BlogService {
             author: 'AXeL',
             image: './assets/img/posts/gitflow-mini.png',
             content: './assets/blog/gitflow.md',
-            categories: [
-                'Workflow'
-            ],
             tags: [
+                'Workflow',
                 'Git'
             ]
         },
@@ -105,10 +95,8 @@ export class BlogService {
             author: 'AXeL',
             image: './assets/img/posts/freelancer.jpg',
             content: './assets/blog/freelancer.md',
-            categories: [
-                'Discussion'
-            ],
             tags: [
+                'Discussion',
                 'Freelance',
                 'Work'
             ]
@@ -120,10 +108,8 @@ export class BlogService {
             author: 'AXeL',
             image: './assets/img/posts/php-vs-node.jpg',
             content: './assets/blog/php-vs-node.md',
-            categories: [
-                'Comparison'
-            ],
             tags: [
+                'Comparison',
                 'PHP',
                 'node.js'
             ]
@@ -135,11 +121,9 @@ export class BlogService {
             author: 'AXeL',
             image: './assets/img/posts/magento.jpg',
             content: './assets/blog/magento.md',
-            categories: [
-                'CMS',
-                'e-commerce'
-            ],
             tags: [
+                'CMS',
+                'e-commerce',
                 'Magento'
             ]
         },
@@ -150,10 +134,8 @@ export class BlogService {
             author: 'AXeL',
             image: './assets/img/posts/jquery.png',
             content: './assets/blog/jquery.md',
-            categories: [
-                'Library'
-            ],
             tags: [
+                'Library',
                 'Javascript',
                 'jQuery'
             ]
@@ -165,11 +147,9 @@ export class BlogService {
             author: 'AXeL',
             image: './assets/img/posts/codeigniter.png',
             content: './assets/blog/codeigniter.md',
-            categories: [
-                'Back End',
-                'Framework'
-            ],
             tags: [
+                'Back End',
+                'Framework',
                 'PHP',
                 'CodeIgniter'
             ]
@@ -181,11 +161,9 @@ export class BlogService {
             author: 'AXeL',
             image: './assets/img/posts/riot-js.png',
             content: './assets/blog/riot-js.md',
-            categories: [
-                'Front End',
-                'Library'
-            ],
             tags: [
+                'Front End',
+                'Library',
                 'Javascript',
                 'Riot.js'
             ]
@@ -197,11 +175,9 @@ export class BlogService {
             author: 'AXeL',
             image: './assets/img/posts/dolibarr.png',
             content: './assets/blog/dolibarr.md',
-            categories: [
-                'ERP',
-                'CRM'
-            ],
             tags: [
+                'ERP',
+                'CRM',
                 'PHP',
                 'Dolibarr'
             ]
