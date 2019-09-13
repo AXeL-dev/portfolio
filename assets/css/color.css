@@ -118,3 +118,7 @@ body .arrow-box::before,
 	-moz-box-shadow: 0 1px 0 0 #337ab7 !important;
 	box-shadow: 0 1px 0 0 #337ab7 !important;
 }
+
+.github-corner svg {
+	fill: #337ab7 !important;
+}
