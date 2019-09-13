@@ -2,8 +2,7 @@
     [ngClass]="{'header-visible': isSticky, 'header-hidden': !isSticky}">
     <div class="site-logo">
         <a href="#"
-            class="animatescroll-link"
-            onclick="$('html').animatescroll();">{{ title }}</a>
+            (click)="scroll(null)">{{ title }}</a>
     </div>
     <div class="menu-bar waves-effect waves-light"
         (click)="toggleMenu()"><span class="fa fa-bars"></span></div>
