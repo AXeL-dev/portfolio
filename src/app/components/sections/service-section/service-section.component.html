@@ -1,0 +1,37 @@
+<section id="service-section"
+    class="service-section">
+    <div class="container">
+        <div class="row">
+            <div *ngIf="title"
+                class="col s12 section-title">
+                <h2>{{ title }}</h2>
+            </div>
+
+            <div class="col s12 masonry pd-0 mgt-20">
+
+                <!-- Single Service -->
+                <div *ngFor="let service of services"
+                    class="col l4 m6 s12 service-wrapper wow zoomIn animated"
+                    data-wow-duration="0.5s"
+                    data-wow-delay="0.3s"
+                    data-wow-offset="0">
+                    <div class="col s12 w-block shadow-bg">
+                        <div class="service-center">
+                            <div class="service-icon">
+                                <span class="fa fa-{{ service.icon }}"></span>
+                            </div>
+                            <div class="service-title">
+                                {{ service.title }}
+                            </div>
+                        </div>
+                        <div class="service-desc">
+                            <p>{{ service.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Single Service -->
+
+            </div>
+        </div>
+    </div>
+</section>

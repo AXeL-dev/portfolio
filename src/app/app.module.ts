@@ -30,6 +30,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LightboxModule } from 'ngx-lightbox';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { ServiceSectionComponent } from './components/sections/service-section/service-section.component';
 
 
 
@@ -52,7 +53,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     BlogSectionComponent,
     PostComponent,
     PostSectionComponent,
-    EscapeHtmlPipe
+    EscapeHtmlPipe,
+    ServiceSectionComponent
   ],
   imports: [
     BrowserModule,

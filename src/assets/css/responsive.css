@@ -80,6 +80,7 @@
 	.service-desc{
 		opacity: 1;
 		visibility: visible;
+		height: auto;
 		-webkit-transform: scale(1);
 		-moz-transform: scale(1);
 		-ms-transform: scale(1);

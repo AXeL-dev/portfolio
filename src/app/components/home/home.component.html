@@ -1,7 +1,10 @@
 <app-top-section [image]="'./assets/img/bg-1.jpg'"
     [isHome]="true"></app-top-section>
 <app-about-section></app-about-section>
-<app-skills-section></app-skills-section>
+<app-service-section [title]="'I Am Good At'"
+    [services]="services"></app-service-section>
+<app-skills-section [title]="'Skills'"
+    [skills]="skills"></app-skills-section>
 <app-carousel-section [id]="'technology-section'"
     [title]="'Tools & Technologies'"
     [items]="technologies"></app-carousel-section>

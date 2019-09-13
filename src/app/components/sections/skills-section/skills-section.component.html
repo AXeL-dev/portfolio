@@ -1,8 +1,9 @@
-<div id="skill-section">
+<section id="skill-section">
     <div class="container">
         <div class="row">
-            <div class="col s12 section-title">
-                <h2>Skills</h2>
+            <div *ngIf="title"
+                class="col s12 section-title">
+                <h2>{{ title }}</h2>
             </div>
             <div class="col s12">
                 <div class="col s12 section-content skill-wrapper w-block shadow-bg pdt-50 pdr-40 pdb-50 pdl-40">
@@ -53,4 +54,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

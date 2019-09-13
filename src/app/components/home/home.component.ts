@@ -13,6 +13,8 @@ declare var imagesLoaded: any;
 })
 export class HomeComponent implements OnInit, AfterViewInit {
 
+  services: any[];
+  skills: any[];
   technologies: any[];
   education: any[];
   experience: any[];
@@ -22,6 +24,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.titleService.setTitle('Home');
+    this.services = this.homeService.services;
+    this.skills = this.homeService.skills;
     this.technologies = this.homeService.technologies;
     this.education = this.homeService.education;
     this.experience = this.homeService.experience;

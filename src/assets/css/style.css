@@ -1101,6 +1101,7 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 .service-desc{
 	opacity: 0;
 	visibility: hidden;
+	height: 80px;
 	-webkit-transform: scale(0.5);
 	-moz-transform: scale(0.5);
 	-ms-transform: scale(0.5);

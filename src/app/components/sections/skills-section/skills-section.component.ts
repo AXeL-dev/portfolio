@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { HomeService } from '../../../services/home.service';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-skills-section',
@@ -8,12 +7,12 @@ import { HomeService } from '../../../services/home.service';
 })
 export class SkillsSectionComponent implements OnInit {
 
-  skills: any[];
+  @Input() title: string;
+  @Input() skills: any[];
 
-  constructor(private homeService: HomeService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.skills = this.homeService.skills;
   }
 
 }

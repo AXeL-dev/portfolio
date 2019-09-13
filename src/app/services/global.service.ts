@@ -6,6 +6,7 @@ export class GlobalService {
 
     menu = [
         { name: 'Home', id: '', link: '/' },
+        //{ name: 'Good At', id: 'service-section', link: '/' },
         { name: 'Skills', id: 'skill-section', link: '/' },
         { name: 'Tools & Technologies', id: 'technology-section', link: '/' },
         { name: 'Education', id: 'education-section', link: '/' },
