@@ -3,33 +3,6 @@ export class PortfolioService {
     // List of projects
     private projects = [
         {
-            name: 'Riot Presents',
-            image: './assets/img/projects/riot-presents.png',
-            link: 'https://github.com/AXeL-dev/riot-presents',
-            category: [
-                'Javascript',
-                'Riot.js'
-            ]
-        },
-        {
-            name: 'Distract Me Not',
-            image: './assets/img/projects/distract-me-not.png',
-            link: 'https://github.com/AXeL-dev/distract-me-not',
-            category: [
-                'Javascript',
-                'WebExtension'
-            ]
-        },
-        {
-            name: 'Easy Image Downloader',
-            image: './assets/img/projects/easy-image-downloader.png',
-            link: 'https://github.com/AXeL-dev/easy-image-downloader',
-            category: [
-                'Javascript',
-                'WebExtension'
-            ]
-        },
-        {
             name: 'CodeIgniter Starter',
             image: './assets/img/projects/codeigniter-starter.png',
             link: 'https://github.com/AXeL-dev/CodeIgniter-Starter',
@@ -110,6 +83,33 @@ export class PortfolioService {
             category: [
                 'Javascript',
                 'AngularJS'
+            ]
+        },
+        {
+            name: 'Riot Presents',
+            image: './assets/img/projects/riot-presents.png',
+            link: 'https://github.com/AXeL-dev/riot-presents',
+            category: [
+                'Javascript',
+                'Riot.js'
+            ]
+        },
+        {
+            name: 'Distract Me Not',
+            image: './assets/img/projects/distract-me-not.png',
+            link: 'https://github.com/AXeL-dev/distract-me-not',
+            category: [
+                'Javascript',
+                'WebExtension'
+            ]
+        },
+        {
+            name: 'Easy Image Downloader',
+            image: './assets/img/projects/easy-image-downloader.png',
+            link: 'https://github.com/AXeL-dev/easy-image-downloader',
+            category: [
+                'Javascript',
+                'WebExtension'
             ]
         },
         {
