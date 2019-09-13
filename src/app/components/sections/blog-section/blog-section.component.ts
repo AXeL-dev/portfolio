@@ -1,15 +1,17 @@
-import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy, AfterViewInit } from '@angular/core';
 import { BlogService } from '../../../services/blog.service';
 import { Router } from '@angular/router';
 import { MarkdownService } from 'ngx-markdown';
 import { Subscription } from 'rxjs';
+
+declare var DISQUSWIDGETS: any;
 
 @Component({
   selector: 'app-blog-section',
   templateUrl: './blog-section.component.html',
   styleUrls: ['./blog-section.component.css']
 })
-export class BlogSectionComponent implements OnInit, OnDestroy {
+export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
 
   @Input() title: string;
   @Input() maxPosts: number = 0;
@@ -65,6 +67,13 @@ export class BlogSectionComponent implements OnInit, OnDestroy {
     } else {
       // Redirect to 404 error page when index <= 0
       this.router.navigate(['404']);
+    }
+  }
+
+  ngAfterViewInit() {
+    // source: https://help.disqus.com/en/articles/1717274-adding-comment-count-links-to-your-home-page#updating-counts
+    if (typeof DISQUSWIDGETS !== 'undefined') {
+      DISQUSWIDGETS.getCount({ reset: true });
     }
   }
 

@@ -26,10 +26,15 @@
                                 <a routerLink="{{ post.link }}">{{ post.title }}</a>
                             </div>
                             <div class="blog-data">
-                                <div class="chip">
+                                <div class="chip mgr-10">
                                     <img src="{{ post.author.avatar }}"
                                         alt="Author">
                                     {{ post.author.name }}
+                                </div>
+                                <div class="chip">
+                                    <span class="fa fa-comments mgr-5"></span>
+                                    <span class="disqus-comment-count"
+                                        attr.data-disqus-identifier="{{ post.link }}">0 Comments</span>
                                 </div>
                             </div>
                             <div class="blog-content">

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeOutAnimation } from './animations/fade-out.animation';
 import { Router, UrlTree } from '@angular/router';
+import { DisqusConfig } from './services/disqus.service';
 
 declare var M: any;
 declare var imagesLoaded: any;
@@ -25,6 +26,7 @@ export class AppComponent implements OnInit {
     //   _self.initTooltips();
     //   _self.disablePreloader(true);
     // });
+    this.loadScripts();
   }
 
   initTooltips() {
@@ -52,6 +54,22 @@ export class AppComponent implements OnInit {
     const element = this.route && this.route.fragment ? document.getElementById(this.route.fragment) : null;
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  // stolen from: https://stackoverflow.com/a/49981918
+  private loadScripts() {
+    const dynamicScripts = [
+      '//' + DisqusConfig.shortname + '.disqus.com/count.js'
+    ];
+    for (let i = 0; i < dynamicScripts.length; i++) {
+      const node = document.createElement('script');
+      node.id = 'dsq-count-scr';
+      node.src = dynamicScripts[i];
+      node.type = 'text/javascript';
+      node.async = true;
+      node.charset = 'utf-8';
+      document.getElementsByTagName('head')[0].appendChild(node);
     }
   }
 
