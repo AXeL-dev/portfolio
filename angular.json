@@ -33,9 +33,8 @@
               "src/assets/css/css_003.css",
               "src/assets/css/css.css",
               "src/assets/css/style.css",
-              "src/assets/css/color.css",
-              "src/assets/css/responsive.css",
-              "src/styles.css"
+              "src/assets/css/color.scss",
+              "src/assets/css/responsive.css"
             ],
             "scripts": [
               "./node_modules/materialize-css/dist/js/materialize.min.js",
@@ -136,5 +135,10 @@
       }
     }
   },
-  "defaultProject": "portfolio"
+  "defaultProject": "portfolio",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

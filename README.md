@@ -14,7 +14,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 To change the displayed data edit all files in [app/services](src/app/services).
 
-To change the main "blue" color edit [assets/css/color.css](src/assets/css/color.css) file.
+To change the main "blue" color edit [assets/css/color.scss](src/assets/css/color.scss) file.
 
 ## Build
 
