@@ -17,9 +17,9 @@ const routes: Routes = [
   //{ path: 'post.html', component: PostComponent }, // handle old 'riotjs-portfolio' post routes also
   { path: 'blog/tag/:tag', component: BlogComponent },
   { path: 'blog/tag/:tag/:page', component: BlogComponent },
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: 'home' },
   { path: '404', component: Error404Component },
-  { path: '**', component: Error404Component }
+  { path: '**', redirectTo: '404' }
 ];
 
 @NgModule({
