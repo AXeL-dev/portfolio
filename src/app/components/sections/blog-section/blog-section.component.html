@@ -60,17 +60,18 @@
                 class="col s12">
                 <div class="col s12 pagination mgt-60">
                     <a class="prev page-numbers btn-circle waves-effect waves-light"
-                        routerLink="/blog/1"><span class="fa fa-angle-double-left"></span></a>
+                        routerLink="{{ paginationRoute }}/1"><span class="fa fa-angle-double-left"></span></a>
                     <ng-container *ngFor="let page of pages">
                         <span *ngIf="page == currentPage"
                             aria-current="page"
                             class="page-numbers current btn-circle waves-effect waves-light">{{ page }}</span>
                         <a *ngIf="page != currentPage"
                             class="page-numbers btn-circle waves-effect waves-light"
-                            routerLink="/blog/{{ page }}">{{ page }}</a>
+                            routerLink="{{ paginationRoute + page }}">{{ page }}</a>
                     </ng-container>
                     <a class="next page-numbers btn-circle waves-effect waves-light"
-                        routerLink="/blog/{{ pages.length }}"><span class="fa fa-angle-double-right"></span></a>
+                        routerLink="{{ paginationRoute + pages.length }}"><span
+                            class="fa fa-angle-double-right"></span></a>
                 </div>
             </div>
         </div>

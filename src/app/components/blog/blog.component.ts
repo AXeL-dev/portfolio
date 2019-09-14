@@ -11,6 +11,7 @@ import { AppComponent } from 'src/app/app.component';
 export class BlogComponent implements OnInit, AfterViewInit {
 
   currentPage: number = 1;
+  tagFilter: string = '';
 
   constructor(private titleService: Title, private route: ActivatedRoute, private router: Router, private appComponent: AppComponent) {
     // force route reload whenever params change;
@@ -22,6 +23,10 @@ export class BlogComponent implements OnInit, AfterViewInit {
     const page = this.route.snapshot.params['page'] || this.route.snapshot.queryParams['page'];
     if (page) {
       this.currentPage = +page; // + is used to convert string to number
+    }
+    const tag = this.route.snapshot.params['tag'] || this.route.snapshot.queryParams['tag'];
+    if (tag) {
+      this.tagFilter = tag;
     }
   }
 

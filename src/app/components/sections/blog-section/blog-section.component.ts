@@ -17,14 +17,25 @@ export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
   @Input() maxPosts: number = 0;
   @Input() postsPerPage: number = 6;
   @Input() currentPage: number = 1;
+  @Input() tagFilter: string = '';
   posts: any[];
   pages: any[] = [];
+  paginationRoute: string = '/blog/';
   private subscriptions: Subscription[] = [];
 
   constructor(private blogService: BlogService, private router: Router, private markdownService: MarkdownService) { }
 
   ngOnInit() {
     this.posts = this.blogService.getPosts();
+
+    // Filter by tag
+    if (this.tagFilter.length) {
+      this.posts = this.posts.filter((post) => {
+        return post.tags.some((tag) => tag.toLowerCase() === this.tagFilter.toLowerCase())
+      });
+      //console.log(this.posts);
+      this.paginationRoute = '/blog/tag/' + this.tagFilter.toLowerCase() + '/';
+    }
 
     // Splice posts array if a max value is provided
     if (this.maxPosts > 0) {
