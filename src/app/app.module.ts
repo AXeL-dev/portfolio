@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { BlogComponent } from './components/blog/blog.component';
-import { Error404Component } from './components/error404/error404.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AboutSectionComponent } from './components/sections/about-section/about-section.component';
 import { GlobalService } from './services/global.service';
 import { HomeService } from './services/home.service';
@@ -41,7 +41,7 @@ import { ServiceSectionComponent } from './components/sections/service-section/s
     HomeComponent,
     PortfolioComponent,
     BlogComponent,
-    Error404Component,
+    PageNotFoundComponent,
     AboutSectionComponent,
     HeaderComponent,
     TopSectionComponent,

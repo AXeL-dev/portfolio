@@ -3,11 +3,11 @@ import { Title } from '@angular/platform-browser';
 import { AppComponent } from 'src/app/app.component';
 
 @Component({
-  selector: 'app-error404',
-  templateUrl: './error404.component.html',
-  styleUrls: ['./error404.component.css']
+  selector: 'app-page-not-found',
+  templateUrl: './page-not-found.component.html',
+  styleUrls: ['./page-not-found.component.css']
 })
-export class Error404Component implements OnInit, AfterViewInit {
+export class PageNotFoundComponent implements OnInit, AfterViewInit {
 
   constructor(private titleService: Title, private appComponent: AppComponent) { }
 

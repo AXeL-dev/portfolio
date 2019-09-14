@@ -20,9 +20,9 @@ export class PostSectionComponent implements OnInit {
   ngOnInit() {
     this.post = this.blogService.getPostById(this.id) || {};
 
-    // Redirect to 404 error page when post is empty
+    // Redirect to error page when post is empty
     if (Object.keys(this.post).length === 0) {
-      this.router.navigate(['404']);
+      this.router.navigate(['page-not-found']);
     } else {
       this.titleService.setTitle(this.post.title);
       this.postsLength = this.blogService.getPosts().length;

@@ -65,9 +65,9 @@ export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
       for (let num = 1; num <= this.posts.length; num += this.postsPerPage) {
         this.pages.push(pageNumber++);
       }
-      // Redirect to 404 error page when page does not exist
+      // Redirect to error page when page does not exist
       if (this.pages.indexOf(this.currentPage) < 0) {
-        this.router.navigate(['404']);
+        this.router.navigate(['page-not-found']);
       } else {
         // Splice posts to show on the current page
         let start = (this.currentPage - 1) * this.postsPerPage;
@@ -76,8 +76,8 @@ export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
         this.posts.splice(this.postsPerPage, end);
       }
     } else {
-      // Redirect to 404 error page when index <= 0
-      this.router.navigate(['404']);
+      // Redirect to error page when index <= 0
+      this.router.navigate(['page-not-found']);
     }
   }
 
