@@ -11,10 +11,7 @@
                         <!-- Single Timeline Item -->
                         <li *ngFor="let item of items"
                             class="wow fadeIn animated"
-                            [ngClass]="{'timeline-inverted': item.position === 'right'}"
-                            data-wow-duration="0.5s"
-                            data-wow-delay="0.3s"
-                            data-wow-offset="0">
+                            [ngClass]="{'timeline-inverted': item.position === 'right'}">
                             <div class="timeline-badge">
                                 <a><i class="fa fa-circle"></i></a>
                             </div>

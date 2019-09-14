@@ -12,10 +12,7 @@
                 <!-- Single Blog -->
                 <div *ngFor="let post of posts"
                     class="col m6 s12 mgt-20">
-                    <div class="col s12 blog-wrapper w-block shadow-bg pd-0 wow fadeIn animated"
-                        data-wow-duration="0.5s"
-                        data-wow-delay="0.3s"
-                        data-wow-offset="0">
+                    <div class="col s12 blog-wrapper w-block shadow-bg pd-0 wow fadeIn animated">
                         <div class="col s12 blog-img pd-0 image-bg"
                             [ngStyle]="{'background': 'url(' + post.image + ')', 'background-position': 'center top', 'background-repeat': 'no-repeat', 'background-size': 'cover'}">
                             <a class="blog-date waves-effect waves-light"
