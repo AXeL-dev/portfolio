@@ -45,6 +45,7 @@ export class HomeService {
         //{ name: 'CSS', image: './assets/img/tech/css.png' },
         { name: 'Bootstrap', image: './assets/img/tech/bootstrap.png' },
         { name: 'Semantic UI', image: './assets/img/tech/semantic-ui.png' },
+        { name: 'Materialize', image: './assets/img/tech/materialize-css.png' },
         { name: 'Sass', image: './assets/img/tech/sass.png' },
         { name: 'Jekyll', image: './assets/img/tech/jekyll.png' },
         //{ name: 'PHP', image: './assets/img/tech/php.png' },
@@ -57,20 +58,22 @@ export class HomeService {
         //{ name: 'Javascript', image: './assets/img/tech/js.png' },
         { name: 'jQuery', image: './assets/img/tech/jquery.png' },
         { name: 'Ajax', image: './assets/img/tech/ajax.png' },
-        { name: 'TypeScript', image: './assets/img/tech/ts.png' },
+        //{ name: 'TypeScript', image: './assets/img/tech/ts.png' },
         { name: 'Angular', image: './assets/img/tech/angular.png' },
         { name: 'Vue.js', image: './assets/img/tech/vue.png' },
         { name: 'Riot JS', image: './assets/img/tech/riot.png' },
         { name: '.Net', image: './assets/img/tech/dotnet.png' },
         { name: 'SQL Server', image: './assets/img/tech/sql-server.png' },
-        { name: 'Docker', image: './assets/img/tech/docker.png' },
-        { name: 'Qt Framework', image: './assets/img/tech/qt.png' },
-        { name: 'GTK', image: './assets/img/tech/gtk.png' },
-        { name: 'Android', image: './assets/img/tech/android.png' },
-        { name: 'Electron', image: './assets/img/tech/electron.png' },
+        //{ name: 'Docker', image: './assets/img/tech/docker.png' },
+        //{ name: 'Qt Framework', image: './assets/img/tech/qt.png' },
+        //{ name: 'GTK', image: './assets/img/tech/gtk.png' },
+        //{ name: 'Android', image: './assets/img/tech/android.png' },
+        //{ name: 'Electron', image: './assets/img/tech/electron.png' },
+        { name: 'Visual Studio Code', image: './assets/img/tech/vs-code.png' },
         { name: 'Trello', image: './assets/img/tech/trello.png' },
         { name: 'Git', image: './assets/img/tech/git.png' },
-        { name: 'NPM', image: './assets/img/tech/npm.png' }
+        { name: 'NPM', image: './assets/img/tech/npm.png' },
+        { name: 'GIMP', image: './assets/img/tech/gimp.png' }
     ];
 
     education = [
