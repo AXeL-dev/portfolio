@@ -1,3 +1,5 @@
+$base-color: #337ab7;
+
 .backdrop,
 .material-tooltip,
 .header .menu-bar,
@@ -46,7 +48,7 @@
 .error-section a,
 .error-section a:hover,
 .owl-theme .owl-controls .owl-page span{
-	background-color: #337ab7 !important;
+	background-color: $base-color !important;
 }
 
 .btn-custom:hover,
@@ -91,7 +93,7 @@
 .single-portfolio-demo-link a:hover,
 .single-sidebar a:hover,
 .color-scheme-select-btn{
-	color: #337ab7 !important;
+	color: $base-color !important;
 }
 
 blockquote,
@@ -103,22 +105,22 @@ blockquote,
 .c-form-input:focus,
 body .color-scheme-select,
 .color-scheme-select-btn{
-	border-color: #337ab7 !important;
+	border-color: $base-color !important;
 }
 
 body .arrow-box::before,
 .timeline-panel .timeline-time::before{
-	border-left-color: #337ab7 !important;
+	border-left-color: $base-color !important;
 }
 
 .search-form .search-field:focus:not([readonly]),
 .input-field input:focus:not([readonly]),
 .input-field textarea:focus:not([readonly]){
-	-webkit-box-shadow: 0 1px 0 0 #337ab7 !important;
-	-moz-box-shadow: 0 1px 0 0 #337ab7 !important;
-	box-shadow: 0 1px 0 0 #337ab7 !important;
+	-webkit-box-shadow: 0 1px 0 0 $base-color !important;
+	-moz-box-shadow: 0 1px 0 0 $base-color !important;
+	box-shadow: 0 1px 0 0 $base-color !important;
 }
 
 .github-corner svg {
-	fill: #337ab7 !important;
+	fill: $base-color !important;
 }
