@@ -1,7 +1,9 @@
+import { Project } from '../models/project.model';
+
 export class PortfolioService {
 
     // List of projects
-    private projects = [
+    private projects: Project[] = [
         {
             name: 'CodeIgniter Starter',
             image: './assets/img/projects/codeigniter-starter.png',

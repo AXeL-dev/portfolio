@@ -1,10 +1,12 @@
+import { Menu } from '../models/menu.model';
+
 export class HeaderService {
 
-    title = 'AXeL-dev';
+    title: string = 'AXeL-dev';
 
-    repositoryLink = 'https://github.com/AXeL-dev/portfolio';
+    repositoryLink: string = 'https://github.com/AXeL-dev/portfolio';
 
-    menu = [
+    menu: Menu[] = [
         { name: 'Home', id: '', link: '/' },
         //{ name: 'Good At', id: 'service-section', link: '/' },
         { name: 'Skills', id: 'skill-section', link: '/' },

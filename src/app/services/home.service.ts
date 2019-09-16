@@ -1,6 +1,14 @@
+import { Author } from '../models/author.model';
+import { SocialLink } from '../models/social-link.model';
+import { Service } from '../models/service.model';
+import { Skill } from '../models/skill.model';
+import { Technology } from '../models/technology.model';
+import { Education } from '../models/education.model';
+import { Experience } from '../models/experience.model';
+
 export class HomeService {
 
-    author = {
+    author: Author = {
         name: 'Denna Anass',
         image: './assets/img/coder.jpg',
         job: 'Full Stack Developer',
@@ -11,7 +19,7 @@ export class HomeService {
         description: 'My name is Anass or just call me AXeL. I was 17 when i took my first steps into the fascinating world of programming. Since then, I have acquired good taste in areas like front-end development, back-end development, database management, dev-ops and graphic design. I like challenges, discovering new stuff and contributing to open source.'
     };
 
-    socials = [
+    socials: SocialLink[] = [
         { icon: 'github', link: 'https://github.com/AXeL-dev' },
         { icon: 'gitlab', link: 'https://gitlab.com/AXeL-dev' },
         { icon: 'youtube-play', link: 'https://www.youtube.com/channel/UCctMROLcvkiqpOyF98_WUYg' },
@@ -20,7 +28,7 @@ export class HomeService {
         { icon: 'linkedin', link: '#' }
     ];
 
-    services = [
+    services: Service[] = [
         { title: 'Front End Development', icon: 'desktop', description: 'AnuglarJS, Angular 6+, Vue.js, Riot.js, Jquery, VanillaJS, HTML5, CSS / SASS, JavaScript / ES6, TypeScript, SPA, PWA, Web Sockets' },
         { title: 'Back End Development', icon: 'cubes', description: 'PHP (CodeIgniter, Symfony), MySQL / SQL Server / MongoDB, CMS (Wordpress, Drupal), Python, C#, ASP.NET, Rest API, OOP' },
         { title: 'Mobile Development', icon: 'mobile', description: 'Java, PhoneGap, Android Studio' },
@@ -29,7 +37,7 @@ export class HomeService {
         { title: 'Dev-ops', icon: 'code-fork', description: 'Git / Github / Gitlab, CI / CD, Gulp, Webpack, NPM' }
     ];
 
-    skills = [
+    skills: Skill[] = [
         { name: 'PHP', progress: 95 },
         { name: 'SQL', progress: 85 },
         { name: 'Python', progress: 70 },
@@ -40,7 +48,7 @@ export class HomeService {
         { name: '.NET / C#', progress: 50, position: 'right' }
     ];
 
-    technologies = [
+    technologies: Technology[] = [
         //{ name: 'HTML', image: './assets/img/tech/html.png' },
         //{ name: 'CSS', image: './assets/img/tech/css.png' },
         { name: 'Bootstrap', image: './assets/img/tech/bootstrap.png' },
@@ -76,7 +84,7 @@ export class HomeService {
         { name: 'GIMP', image: './assets/img/tech/gimp.png' }
     ];
 
-    education = [
+    education: Education[] = [
         {
             tag: 'University of Science and Technology Settat',
             title: 'Professional license in application design and development',
@@ -101,7 +109,7 @@ export class HomeService {
         }
     ];
 
-    experience = [
+    experience: Experience[] = [
         {
             tag: 'Blue Mango Software',
             title: 'Analyst/Programmer',

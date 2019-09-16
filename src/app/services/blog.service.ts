@@ -1,13 +1,16 @@
+import { Author } from '../models/author.model';
+import { Post } from '../models/post.model';
+
 export class BlogService {
 
-    private authors = {
+    private authors: { [key: string]: Author } = {
         'AXeL': {
             name: 'AXeL',
-            avatar: './assets/img/avatar.jpg'
+            image: './assets/img/avatar.jpg'
         }
     };
 
-    private posts = [
+    private posts: Post[] = [
         {
             id: 16,
             title: 'Frontend vs Backend',
