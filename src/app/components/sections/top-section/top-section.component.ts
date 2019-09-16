@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { GlobalService } from '../../../services/global.service';
+import { HeaderService } from '../../../services/header.service';
 
 @Component({
   selector: 'app-top-section',
@@ -14,10 +14,10 @@ export class TopSectionComponent implements OnInit {
   @Input() isHome: boolean = false;
   repositoryLink: string;
 
-  constructor(private globalService: GlobalService) { }
+  constructor(private headerService: HeaderService) { }
 
   ngOnInit() {
-    this.repositoryLink = this.globalService.repositoryLink;
+    this.repositoryLink = this.headerService.repositoryLink;
   }
 
 }

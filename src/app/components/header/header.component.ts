@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, Input } from '@angular/core';
-import { GlobalService } from '../../services/global.service';
+import { HeaderService } from '../../services/header.service';
 
 @Component({
   selector: 'app-header',
@@ -14,11 +14,11 @@ export class HeaderComponent implements OnInit {
   showMenu: boolean = false;
   @Input() isHomePage: boolean = false;
 
-  constructor(private globalService: GlobalService) { }
+  constructor(private headerService: HeaderService) { }
 
   ngOnInit() {
-    this.title = this.globalService.title;
-    this.menu = this.globalService.menu;
+    this.title = this.headerService.title;
+    this.menu = this.headerService.menu;
   }
 
   @HostListener('window:scroll')

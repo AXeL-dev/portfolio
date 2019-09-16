@@ -1,4 +1,4 @@
-export class GlobalService {
+export class HeaderService {
 
     title = 'AXeL-dev';
 

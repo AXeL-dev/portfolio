@@ -8,7 +8,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AboutSectionComponent } from './components/sections/about-section/about-section.component';
-import { GlobalService } from './services/global.service';
+import { HeaderService } from './services/header.service';
 import { HomeService } from './services/home.service';
 import { PortfolioService } from './services/portfolio.service';
 import { BlogService } from './services/blog.service';
@@ -24,7 +24,7 @@ import { BlogSectionComponent } from './components/sections/blog-section/blog-se
 import { PostComponent } from './components/post/post.component';
 import { PostSectionComponent } from './components/sections/post-section/post-section.component';
 import { DisqusModule } from 'ngx-disqus';
-import { DisqusConfig } from './services/disqus.service';
+import { DisqusConfig } from './services/blog.service';
 import { EscapeHtmlPipe } from './pipes/keep-html.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -68,7 +68,7 @@ import { ServiceSectionComponent } from './components/sections/service-section/s
     MarkdownModule.forRoot({ loader: HttpClient })
   ],
   providers: [
-    GlobalService,
+    HeaderService,
     HomeService,
     PortfolioService,
     BlogService

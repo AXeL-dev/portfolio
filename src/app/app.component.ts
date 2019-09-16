@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeOutAnimation } from './animations/fade-out.animation';
 import { Router, UrlTree } from '@angular/router';
-import { DisqusConfig } from './services/disqus.service';
+import { DisqusConfig } from './services/blog.service';
 
 declare var M: any;
 declare var imagesLoaded: any;

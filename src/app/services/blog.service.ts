@@ -221,3 +221,8 @@ export class BlogService {
         return this.posts.find(p => p.id == id);
     }
 }
+
+export const DisqusConfig = {
+    //url: 'https://axel-dev.github.io/portfolio',
+    shortname: 'axel-dev'
+};
