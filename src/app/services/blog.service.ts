@@ -12,6 +12,19 @@ export class BlogService {
 
     private posts: Post[] = [
         {
+            id: 17,
+            title: '10 interview questions around Symfony',
+            date: '2019/09/20',
+            author: this.authors['AXeL'],
+            image: './assets/img/posts/symfony.jpg',
+            content: './assets/blog/symfony-interview-questions.md',
+            tags: [
+                'Interview',
+                'Symfony',
+                'Back-end'
+            ]
+        },
+        {
             id: 16,
             title: 'Frontend vs Backend',
             date: '2019/09/11',

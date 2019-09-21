@@ -29,6 +29,7 @@
               "./node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
               "./node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "./node_modules/ngx-lightbox/lightbox.css",
+              "./node_modules/prismjs/themes/prism-okaidia.css",
               "src/assets/css/css_002.css",
               "src/assets/css/css_003.css",
               "src/assets/css/css.css",
@@ -38,7 +39,11 @@
             ],
             "scripts": [
               "./node_modules/materialize-css/dist/js/materialize.min.js",
-              "./node_modules/imagesloaded/imagesloaded.pkgd.min.js"
+              "./node_modules/imagesloaded/imagesloaded.pkgd.min.js",
+              "./node_modules/marked/lib/marked.js",
+              "./node_modules/prismjs/prism.js",
+              "./node_modules/prismjs/components/prism-csharp.min.js",
+              "./node_modules/prismjs/components/prism-css.min.js"
             ]
           },
           "configurations": {
