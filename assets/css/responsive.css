@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1440px){
+	.portfolio-content img{
+		height: 212px;
+	}
+}
+
 @media only screen and (max-width: 992px){
 	.pd-md-40{padding: 40px !important;}
 
