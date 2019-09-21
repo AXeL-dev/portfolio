@@ -35,7 +35,7 @@
                                 </div>
                             </div>
                             <div class="blog-content">
-                                <p>{{ post.text }}</p>
+                                <p [innerHTML]="post.text"></p>
                             </div>
                             <div class="blog-more">
                                 <a routerLink="{{ post.link }}"
