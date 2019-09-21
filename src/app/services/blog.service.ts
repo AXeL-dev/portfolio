@@ -12,6 +12,18 @@ export class BlogService {
 
     private posts: Post[] = [
         {
+            id: 18,
+            title: 'Why i switched to Angular',
+            date: '2019/09/21',
+            author: this.authors['AXeL'],
+            image: './assets/img/posts/angular.jpg',
+            content: './assets/blog/why-i-switched-to-angular.md',
+            tags: [
+                'Angular',
+                'Front-end'
+            ]
+        },
+        {
             id: 17,
             title: '10 interview questions around Symfony',
             date: '2019/09/20',
