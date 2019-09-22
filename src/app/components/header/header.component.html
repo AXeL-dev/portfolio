@@ -5,11 +5,12 @@
             (click)="scroll(null)">{{ title }}</a>
     </div>
     <div class="menu-bar waves-effect waves-light"
-        (click)="toggleMenu()"><span class="fa fa-bars"></span></div>
+        (click)="toggleMenu($event)"><span class="fa fa-bars"></span></div>
 </div>
 
 <div class="main-nav hero-height"
-    [ngClass]="{'active': showMenu, 'hidden': !showMenu}">
+    [ngClass]="{'active': showMenu, 'hidden': !showMenu}"
+    (click)="stopPropagation($event)">
     <div class="menu-close waves-effect waves-light"
         (click)="closeMenu()"><span class="fa fa-times"></span></div>
     <ul>

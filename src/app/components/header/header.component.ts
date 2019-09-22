@@ -21,14 +21,23 @@ export class HeaderComponent implements OnInit {
     this.menu = this.headerService.menu;
   }
 
-  @HostListener('window:scroll')
-  checkScroll() {
+  @HostListener('window:scroll') checkScroll() {
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     this.isSticky = scrollPosition >= 100;
   }
 
-  toggleMenu() {
+  @HostListener('document:click') clickout() {
+    // Click outside of the menu was detected
+    this.closeMenu();
+  }
+
+  toggleMenu(event: Event) {
     this.showMenu = !this.showMenu;
+    this.stopPropagation(event);
+  }
+
+  stopPropagation(event: Event) {
+    event.stopPropagation(); // Stop the propagation to prevent reaching document
   }
 
   closeMenu() {
