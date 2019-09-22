@@ -1,5 +1,5 @@
 <section id="blog-section"
-    [ngClass]="{'blog-section': maxPosts, 'all-blog-section': !maxPosts}">
+    [ngClass]="{'blog-section': maxPosts, 'all-blog-section': !maxPosts && posts.length}">
     <div class="container">
         <div class="row">
             <div *ngIf="title"
@@ -74,3 +74,5 @@
         </div>
     </div>
 </section>
+<app-error-section *ngIf="!posts.length && !maxPosts"
+    [message]="'No posts available'"></app-error-section>

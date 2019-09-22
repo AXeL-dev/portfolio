@@ -28,6 +28,10 @@ export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnInit() {
     this.posts = this.blogService.getPosts();
 
+    if (this.posts.length === 0) {
+      return;
+    }
+
     // Filter by tag
     if (this.tagFilter.length) {
       this.posts = this.posts.filter((post) => {
