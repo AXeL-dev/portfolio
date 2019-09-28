@@ -12,6 +12,19 @@ export class BlogService {
 
     private posts: Post[] = [
         {
+            id: 19,
+            title: 'Some useful design patterns',
+            date: '2019/09/28',
+            author: this.authors['AXeL'],
+            image: './assets/img/posts/design-patterns.jpeg',
+            content: './assets/blog/some-useful-design-patterns.md',
+            tags: [
+                'Design patterns',
+                'Architecture',
+                'Back-end'
+            ]
+        },
+        {
             id: 18,
             title: 'Why i switched to Angular',
             date: '2019/09/21',
