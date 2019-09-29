@@ -23,7 +23,8 @@ export class BlogService {
             tags: [
                 'Design patterns',
                 'Architecture',
-                'Back-end'
+                'Back-end',
+                'PHP'
             ]
         },
         {
@@ -35,7 +36,9 @@ export class BlogService {
             content: './assets/blog/why-i-switched-to-angular.md',
             tags: [
                 'Angular',
-                'Front-end'
+                'Front-end',
+                'Framework',
+                'Javascript'
             ]
         },
         {
@@ -48,6 +51,7 @@ export class BlogService {
             tags: [
                 'Interview',
                 'Symfony',
+                'Framework',
                 'Back-end'
             ]
         },
@@ -98,7 +102,8 @@ export class BlogService {
             image: './assets/img/posts/osticket.png',
             content: './assets/blog/osticket.md',
             tags: [
-                'osTicket'
+                'osTicket',
+                'PHP'
             ]
         },
         {
@@ -147,8 +152,7 @@ export class BlogService {
             content: './assets/blog/freelancer.md',
             tags: [
                 'Discussion',
-                'Freelance',
-                'Work'
+                'Freelance'
             ]
         },
         {
@@ -174,7 +178,8 @@ export class BlogService {
             tags: [
                 'CMS',
                 'e-commerce',
-                'Magento'
+                'Magento',
+                'PHP'
             ]
         },
         {
@@ -185,7 +190,6 @@ export class BlogService {
             image: './assets/img/posts/jquery.png',
             content: './assets/blog/jquery.md',
             tags: [
-                'Library',
                 'Javascript',
                 'jQuery'
             ]
@@ -198,7 +202,7 @@ export class BlogService {
             image: './assets/img/posts/codeigniter.png',
             content: './assets/blog/codeigniter.md',
             tags: [
-                'Back End',
+                'Back-End',
                 'Framework',
                 'PHP',
                 'CodeIgniter'
@@ -212,8 +216,7 @@ export class BlogService {
             image: './assets/img/posts/riot-js.png',
             content: './assets/blog/riot-js.md',
             tags: [
-                'Front End',
-                'Library',
+                'Front-End',
                 'Javascript',
                 'Riot.js'
             ]
@@ -251,6 +254,7 @@ export class BlogService {
             image: './assets/img/posts/github.png',
             content: './assets/blog/github-private-repos.md',
             tags: [
+                'Git',
                 'Github'
             ]
         }
