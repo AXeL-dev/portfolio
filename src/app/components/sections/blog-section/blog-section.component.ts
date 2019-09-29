@@ -3,6 +3,7 @@ import { BlogService } from '../../../services/blog.service';
 import { Router } from '@angular/router';
 import { MarkdownService } from 'ngx-markdown';
 import { Subscription } from 'rxjs';
+import { Post } from 'src/app/models/post.model';
 
 declare var DISQUSWIDGETS: any;
 
@@ -18,8 +19,8 @@ export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
   @Input() postsPerPage: number = 6;
   @Input() currentPage: number = 1;
   @Input() tagFilter: string = '';
-  posts: any[];
-  pages: any[] = [];
+  posts: Post[];
+  pages: number[] = [];
   paginationRoute: string = '/blog/';
   private subscriptions: Subscription[] = [];
 

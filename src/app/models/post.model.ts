@@ -4,6 +4,7 @@ export interface Post {
     id: number;
     title: string;
     link?: string;
+    text?: string;
     date: string;
     author: Author;
     image: string;

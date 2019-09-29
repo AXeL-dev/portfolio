@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Service } from 'src/app/models/service.model';
 
 @Component({
   selector: 'app-service-section',
@@ -8,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ServiceSectionComponent implements OnInit {
 
   @Input() title: string;
-  @Input() services: any[];
+  @Input() services: Service[];
 
   constructor() { }
 

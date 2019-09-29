@@ -2,6 +2,7 @@ import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
 import { PortfolioService } from '../../../services/portfolio.service';
 import { Lightbox, LightboxConfig } from 'ngx-lightbox';
 import Shuffle from 'shufflejs';
+import { Project } from 'src/app/models/project.model';
 
 @Component({
   selector: 'app-portfolio-section',
@@ -13,7 +14,7 @@ export class PortfolioSectionComponent implements OnInit, AfterViewInit {
   @Input() title: string;
   @Input() filters: any[];
   @Input() max: number = 0;
-  projects: any[];
+  projects: Project[];
   currentFilter: string = 'all';
   private _album: any[] = [];
   private shuffle: any;

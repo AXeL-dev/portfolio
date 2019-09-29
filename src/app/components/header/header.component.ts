@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener, Input } from '@angular/core';
 import { HeaderService } from '../../services/header.service';
+import { Menu } from 'src/app/models/menu.model';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,7 @@ import { HeaderService } from '../../services/header.service';
 export class HeaderComponent implements OnInit {
 
   title: string;
-  menu: any[];
+  menu: Menu[];
   isSticky: boolean = false;
   showMenu: boolean = false;
   @Input() isHomePage: boolean = false;

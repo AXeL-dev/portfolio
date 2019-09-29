@@ -2,6 +2,11 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { HomeService } from '../../services/home.service';
 import { AppComponent } from 'src/app/app.component';
+import { Service } from 'src/app/models/service.model';
+import { Skill } from 'src/app/models/skill.model';
+import { Technology } from 'src/app/models/technology.model';
+import { Education } from 'src/app/models/education.model';
+import { Experience } from 'src/app/models/experience.model';
 
 declare var M: any;
 declare var imagesLoaded: any;
@@ -13,11 +18,11 @@ declare var imagesLoaded: any;
 })
 export class HomeComponent implements OnInit, AfterViewInit {
 
-  services: any[];
-  skills: any[];
-  technologies: any[];
-  education: any[];
-  experience: any[];
+  services: Service[];
+  skills: Skill[];
+  technologies: Technology[];
+  education: Education[];
+  experience: Experience[];
   portfolioFilters: any[];
 
   constructor(private titleService: Title, private homeService: HomeService, private appComponent: AppComponent) { }
