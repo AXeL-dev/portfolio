@@ -2614,7 +2614,7 @@ ol.children{
 
 .related-post-single{
 	position: relative;
-	height: 70px;
+	height: 90px;
 	margin-bottom: 15px;
 	width: 100%;
 	display: block;
@@ -2633,13 +2633,13 @@ ol.children{
 }
 
 .related-post-img{
-	width: 60px;
-	height: 70px;
+	width: 90px;
+	height: 90px;
 }
 
 .related-post-title,
 .related-post-author{
-	margin-left: 70px;
+	margin-left: 100px;
 }
 
 .related-post-title a{

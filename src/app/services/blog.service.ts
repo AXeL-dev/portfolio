@@ -6,7 +6,9 @@ export class BlogService {
     private authors: { [key: string]: Author } = {
         'AXeL': {
             name: 'AXeL',
-            image: './assets/img/avatar.jpg'
+            image: './assets/img/avatar.jpg',
+            email: 'contact.axel.dev@gmail.com',
+            bio: 'A full-stack developer and freelancer with a passion for thoughtful coding, collaboration, and open-source. I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally make the impossible possible.'
         }
     };
 
@@ -261,6 +263,18 @@ export class BlogService {
     getPostById(id: number) {
         return this.posts.find(p => p.id == id);
     }
+
+    // getTags() {
+    //     let tags = [];
+    //     this.posts.forEach((post) => {
+    //         post.tags.forEach((tag) => {
+    //             if (!tags.includes(tag)) {
+    //                 tags.push(tag);
+    //             }
+    //         });
+    //     });
+    //     return tags;
+    // }
 }
 
 export const DisqusConfig = {

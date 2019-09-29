@@ -12,11 +12,11 @@ export class HomeService {
         name: 'Denna Anass',
         image: './assets/img/coder.jpg',
         job: 'Full Stack Developer',
+        bio: 'My name is Anass or just call me AXeL. I was 17 when i took my first steps into the fascinating world of programming. Since then, I have acquired good taste in areas like front-end development, back-end development, database management, dev-ops and graphic design. I like challenges, discovering new stuff and contributing to open source.',
         age: this.calculateAge('1995-02-25'),
         address: 'Rabat, Morocco',
         email: 'contact.axel.dev@gmail.com',
-        website: 'https://axel-dev.github.io/',
-        description: 'My name is Anass or just call me AXeL. I was 17 when i took my first steps into the fascinating world of programming. Since then, I have acquired good taste in areas like front-end development, back-end development, database management, dev-ops and graphic design. I like challenges, discovering new stuff and contributing to open source.'
+        website: 'https://axel-dev.github.io/'
     };
 
     socials: SocialLink[] = [
