@@ -31,7 +31,7 @@ export class HomeService {
     services: Service[] = [
         { title: 'Front End Development', icon: 'desktop', description: 'AnuglarJS, Angular 6+, Vue.js, Jquery, VanillaJS, HTML5, CSS / SASS, JavaScript / ES6, TypeScript, SPA, PWA, Web Sockets' },
         { title: 'Back End Development', icon: 'cubes', description: 'PHP (CodeIgniter, Symfony), MySQL / SQL Server / MongoDB, CMS (Wordpress, Drupal), Python, C#, ASP.NET, Rest API, OOP' },
-        { title: 'Mobile Development', icon: 'mobile', description: 'Java, PhoneGap, Android Studio' },
+        { title: 'Mobile Development', icon: 'mobile', description: 'Java, PhoneGap, Ionic, Android Studio' },
         { title: 'Web Hosting', icon: 'server', description: 'FTP, SSH, FileZilla, cPanel, Linux / Unix, VM, Cloud' },
         { title: 'Data Mining', icon: 'search-plus', description: 'CasperJS, PhantomJS, Web Scraper' },
         { title: 'Dev-ops', icon: 'code-fork', description: 'Git / Github / Gitlab, CI / CD, Gulp, Webpack, NPM' }
@@ -111,6 +111,15 @@ export class HomeService {
 
     experience: Experience[] = [
         {
+            tag: 'eCapital',
+            title: 'Full Stack Developer',
+            description: [
+                '✔ Developing & maintaining web apps/websites using Symfony2/3, Wordpress, Angular & Firebase.',
+                '✔ Building mobile apps with Ionic and Angular.'
+            ],
+            period: 'September 2019 - present'
+        },
+        {
             tag: 'Blue Mango Software',
             title: 'Analyst/Programmer',
             description: [
@@ -120,7 +129,8 @@ export class HomeService {
                 '✔ Setting up an OpenLDAP server to centralise third parties data.',
                 '✔ Doing server administration & backup stuff (ssh, ftp, vnc).'
             ],
-            period: 'April 2019 - July 2019'
+            period: 'April 2019 - July 2019',
+            position: 'right'
         },
         {
             tag: 'Freelance',
@@ -131,8 +141,7 @@ export class HomeService {
                 '✔ Contributing to open-source community. <a href="https://github.com/Jessewb786/Silaty/graphs/contributors" target="_blank">#Silaty</a> <a href="https://github.com/Dolibarr/dolibarr/graphs/contributors" target="_blank">#Dolibarr</a>',
                 '✔ Learning & discovering new technologies, design patterns, best code practices.'
             ],
-            period: '2017 - present',
-            position: 'right'
+            period: '2017 - present'
         },
         {
             tag: 'NAMYR Communication',
@@ -141,7 +150,8 @@ export class HomeService {
                 '✔ Creation of an e-commerce website using the CodeIgniter PHP framework.',
                 '✔ Web scraping data for analysis purpose using <a href="http://casperjs.org/" target="_blank">CasperJS</a>.'
             ],
-            period: 'October 2017 - November 2017'
+            period: 'October 2017 - November 2017',
+            position: 'right'
         },
         {
             tag: 'Kenitra Negoce Technology',
@@ -152,8 +162,7 @@ export class HomeService {
                 '✔ Using tools like <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a> for tasks management & <a href="https://git-scm.com/" target="_blank">git</a> for source code commits.',
                 '✔ Administering servers/virtual machines using ssh & VMware.'
             ],
-            period: 'February 2016 - June 2016',
-            position: 'right'
+            period: 'February 2016 - June 2016'
         },
         {
             tag: 'ZTE CORPORATION',
@@ -161,7 +170,8 @@ export class HomeService {
             description: [
                 'Creating a web application in PHP to simplify script generation and execution from Excel sheets.'
             ],
-            period: 'February 2015 - April 2015'
+            period: 'February 2015 - April 2015',
+            position: 'right'
         }
     ];
 
