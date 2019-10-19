@@ -14,9 +14,9 @@ export class PortfolioService {
             ]
         },
         {
-            name: 'Dentale Care',
-            image: './assets/img/projects/dentale-care.png',
-            link: 'https://github.com/AXeL-dev/Dentale-Care',
+            name: 'Dental Care',
+            image: './assets/img/projects/dental-care.png',
+            link: 'https://github.com/AXeL-dev/Dental-Care',
             category: [
                 'ASP.Net',
                 'MVC'
