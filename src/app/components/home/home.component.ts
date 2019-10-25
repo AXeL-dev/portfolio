@@ -7,6 +7,7 @@ import { Skill } from 'src/app/models/skill.model';
 import { Technology } from 'src/app/models/technology.model';
 import { Education } from 'src/app/models/education.model';
 import { Experience } from 'src/app/models/experience.model';
+import { Reference } from 'src/app/models/reference.model';
 
 declare var M: any;
 declare var imagesLoaded: any;
@@ -23,6 +24,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   technologies: Technology[];
   education: Education[];
   experience: Experience[];
+  funFact: Reference[];
   portfolioFilters: any[];
 
   constructor(private titleService: Title, private homeService: HomeService, private appComponent: AppComponent) { }
@@ -34,6 +36,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.technologies = this.homeService.technologies;
     this.education = this.homeService.education;
     this.experience = this.homeService.experience;
+    this.funFact = this.homeService.funFact;
     this.portfolioFilters = [
       { name: 'Python', filter: 'python' },
       { name: 'PHP', filter: 'php' },

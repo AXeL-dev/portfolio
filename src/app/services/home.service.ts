@@ -5,6 +5,7 @@ import { Skill } from '../models/skill.model';
 import { Technology } from '../models/technology.model';
 import { Education } from '../models/education.model';
 import { Experience } from '../models/experience.model';
+import { Reference } from '../models/reference.model';
 
 export class HomeService {
 
@@ -172,6 +173,21 @@ export class HomeService {
             ],
             period: 'February 2015 - April 2015',
             position: 'right'
+        }
+    ];
+
+    funFact: Reference[] = [
+        {
+            title: 'Baka.. 🙄',
+            content: 'In my childhood, i often mixed left and right directions 😅'
+        },
+        {
+            title: 'C Addict 💘',
+            content: 'I spent too much time coding in <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C</a> (2012 to 2018) than i did with any other programming language'
+        },
+        {
+            title: 'Lazy 🤫',
+            content: 'Failed 1 year in University for no reason 👀'
         }
     ];
 

@@ -32,6 +32,7 @@ import { LightboxModule } from 'ngx-lightbox';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ServiceSectionComponent } from './components/sections/service-section/service-section.component';
+import { ReferenceSectionComponent } from './components/sections/reference-section/reference-section.component';
 
 
 
@@ -55,7 +56,8 @@ import { ServiceSectionComponent } from './components/sections/service-section/s
     PostComponent,
     PostSectionComponent,
     EscapeHtmlPipe,
-    ServiceSectionComponent
+    ServiceSectionComponent,
+    ReferenceSectionComponent
   ],
   imports: [
     BrowserModule,

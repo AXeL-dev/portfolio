@@ -14,6 +14,7 @@ export class HeaderService {
         { name: 'Education', id: 'education-section', link: '/' },
         { name: 'Experience', id: 'experience-section', link: '/' },
         { name: 'Portfolio', id: 'portfolio-section', link: '/' },
+        { name: 'Fun Fact', id: 'fun-fact-section', link: '/' },
         { name: 'Blog', id: 'blog-section', link: '/' }
     ];
 }

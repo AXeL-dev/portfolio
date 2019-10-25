@@ -1,0 +1,41 @@
+<!-- Reference Section -->
+<section id="{{ id }}" class="reference-section">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 section-title">
+                <h2>{{ title }}</h2>
+            </div>
+            <div class="col s12">
+                <div class="reference-wrapper col s12 w-block shadow-bg">
+                    <div class="reference-carousel">
+
+                        <!-- Single Reference Item -->
+                        <owl-carousel-o [options]="options">
+                            <ng-container *ngFor="let item of items">
+                                <ng-template carouselSlide>
+                                        <div class="item">
+                                            <div *ngIf="item.image" class="reference-img">
+                                                <img src="{{ item.image }}" alt="{{ item.title }}">
+                                            </div>
+                                            <div class="reference-author">
+                                                {{ item.title }}
+                                            </div>
+                                            <div *ngIf="item.subtitle" class="reference-company">
+                                                {{ item.subtitle }}
+                                            </div>
+                                            <div *ngIf="item.content" class="reference-content">
+                                                <p [innerHTML]="item.content"></p>
+                                            </div>
+                                        </div>
+                                </ng-template>
+                            </ng-container>
+                        </owl-carousel-o>
+                        <!--/ Single Reference Item -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Reference Section -->
