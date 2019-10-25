@@ -14,6 +14,18 @@ export class BlogService {
 
     private posts: Post[] = [
         {
+            id: 20,
+            title: '!! (not not) operator in JavaScript?',
+            date: '2019/10/25',
+            author: this.authors['AXeL'],
+            image: './assets/img/posts/javascript.png',
+            content: './assets/blog/not-not-operator-in-javascript.md',
+            tags: [
+                'Javascript',
+                'Front-end'
+            ]
+        },
+        {
             id: 19,
             title: 'Some useful design patterns',
             date: '2019/09/28',
