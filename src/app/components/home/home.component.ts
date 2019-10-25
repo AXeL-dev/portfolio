@@ -8,6 +8,7 @@ import { Technology } from 'src/app/models/technology.model';
 import { Education } from 'src/app/models/education.model';
 import { Experience } from 'src/app/models/experience.model';
 import { Reference } from 'src/app/models/reference.model';
+import { Tool } from 'src/app/models/tool.model';
 
 declare var M: any;
 declare var imagesLoaded: any;
@@ -21,6 +22,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   services: Service[];
   skills: Skill[];
+  tools: Tool[];
   technologies: Technology[];
   education: Education[];
   experience: Experience[];
@@ -33,6 +35,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.titleService.setTitle('Home');
     this.services = this.homeService.services;
     this.skills = this.homeService.skills;
+    this.tools = this.homeService.tools;
     this.technologies = this.homeService.technologies;
     this.education = this.homeService.education;
     this.experience = this.homeService.experience;

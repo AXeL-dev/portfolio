@@ -6,6 +6,7 @@ import { Technology } from '../models/technology.model';
 import { Education } from '../models/education.model';
 import { Experience } from '../models/experience.model';
 import { Reference } from '../models/reference.model';
+import { Tool } from '../models/tool.model';
 
 export class HomeService {
 
@@ -33,7 +34,7 @@ export class HomeService {
         { title: 'Front End Development', icon: 'desktop', description: 'AnuglarJS, Angular 6+, Vue.js, Jquery, VanillaJS, HTML5, CSS / SASS, JavaScript / ES6, TypeScript, SPA, PWA, Web Sockets' },
         { title: 'Back End Development', icon: 'cubes', description: 'PHP (CodeIgniter, Symfony), MySQL / SQL Server / MongoDB, CMS (Wordpress, Drupal), Python, C#, ASP.NET, Rest API, OOP' },
         { title: 'Mobile Development', icon: 'mobile', description: 'Java, PhoneGap, Ionic, Android Studio' },
-        { title: 'Web Hosting', icon: 'server', description: 'FTP, SSH, FileZilla, cPanel, Linux / Unix, VM, Cloud' },
+        { title: 'Web Hosting', icon: 'server', description: 'FTP, SSH, cPanel, Linux, VM, Cloud' },
         { title: 'Data Mining', icon: 'search-plus', description: 'CasperJS, PhantomJS, Web Scraper' },
         { title: 'Dev-ops', icon: 'code-fork', description: 'Git / Github / Gitlab, CI / CD, Gulp, Webpack, NPM' }
     ];
@@ -49,40 +50,49 @@ export class HomeService {
         { name: '.NET / C#', progress: 50, position: 'right' }
     ];
 
+    tools: Tool[] = [
+        { name: 'Visual Studio Code', image: './assets/img/tools/vs-code.png' },
+        { name: 'Sublime Text', image: './assets/img/tools/sublime-text.png' },
+        { name: 'PHP Storm', image: './assets/img/tools/php-storm.png' },
+        { name: 'Android Studio', image: './assets/img/tools/android-studio.png' },
+        { name: 'Trello', image: './assets/img/tools/trello.png' },
+        { name: 'Git', image: './assets/img/tools/git.png' },
+        { name: 'NPM', image: './assets/img/tools/npm.png' },
+        { name: 'Meld', image: './assets/img/tools/meld.png' },
+        { name: 'FileZilla', image: './assets/img/tools/filezilla.png' },
+        { name: 'GIMP', image: './assets/img/tools/gimp.png' }
+    ];
+
     technologies: Technology[] = [
-        //{ name: 'HTML', image: './assets/img/tech/html.png' },
-        //{ name: 'CSS', image: './assets/img/tech/css.png' },
+        // { name: 'HTML', image: './assets/img/tech/html.png' },
+        // { name: 'CSS', image: './assets/img/tech/css.png' },
         { name: 'Bootstrap', image: './assets/img/tech/bootstrap.png' },
         { name: 'Semantic UI', image: './assets/img/tech/semantic-ui.png' },
         { name: 'Materialize', image: './assets/img/tech/materialize-css.png' },
         { name: 'Sass', image: './assets/img/tech/sass.png' },
         { name: 'Jekyll', image: './assets/img/tech/jekyll.png' },
-        //{ name: 'PHP', image: './assets/img/tech/php.png' },
+        // { name: 'PHP', image: './assets/img/tech/php.png' },
         { name: 'Symfony', image: './assets/img/tech/symfony.png' },
         { name: 'CodeIgniter', image: './assets/img/tech/codeigniter.png' },
         { name: 'Wordpress', image: './assets/img/tech/wordpress.png' },
         { name: 'Drupal', image: './assets/img/tech/drupal.png' },
         { name: 'MySQL', image: './assets/img/tech/mysql.png' },
         { name: 'mongoDB', image: './assets/img/tech/mongodb.png' },
-        //{ name: 'Javascript', image: './assets/img/tech/js.png' },
+        // { name: 'Javascript', image: './assets/img/tech/js.png' },
         { name: 'jQuery', image: './assets/img/tech/jquery.png' },
-        { name: 'Ajax', image: './assets/img/tech/ajax.png' },
-        //{ name: 'TypeScript', image: './assets/img/tech/ts.png' },
+        // { name: 'Ajax', image: './assets/img/tech/ajax.png' },
+        // { name: 'TypeScript', image: './assets/img/tech/ts.png' },
         { name: 'Angular', image: './assets/img/tech/angular.png' },
+        { name: 'Ionic', image: './assets/img/tech/ionic.png' },
         { name: 'Vue.js', image: './assets/img/tech/vue.png' },
         { name: 'Riot JS', image: './assets/img/tech/riot.png' },
         { name: '.Net', image: './assets/img/tech/dotnet.png' },
         { name: 'SQL Server', image: './assets/img/tech/sql-server.png' },
-        //{ name: 'Docker', image: './assets/img/tech/docker.png' },
-        //{ name: 'Qt Framework', image: './assets/img/tech/qt.png' },
-        //{ name: 'GTK', image: './assets/img/tech/gtk.png' },
-        //{ name: 'Android', image: './assets/img/tech/android.png' },
-        //{ name: 'Electron', image: './assets/img/tech/electron.png' },
-        { name: 'Visual Studio Code', image: './assets/img/tech/vs-code.png' },
-        { name: 'Trello', image: './assets/img/tech/trello.png' },
-        { name: 'Git', image: './assets/img/tech/git.png' },
-        { name: 'NPM', image: './assets/img/tech/npm.png' },
-        { name: 'GIMP', image: './assets/img/tech/gimp.png' }
+        // { name: 'Docker', image: './assets/img/tech/docker.png' },
+        // { name: 'Qt Framework', image: './assets/img/tech/qt.png' },
+        // { name: 'GTK', image: './assets/img/tech/gtk.png' },
+        // { name: 'Android', image: './assets/img/tech/android.png' },
+        // { name: 'Electron', image: './assets/img/tech/electron.png' },
     ];
 
     education: Education[] = [
