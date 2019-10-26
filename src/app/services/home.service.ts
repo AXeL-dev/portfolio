@@ -193,7 +193,7 @@ export class HomeService {
             content: 'In my childhood, i often mixed left and right directions 😅'
         },
         {
-            title: 'C Addict 💘',
+            title: 'Geek? 🤓',
             content: 'I spent too much time coding in <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C</a> (2012 to 2018) than i did with any other programming language'
         },
         {
