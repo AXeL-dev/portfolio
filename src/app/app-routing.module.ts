@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:page', component: BlogComponent },
   { path: 'blog/post', component: PostComponent },
-  { path: 'blog/post/:id', component: PostComponent },
+  { path: 'blog/post/:slug', component: PostComponent },
   //{ path: 'post.html', component: PostComponent }, // handle old 'riotjs-portfolio' post routes also
   { path: 'blog/tag/:tag', component: BlogComponent },
   { path: 'blog/tag/:tag/:page', component: BlogComponent },

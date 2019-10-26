@@ -1,4 +1,4 @@
-<section class="single-blog-section">
+<section *ngIf="post" class="single-blog-section">
     <div class="container">
         <div class="row">
             <div class="col l8 s12 single-blog-wrapper">
@@ -21,7 +21,7 @@
                             <div class="chip">
                                 <span class="fa fa-comments mgr-5"></span>
                                 <span class="disqus-comment-count"
-                                    attr.data-disqus-identifier="{{ post.link }}">0 Comments</span>
+                                    attr.data-disqus-identifier="{{ post.disqusIdentifier }}">0 Comments</span>
                             </div>
                         </div>
                         <div class="single-blog-content">
@@ -34,19 +34,19 @@
                                 <span class="single-blog-taxonomy-item fa fa-tags"></span>
                                 <div>
                                     <a *ngFor="let tag of post.tags"
-                                        routerLink="/blog/tag/{{ tag.toLowerCase() }}">{{ tag }}</a>
+                                        routerLink="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="single-blog-navigation">
-                            <a *ngIf="post.id > 1"
+                            <a *ngIf="prevPost"
                                 class="btn-custom waves-effect"
-                                routerLink="/blog/post/{{ post.id - 1 }}"
+                                routerLink="/blog/post/{{ prevPost.slug }}"
                                 rel="prev">Prev Post</a>
-                            <a *ngIf="post.id < postsLength"
+                            <a *ngIf="nextPost"
                                 class="btn-custom waves-effect"
-                                routerLink="/blog/post/{{ post.id + 1 }}"
+                                routerLink="/blog/post/{{ nextPost.slug }}"
                                 rel="next">Next Post</a>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                 <div id="comment-section"
                     class="col s12 single-blog-comment comments-area w-block shadow-bg pd-50 pd-md-40 pd-sm-30 mgt-50">
                     <div class="comment-title"><span class="fa fa-comments"></span> Comments</div>
-                    <disqus [identifier]="post.link"></disqus>
+                    <disqus [identifier]="post.disqusIdentifier"></disqus>
                 </div>
             </div>
             <div class="col l4 s12 sidebar-wrapper">
@@ -97,7 +97,7 @@
                     </div>
                     <ul>
                         <li *ngFor="let tag of post.tags">
-                            <a routerLink="/blog/tag/{{ tag.toLowerCase() }}">{{ tag }}</a>
+                            <a routerLink="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
                         </li>
                     </ul>
                 </div>

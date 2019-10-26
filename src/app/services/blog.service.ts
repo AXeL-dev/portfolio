@@ -1,7 +1,14 @@
 import { Author } from '../models/author.model';
 import { Post } from '../models/post.model';
+import { SlugifyPipe } from '../pipes/slugify.pipe';
+import { Injectable } from '@angular/core';
 
+@Injectable()
 export class BlogService {
+
+    constructor(private slugifyPipe: SlugifyPipe) {
+        this.generateSlugs();
+    }
 
     private authors: { [key: string]: Author } = {
         'AXeL': {
@@ -15,7 +22,7 @@ export class BlogService {
     private posts: Post[] = [
         {
             id: 20,
-            title: '!! (not not) operator in JavaScript?',
+            title: '!! (not not) operator in JavaScript',
             date: '2019/10/25',
             author: this.authors['AXeL'],
             image: './assets/img/posts/javascript.png',
@@ -272,8 +279,20 @@ export class BlogService {
         }
     ];
 
+    private generateSlugs() {
+        this.posts.forEach((post) => {
+            if (! post.slug) {
+                post.slug = this.slugifyPipe.transform(post.title);
+            }
+        });
+    }
+
     getPosts() {
         return this.posts.slice();
+    }
+
+    getPostBySlug(slug: string) {
+        return this.posts.find(p => p.slug == slug);
     }
 
     getPostById(id: number) {

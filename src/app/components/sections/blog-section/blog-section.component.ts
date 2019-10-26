@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { MarkdownService } from 'ngx-markdown';
 import { Subscription } from 'rxjs';
 import { Post } from 'src/app/models/post.model';
+import { SlugifyPipe } from 'src/app/pipes/slugify.pipe';
 
 declare var DISQUSWIDGETS: any;
 
@@ -24,7 +25,7 @@ export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
   paginationRoute: string = '/blog/';
   private subscriptions: Subscription[] = [];
 
-  constructor(private blogService: BlogService, private router: Router, private markdownService: MarkdownService) { }
+  constructor(private blogService: BlogService, private router: Router, private markdownService: MarkdownService, private slugifyPipe: SlugifyPipe) { }
 
   ngOnInit() {
     this.posts = this.blogService.getPosts();
@@ -36,10 +37,10 @@ export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
     // Filter by tag
     if (this.tagFilter.length) {
       this.posts = this.posts.filter((post) => {
-        return post.tags.some((tag) => tag.toLowerCase() === this.tagFilter.toLowerCase())
+        return post.tags.some((tag) => this.slugifyPipe.transform(tag) === this.tagFilter)
       });
       //console.log(this.posts);
-      this.paginationRoute = '/blog/tag/' + this.tagFilter.toLowerCase() + '/';
+      this.paginationRoute = '/blog/tag/' + this.tagFilter + '/';
     }
 
     // Splice posts array if a max value is provided
@@ -49,8 +50,9 @@ export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
 
     // Generate posts links + clean and cut long posts text
     this.posts.forEach((post) => {
-      post.link = '/blog/post/' + post.id;
+      post.link = '/blog/post/' + post.slug;
       post.text = 'Loading...';
+      post.disqusIdentifier = '/blog/post/' + post.id;
       const content = this.markdownService.getSource(post.content);
       const subscription = content.subscribe((text) => {
         post.text = this.markdownService.compile(text);

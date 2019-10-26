@@ -9,7 +9,7 @@ import { AppComponent } from 'src/app/app.component';
 })
 export class PostComponent implements OnInit, AfterViewInit {
 
-  postId: number;
+  slug: string;
 
   constructor(private route: ActivatedRoute, private router: Router, private appComponent: AppComponent) {
     // force route reload whenever params change;
@@ -17,10 +17,7 @@ export class PostComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-    const id = this.route.snapshot.params['id'] || this.route.snapshot.queryParams['id'];
-    if (id) {
-      this.postId = +id;
-    }
+    this.slug = this.route.snapshot.params['slug'] || this.route.snapshot.queryParams['slug'];
   }
 
   ngAfterViewInit() {

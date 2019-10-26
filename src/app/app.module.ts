@@ -33,6 +33,7 @@ import { MarkdownModule } from 'ngx-markdown';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ServiceSectionComponent } from './components/sections/service-section/service-section.component';
 import { ReferenceSectionComponent } from './components/sections/reference-section/reference-section.component';
+import { SlugifyPipe } from './pipes/slugify.pipe';
 
 
 
@@ -57,7 +58,8 @@ import { ReferenceSectionComponent } from './components/sections/reference-secti
     PostSectionComponent,
     EscapeHtmlPipe,
     ServiceSectionComponent,
-    ReferenceSectionComponent
+    ReferenceSectionComponent,
+    SlugifyPipe
   ],
   imports: [
     BrowserModule,
@@ -73,7 +75,8 @@ import { ReferenceSectionComponent } from './components/sections/reference-secti
     HeaderService,
     HomeService,
     PortfolioService,
-    BlogService
+    BlogService,
+    SlugifyPipe
   ],
   bootstrap: [AppComponent]
 })

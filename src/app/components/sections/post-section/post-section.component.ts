@@ -13,35 +13,39 @@ declare var DISQUSWIDGETS: any;
 })
 export class PostSectionComponent implements OnInit, AfterViewInit {
 
-  @Input() id: number;
+  @Input() slug: string;
   post: Post;
   recentPosts: Post[];
-  postsLength: number = 0;
+  prevPost: Post;
+  nextPost: Post;
 
   constructor(private blogService: BlogService, private router: Router, private titleService: Title) { }
 
   ngOnInit() {
-    this.post = this.blogService.getPostById(this.id) || null;
+    this.post = this.blogService.getPostBySlug(this.slug) || this.blogService.getPostById(+this.slug) || null;
 
-    // Redirect to error page when post is empty
-    if (!this.post || Object.keys(this.post).length === 0) {
+    // Redirect to error page when post is null
+    if (!this.post) {
       this.router.navigate(['page-not-found']);
     } else {
       this.titleService.setTitle(this.post.title);
       let posts = this.blogService.getPosts();
-      this.postsLength = posts.length;
-      this.post.link = '/blog/post/' + this.post.id; //'/post.html?id=' + this.post.id;
+      this.post.link = '/blog/post/' + this.post.slug;
+      this.post.disqusIdentifier = '/blog/post/' + this.post.id; //'/post.html?id=' + this.post.id;
       // Get recent posts
       this.recentPosts = posts.slice(0, 5);
       this.recentPosts.forEach((post) => {
-        post.link = '/blog/post/' + post.id;
+        post.link = '/blog/post/' + post.slug;
       });
+      // Get previous & next posts
+      this.prevPost = this.blogService.getPostById(this.post.id - 1);
+      this.nextPost = this.blogService.getPostById(this.post.id + 1);
     }
   }
 
   ngAfterViewInit() {
     // source: https://help.disqus.com/en/articles/1717274-adding-comment-count-links-to-your-home-page#updating-counts
-    if (typeof DISQUSWIDGETS !== 'undefined') {
+    if (this.post && typeof DISQUSWIDGETS !== 'undefined') {
       DISQUSWIDGETS.getCount({ reset: true });
     }
   }

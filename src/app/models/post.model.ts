@@ -3,6 +3,7 @@ import { Author } from './author.model';
 export interface Post {
     id: number;
     title: string;
+    slug?: string;
     link?: string;
     text?: string;
     date: string;
@@ -10,4 +11,5 @@ export interface Post {
     image: string;
     content: string;
     tags?: string[];
+    disqusIdentifier?: string;
 }
