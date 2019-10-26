@@ -83,6 +83,7 @@ export class HomeService {
         // { name: 'Ajax', image: './assets/img/tech/ajax.png' },
         // { name: 'TypeScript', image: './assets/img/tech/ts.png' },
         { name: 'Angular', image: './assets/img/tech/angular.png' },
+        { name: 'Firebase', image: './assets/img/tech/firebase.png' },
         { name: 'Ionic', image: './assets/img/tech/ionic.png' },
         { name: 'Vue.js', image: './assets/img/tech/vue.png' },
         { name: 'Riot JS', image: './assets/img/tech/riot.png' },
