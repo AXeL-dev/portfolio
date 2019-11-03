@@ -26,8 +26,7 @@ If it's your first deploy on github, you may need to install this package `npm i
 
 Once you have the required package, simply run:
 ```
-ng build --prod --base-href "/portfolio/"
-ngh --dir=dist/portfolio
+npm run buildProd && npm run deploy
 ```
 
 ## Running unit tests
