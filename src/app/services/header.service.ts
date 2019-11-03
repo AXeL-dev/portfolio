@@ -13,7 +13,7 @@ export class HeaderService {
         { name: 'Tools', id: 'tools-section', link: '/' },
         { name: 'Technologies', id: 'technologies-section', link: '/' },
         { name: 'Education', id: 'education-section', link: '/' },
-        { name: 'Experience', id: 'experience-section', link: '/' },
+        //{ name: 'Experience', id: 'experience-section', link: '/' },
         { name: 'Portfolio', id: 'portfolio-section', link: '/' },
         { name: 'Fun Fact', id: 'fun-fact-section', link: '/' },
         { name: 'Blog', id: 'blog-section', link: '/' }
