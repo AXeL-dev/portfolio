@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
-import { BlogService } from '../../../services/blog.service';
+import { BlogService } from '../../../../services/blog.service';
 import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Post } from 'src/app/models/post.model';

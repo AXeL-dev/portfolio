@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
-import { PortfolioService } from '../../../services/portfolio.service';
+import { PortfolioService } from '../../../../services/portfolio.service';
 import { Lightbox, LightboxConfig } from 'ngx-lightbox';
 import Shuffle from 'shufflejs';
 import { Project } from 'src/app/models/project.model';

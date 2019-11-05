@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeService } from '../../../services/home.service';
+import { HomeService } from '../../../../services/home.service';
 import { Author } from 'src/app/models/author.model';
 import { SocialLink } from 'src/app/models/social-link.model';
 

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, OnDestroy, AfterViewInit } from '@angular/core';
-import { BlogService } from '../../../services/blog.service';
+import { BlogService } from '../../../../services/blog.service';
 import { Router } from '@angular/router';
 import { MarkdownService } from 'ngx-markdown';
 import { Subscription } from 'rxjs';
