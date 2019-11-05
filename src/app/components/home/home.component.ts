@@ -53,20 +53,4 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.appComponent.disablePreloader(true);
   }
 
-  initTooltips() {
-    // Initialize Materialize tooltips
-    const tooltips = document.querySelectorAll('.tooltipped');
-    console.log(tooltips);
-    console.log(document.querySelectorAll('.image-bg'));
-    let instances = M.Tooltip.init(tooltips);
-  }
-
-  initImagesLoaded(_self) {
-    // Wait for background images to load before removing the preloader
-    imagesLoaded('.image-bg', { background: true }, function () {
-      //console.log('all images are loaded');
-      _self.isLoading = false;
-    });
-  }
-
 }
