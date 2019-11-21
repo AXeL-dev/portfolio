@@ -1,4 +1,4 @@
-If you read my older post about vue.js "<a href="./blog/post/15" target="_blank">I fall in love with vue.js</a>" you may be wondering why did i switch to Angular that fast. Well, this wasn't a simple decision since i've already tried Angular 2 before & i've found it kind of complicate, so why?
+If you read my older post about vue.js "<a href="./blog/post/i-fall-in-with-vuejs" target="_blank">I fall in love with vue.js</a>" you may be wondering why did i switch to Angular that fast. Well, this wasn't a simple decision since i've already tried Angular 2 before & i've found it kind of complicate, so why?
 
 Honestly, Vue is just awesome & i really loved the simplicity of that "well documented" framework, but it stills got some lacks.. or in other words, Vue is losing the race against Angular, so let's get more in the details & see how Angular is quite better (in my opinion):
 
