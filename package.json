@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "buildProd": "ng build --prod --base-href \"/portfolio/\"",
-    "deploy": "ngh --dir=dist/portfolio"
+    "ghbuild": "ng build --prod --base-href \"/portfolio/\"",
+    "ghdeploy": "ngh --dir=dist/portfolio"
   },
   "private": true,
   "dependencies": {
