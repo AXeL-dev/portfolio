@@ -20,13 +20,14 @@ To change the main "blue" color edit [assets/css/color.scss](src/assets/css/colo
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Deploy on github pages
+## Deploy to github pages
 
-If it's your first deploy on github, you may need to install this package `npm install -g angular-cli-ghpages`.
+If it's your first deploy to github, you may need to install this package `npm install -g angular-cli-ghpages`.
 
 Once you have the required package, simply run:
 ```
-npm run buildProd && npm run deploy
+npm run ghbuild
+npm run ghdeploy
 ```
 
 ## Running unit tests
