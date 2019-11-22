@@ -26,8 +26,7 @@ If it's your first deploy to github, you may need to install this package `npm i
 
 Once you have the required package, simply run:
 ```
-npm run ghbuild
-npm run ghdeploy
+npm run ghbuild && npm run ghdeploy
 ```
 
 ## Running unit tests
