@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class BlogService {
 
     constructor(private slugifyPipe: SlugifyPipe) {
-        this.generateSlugs();
+        this.init();
     }
 
     private authors: { [key: string]: Author } = {
@@ -21,7 +21,6 @@ export class BlogService {
 
     private posts: Post[] = [
         {
-            id: 22,
             title: 'Ant Design',
             date: '2019/11/30',
             author: this.authors['AXeL'],
@@ -33,7 +32,6 @@ export class BlogService {
             ]
         },
         {
-            id: 21,
             title: 'React, Vue or Angular?',
             date: '2019/11/29',
             author: this.authors['AXeL'],
@@ -46,7 +44,6 @@ export class BlogService {
             ]
         },
         {
-            id: 20,
             title: '!! (not not) operator in JavaScript',
             date: '2019/10/25',
             author: this.authors['AXeL'],
@@ -58,7 +55,6 @@ export class BlogService {
             ]
         },
         {
-            id: 19,
             title: 'Some useful design patterns',
             date: '2019/09/28',
             author: this.authors['AXeL'],
@@ -72,7 +68,6 @@ export class BlogService {
             ]
         },
         {
-            id: 18,
             title: 'Why i switched to Angular',
             date: '2019/09/21',
             author: this.authors['AXeL'],
@@ -86,7 +81,6 @@ export class BlogService {
             ]
         },
         {
-            id: 17,
             title: '10 interview questions around Symfony',
             date: '2019/09/20',
             author: this.authors['AXeL'],
@@ -100,7 +94,6 @@ export class BlogService {
             ]
         },
         {
-            id: 16,
             title: 'Frontend vs Backend',
             date: '2019/09/11',
             author: this.authors['AXeL'],
@@ -113,7 +106,6 @@ export class BlogService {
             ]
         },
         {
-            id: 15,
             title: 'I fall in ❤️ with Vue.js',
             date: 'August 3, 2019',
             author: this.authors['AXeL'],
@@ -126,7 +118,6 @@ export class BlogService {
             ]
         },
         {
-            id: 14,
             title: 'Phoenix OS: use Android as a desktop OS',
             date: 'June 29, 2019',
             author: this.authors['AXeL'],
@@ -139,7 +130,6 @@ export class BlogService {
             ]
         },
         {
-            id: 13,
             title: 'osTicket: An open source ticket manager',
             date: 'June 23, 2019',
             author: this.authors['AXeL'],
@@ -151,7 +141,6 @@ export class BlogService {
             ]
         },
         {
-            id: 12,
             title: 'Discover LDAP',
             date: 'June 22, 2019',
             author: this.authors['AXeL'],
@@ -162,7 +151,6 @@ export class BlogService {
             ]
         },
         {
-            id: 11,
             title: 'Run Photoshop CS6 on Linux',
             date: 'June 15, 2019',
             author: this.authors['AXeL'],
@@ -176,7 +164,6 @@ export class BlogService {
             ]
         },
         {
-            id: 10,
             title: 'Gitflow: A successful branching model',
             date: 'May 25, 2019',
             author: this.authors['AXeL'],
@@ -188,7 +175,6 @@ export class BlogService {
             ]
         },
         {
-            id: 9,
             title: 'Why being a freelancer is better !',
             date: 'May 18, 2019',
             author: this.authors['AXeL'],
@@ -200,7 +186,6 @@ export class BlogService {
             ]
         },
         {
-            id: 8,
             title: 'PHP vs node.js',
             date: 'March 27, 2019',
             author: this.authors['AXeL'],
@@ -213,7 +198,6 @@ export class BlogService {
             ]
         },
         {
-            id: 7,
             title: 'Magento CMS: Presentation',
             date: 'March 27, 2019',
             author: this.authors['AXeL'],
@@ -227,7 +211,6 @@ export class BlogService {
             ]
         },
         {
-            id: 6,
             title: 'Is jQuery dying?',
             date: 'March 27, 2019',
             author: this.authors['AXeL'],
@@ -239,7 +222,6 @@ export class BlogService {
             ]
         },
         {
-            id: 5,
             title: 'CodeIgniter 4: What\'s new',
             date: 'March 26, 2019',
             author: this.authors['AXeL'],
@@ -253,7 +235,6 @@ export class BlogService {
             ]
         },
         {
-            id: 4,
             title: 'Riot JS: Simple yet Powerful',
             date: 'March 25, 2019',
             author: this.authors['AXeL'],
@@ -266,7 +247,6 @@ export class BlogService {
             ]
         },
         {
-            id: 3,
             title: 'Dolibarr.. My opinion',
             date: 'March 25, 2019',
             author: this.authors['AXeL'],
@@ -280,7 +260,6 @@ export class BlogService {
             ]
         },
         {
-            id: 2,
             title: 'Get a free account on lynda.com',
             date: 'March 25, 2019',
             author: this.authors['AXeL'],
@@ -291,7 +270,6 @@ export class BlogService {
             ]
         },
         {
-            id: 1,
             title: 'GitHub: Free unlimited private repos',
             date: 'January 7, 2019',
             author: this.authors['AXeL'],
@@ -304,8 +282,12 @@ export class BlogService {
         }
     ];
 
-    private generateSlugs() {
+    private init() {
+        let currentId = this.posts.length;
         this.posts.forEach((post) => {
+            // Generate post id
+            post.id = currentId--;
+            // Generate slug
             if (! post.slug) {
                 post.slug = this.slugifyPipe.transform(post.title);
             }

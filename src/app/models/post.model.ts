@@ -1,7 +1,7 @@
 import { Author } from './author.model';
 
 export interface Post {
-    id: number;
+    id?: number;
     title: string;
     slug?: string;
     link?: string;
