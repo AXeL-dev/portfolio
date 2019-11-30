@@ -21,6 +21,19 @@ export class BlogService {
 
     private posts: Post[] = [
         {
+            id: 21,
+            title: 'React, Vue or Angular?',
+            date: '2019/11/30',
+            author: this.authors['AXeL'],
+            image: './assets/img/posts/R-V-A.jpg',
+            content: './assets/blog/react-vue-or-angular.md',
+            tags: [
+                'Comparison',
+                'Javascript',
+                'Front-end'
+            ]
+        },
+        {
             id: 20,
             title: '!! (not not) operator in JavaScript',
             date: '2019/10/25',
