@@ -15,15 +15,27 @@ export class BlogService {
             name: 'AXeL',
             image: './assets/img/avatar.jpg',
             email: 'contact.axel.dev@gmail.com',
-            bio: 'A full-stack developer and freelancer with a passion for thoughtful coding, collaboration, and open-source. I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally make the impossible possible.'
+            bio: 'A full-stack developer and freelancer with a passion for thoughtful coding, collaboration, and open-source. I spend my days coding, reading mangas, watching animes or playing video games.'
         }
     };
 
     private posts: Post[] = [
         {
+            id: 22,
+            title: 'Ant Design',
+            date: '2019/11/30',
+            author: this.authors['AXeL'],
+            image: './assets/img/posts/ant-design.png',
+            content: './assets/blog/ant-design.md',
+            tags: [
+                'Design',
+                'Front-end'
+            ]
+        },
+        {
             id: 21,
             title: 'React, Vue or Angular?',
-            date: '2019/11/30',
+            date: '2019/11/29',
             author: this.authors['AXeL'],
             image: './assets/img/posts/R-V-A.jpg',
             content: './assets/blog/react-vue-or-angular.md',
