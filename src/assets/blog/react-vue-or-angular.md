@@ -2,7 +2,7 @@ One of the questions that may come up to your mind when reading the title of thi
 
 To debate this widely asked question: **React, Vue or Angular?** i'll not use statistics or compare popularity, none of that! i'll simply use some math & magic! Math is enough in fact.., so i've prepared a suite of relevant questions that i will answer in order to get a winner depending on the number of points obtained by each candidate. Got it? Let's begin! 🏁
 
-**Note**: All the answers below come from my own experiences, if you have a different opinion leave it in the comments 💬 so we can discuss it.
+**Note**: All the answers below come from my own experiences, if you have a different opinion leave it in the comments section [💬](./blog/post/react-vue-or-angular#comment-section) so we can discuss it.
 
 <br>
 
