@@ -5,6 +5,35 @@ export class PortfolioService {
     // List of projects
     private projects: Project[] = [
         {
+            name: 'Firestore Manager',
+            image: './assets/img/projects/firestore-manager.png',
+            link: 'https://github.com/AXeL-dev/firestore-manager',
+            category: [
+                'Javascript',
+                'Angular',
+                'WebExtension'
+            ]
+        },
+        {
+            name: 'Riot Presents',
+            image: './assets/img/projects/riot-presents.png',
+            link: 'https://github.com/AXeL-dev/riot-presents',
+            category: [
+                'Javascript',
+                'Riot.js'
+            ]
+        },
+        {
+            name: 'Dolibarr Modules',
+            image: './assets/img/projects/revamp-my-dolibarr.png',
+            link: 'https://www.dolistore.com/en/search?orderby=position&orderway=desc&search_query=axel',
+            category: [
+                'PHP',
+                'Javascript',
+                'Jquery'
+            ]
+        },
+        {
             name: 'CodeIgniter Starter',
             image: './assets/img/projects/codeigniter-starter.png',
             link: 'https://github.com/AXeL-dev/CodeIgniter-Starter',
@@ -33,16 +62,6 @@ export class PortfolioService {
             ]
         },
         {
-            name: 'Dolibarr Modules',
-            image: './assets/img/projects/revamp-my-dolibarr.png',
-            link: 'https://www.dolistore.com/en/search?orderby=position&orderway=desc&search_query=axel',
-            category: [
-                'PHP',
-                'Javascript',
-                'Jquery'
-            ]
-        },
-        {
             name: 'Dindo Bot',
             image: './assets/img/projects/dindo-bot.gif',
             link: 'https://github.com/AXeL-dev/Dindo-Bot/tree/v1.x',
@@ -61,6 +80,15 @@ export class PortfolioService {
             ]
         },
         {
+            name: 'XAMPP Indicator',
+            image: './assets/img/projects/xampp-indicator.png',
+            link: 'https://github.com/AXeL-dev/xampp-indicator',
+            category: [
+                'Python',
+                'GTK'
+            ]
+        },
+        {
             name: 'Dolibase Framework',
             image: './assets/img/projects/dolibase.png',
             link: 'https://github.com/AXeL-dev/dolibase',
@@ -69,33 +97,24 @@ export class PortfolioService {
                 'Javascript'
             ]
         },
-        {
-            name: 'OVH CTI Dashboard',
-            image: './assets/img/projects/ovh-cti.png',
-            link: '#',
-            category: [
-                'Javascript',
-                'AngularJS'
-            ]
-        },
-        {
-            name: 'OVH CTI Dashboard Lite (for Raspberry Pi)',
-            image: './assets/img/projects/ovh-rp.png',
-            link: '#',
-            category: [
-                'Javascript',
-                'AngularJS'
-            ]
-        },
-        {
-            name: 'Riot Presents',
-            image: './assets/img/projects/riot-presents.png',
-            link: 'https://github.com/AXeL-dev/riot-presents',
-            category: [
-                'Javascript',
-                'Riot.js'
-            ]
-        },
+        // {
+        //     name: 'OVH CTI Dashboard',
+        //     image: './assets/img/projects/ovh-cti.png',
+        //     link: '#',
+        //     category: [
+        //         'Javascript',
+        //         'AngularJS'
+        //     ]
+        // },
+        // {
+        //     name: 'OVH CTI Dashboard Lite (for Raspberry Pi)',
+        //     image: './assets/img/projects/ovh-rp.png',
+        //     link: '#',
+        //     category: [
+        //         'Javascript',
+        //         'AngularJS'
+        //     ]
+        // },
         {
             name: 'Distract Me Not',
             image: './assets/img/projects/distract-me-not.png',
@@ -133,33 +152,24 @@ export class PortfolioService {
                 'Javascript'
             ]
         },
-        {
-            name: 'Mendicity website',
-            image: './assets/img/projects/mendicity-site.png',
-            link: 'https://github.com/AXeL-dev/mendicity-site',
-            category: [
-                'Javascript'
-            ]
-        },
-        {
-            name: 'MM Portfolio',
-            image: './assets/img/projects/mm-portfolio.png',
-            link: '#',
-            category: [
-                'HTML',
-                'CSS',
-                'Javascript'
-            ]
-        },
-        {
-            name: 'XAMPP Indicator',
-            image: './assets/img/projects/xampp-indicator.png',
-            link: 'https://github.com/AXeL-dev/xampp-indicator',
-            category: [
-                'Python',
-                'GTK'
-            ]
-        },
+        // {
+        //     name: 'Mendicity website',
+        //     image: './assets/img/projects/mendicity-site.png',
+        //     link: 'https://github.com/AXeL-dev/mendicity-site',
+        //     category: [
+        //         'Javascript'
+        //     ]
+        // },
+        // {
+        //     name: 'MM Portfolio',
+        //     image: './assets/img/projects/mm-portfolio.png',
+        //     link: '#',
+        //     category: [
+        //         'HTML',
+        //         'CSS',
+        //         'Javascript'
+        //     ]
+        // },
         // {
         //     name: 'C.N. Blog',
         //     image: './assets/img/projects/cn-blog.png',
