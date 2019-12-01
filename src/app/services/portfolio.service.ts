@@ -85,7 +85,8 @@ export class PortfolioService {
             link: 'https://github.com/AXeL-dev/xampp-indicator',
             category: [
                 'Python',
-                'GTK'
+                'GTK',
+                'Linux'
             ]
         },
         {
@@ -152,14 +153,14 @@ export class PortfolioService {
                 'Javascript'
             ]
         },
-        // {
-        //     name: 'Mendicity website',
-        //     image: './assets/img/projects/mendicity-site.png',
-        //     link: 'https://github.com/AXeL-dev/mendicity-site',
-        //     category: [
-        //         'Javascript'
-        //     ]
-        // },
+        {
+            name: 'Mendicity website',
+            image: './assets/img/projects/mendicity-site.png',
+            link: 'https://github.com/AXeL-dev/mendicity-site',
+            category: [
+                'Javascript'
+            ]
+        },
         // {
         //     name: 'MM Portfolio',
         //     image: './assets/img/projects/mm-portfolio.png',
@@ -187,14 +188,30 @@ export class PortfolioService {
         //     ]
         // },
         {
-            name: 'WinSk',
-            image: './assets/img/projects/winsk.png',
-            link: 'https://github.com/AXeL-dev/WinSk',
+            name: 'Ubuntu Themes',
+            image: 'https://cn.opendesktop.org/img/2/a/e/a/83bf56f927c7e7fa33e0995fd91e72ffeced.png',
+            link: 'https://github.com/AXeL-dev/ubuntu-themes',
             category: [
-                'C',
-                'Windows API',
-                'Java',
-                'Android'
+                'Linux'
+            ]
+        },
+        {
+            name: 'QChat',
+            image: './assets/img/projects/QChat.png',
+            link: 'https://github.com/AXeL-dev/QChat',
+            category: [
+                'C++',
+                'Qt Framework'
+            ]
+        },
+        {
+            name: 'SufoBot',
+            image: './assets/img/projects/SufoBot.png',
+            link: 'https://github.com/AXeL-dev/SufoBot',
+            category: [
+                'C++',
+                'wxWidgets',
+                'Linux'
             ]
         },
         {
@@ -219,6 +236,17 @@ export class PortfolioService {
             link: 'https://github.com/AXeL-dev/Gestion-Client',
             category: [
                 'C#'
+            ]
+        },
+        {
+            name: 'WinSk',
+            image: './assets/img/projects/winsk.png',
+            link: 'https://github.com/AXeL-dev/WinSk',
+            category: [
+                'C',
+                'Windows API',
+                'Java',
+                'Android'
             ]
         },
         {
@@ -291,15 +319,6 @@ export class PortfolioService {
             category: [
                 'C',
                 'SDL'
-            ]
-        },
-        {
-            name: 'QChat',
-            image: './assets/img/projects/QChat.png',
-            link: 'https://github.com/AXeL-dev/QChat',
-            category: [
-                'C++',
-                'Qt Framework'
             ]
         }
     ];
