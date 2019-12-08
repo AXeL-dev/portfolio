@@ -4,7 +4,7 @@ export interface Author {
     job?: string;
     bio?: string;
     age?: number;
-    address?: string;
+    location?: string;
     email?: string;
     website?: string;
 }
