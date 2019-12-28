@@ -27,14 +27,14 @@
     "ngx-disqus": "^2.4.3",
     "ngx-lightbox": "^2.1.1",
     "ngx-markdown": "^8.2.1",
-    "ngx-owl-carousel-o": "^2.0.1",
+    "ngx-owl-carousel-o": "^2.0.3",
     "rxjs": "~6.4.0",
     "shufflejs": "^5.2.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.803.20",
+    "@angular-devkit/build-angular": "^0.803.21",
     "@angular/cli": "^8.3.20",
     "@angular/compiler-cli": "^8.2.14",
     "@angular/language-service": "^8.2.14",
