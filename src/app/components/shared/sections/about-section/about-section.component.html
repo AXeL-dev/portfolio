@@ -17,7 +17,7 @@
                             <div class="about-desc pd-0">
                                 <div class="about-section-title">About Me</div>
                                 <div class="about-data">
-                                    <p>{{ author.bio }}</p>
+                                    <p [innerHTML]="author.bio"></p>
                                     <div><span>Age</span>{{ author.age }}</div>
                                     <div><span>Location</span>{{ author.location }}</div>
                                     <div><span>Email</span><a href="mailto:{{ author.email }}">{{ author.email }}</a>
