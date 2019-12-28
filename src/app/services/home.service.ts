@@ -82,6 +82,7 @@ export class HomeService {
         { name: 'jQuery', image: './assets/img/tech/jquery.png' },
         // { name: 'Ajax', image: './assets/img/tech/ajax.png' },
         // { name: 'TypeScript', image: './assets/img/tech/ts.png' },
+        { name: 'Gulp', image: './assets/img/tech/gulp.png' },
         { name: 'Angular', image: './assets/img/tech/angular.png' },
         { name: 'Firebase', image: './assets/img/tech/firebase.png' },
         { name: 'Ionic', image: './assets/img/tech/ionic.png' },
