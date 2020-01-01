@@ -25,9 +25,12 @@
                         <ng-container *ngFor="let project of projects; let i = index">
                             <li class="portfolio-content shadow-bg"
                                 attr.data-groups="{{ project.groups.join(',') }}">
-                                <figure>
-                                    <img src="{{ project.image }}"
-                                        alt="{{ project.name }}" />
+                                <figure class="portfolio-content__inner">
+                                    <div class="aspect aspect--4x3">
+                                        <div class="aspect__inner">
+                                            <img src="{{ project.image }}" alt="{{ project.name }}" />
+                                        </div>
+                                    </div>
                                     <figcaption>
                                         <div class="portfolio-intro">
                                             <div class="portfolio-intro-category">
