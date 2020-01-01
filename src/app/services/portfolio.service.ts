@@ -41,6 +41,7 @@ export class PortfolioService {
             link: 'https://www.dolistore.com/en/search?orderby=position&orderway=desc&search_query=axel',
             category: [
                 'PHP',
+                'MySQL',
                 'Jquery'
             ],
             group: [
@@ -53,7 +54,8 @@ export class PortfolioService {
             link: 'https://github.com/AXeL-dev/CodeIgniter-Starter',
             category: [
                 'PHP',
-                'CodeIgniter'
+                'CodeIgniter',
+                'MySQL'
             ],
             group: [
                 this.groups['Web apps']
@@ -64,8 +66,8 @@ export class PortfolioService {
             image: './assets/img/projects/dental-care.png',
             link: 'https://github.com/AXeL-dev/Dental-Care',
             category: [
-                'ASP.Net',
-                'MVC'
+                'ASP.Net MVC',
+                'Entity Framework'
             ],
             group: [
                 this.groups['Web apps']
@@ -113,8 +115,7 @@ export class PortfolioService {
             link: 'https://github.com/AXeL-dev/xampp-indicator',
             category: [
                 'Python',
-                'GTK',
-                'Linux'
+                'GTK'
             ],
             group: [
                 this.groups['Desktop apps']
@@ -183,8 +184,7 @@ export class PortfolioService {
             image: './assets/img/projects/anime-site.png',
             link: 'https://github.com/AXeL-dev/anime-site',
             category: [
-                'PHP',
-                'ASP.Net',
+                'Javascript',
                 'Jquery'
             ],
             group: [

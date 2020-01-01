@@ -3,5 +3,5 @@ export interface Project {
     image: string;
     link: string;
     category?: string[];
-    group?: string[];
+    group: string[];
 }
