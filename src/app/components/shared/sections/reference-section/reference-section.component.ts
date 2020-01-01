@@ -4,7 +4,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
   selector: 'app-reference-section',
   templateUrl: './reference-section.component.html',
-  styleUrls: ['./reference-section.component.scss']
+  styleUrls: ['./reference-section.component.css']
 })
 export class ReferenceSectionComponent implements OnInit {
 
