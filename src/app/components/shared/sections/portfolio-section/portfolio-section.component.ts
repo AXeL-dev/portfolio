@@ -37,20 +37,10 @@ export class PortfolioSectionComponent implements OnInit, AfterViewInit {
     // Generate filters when not provided
     if (!this.filters) {
       this.filters = [];
-      Object.keys(this.portfolioService.categories).forEach(function (category) {
-        _self.filters.push({ name: category, filter: _self.portfolioService.categories[category] });
+      Object.keys(this.portfolioService.groups).forEach(function (group) {
+        _self.filters.push({ name: group, filter: _self.portfolioService.groups[group] });
       });
     }
-
-    // Generate projects groups
-    this.projects.forEach(function (project) {
-      project.groups = [];
-      project.category.forEach(function (category) {
-        if (_self.portfolioService.categories[category]) {
-          project.groups.push(_self.portfolioService.categories[category]);
-        }
-      });
-    });
 
     // Generate album (for lightbox gallery)
     this.projects.forEach((project) => {

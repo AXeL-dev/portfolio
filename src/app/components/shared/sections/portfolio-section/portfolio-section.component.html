@@ -24,7 +24,7 @@
                         <!-- Single Portfolio -->
                         <ng-container *ngFor="let project of projects; let i = index">
                             <li class="portfolio-content shadow-bg"
-                                attr.data-groups="{{ project.groups.join(',') }}">
+                                attr.data-groups="{{ project.group.join(',') }}">
                                 <figure class="portfolio-content__inner">
                                     <div class="aspect aspect--4x3">
                                         <div class="aspect__inner">
@@ -71,7 +71,7 @@
                         class="btn-circle waves-effect tooltipped"
                         data-position="top"
                         data-delay="50"
-                        data-tooltip="All Featured Work"><span></span><span></span></a>
+                        data-tooltip="More Featured Work"><span></span><span></span></a>
                 </div>
             </div>
         </div>

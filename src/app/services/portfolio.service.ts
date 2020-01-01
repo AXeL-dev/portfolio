@@ -2,6 +2,13 @@ import { Project } from '../models/project.model';
 
 export class PortfolioService {
 
+    // List of projects groups
+    groups = {
+        'Web apps': 'web-apps',
+        'Desktop apps': 'desktop-apps',
+        'Web extensions': 'web-extensions'
+    };
+
     // List of projects
     private projects: Project[] = [
         {
@@ -9,9 +16,12 @@ export class PortfolioService {
             image: './assets/img/projects/firestore-manager.png',
             link: 'https://github.com/AXeL-dev/firestore-manager',
             category: [
-                'Javascript',
-                'Angular',
-                'WebExtension'
+                'Typescript',
+                'Angular'
+            ],
+            group: [
+                this.groups['Web apps'],
+                this.groups['Web extensions']
             ]
         },
         {
@@ -19,8 +29,10 @@ export class PortfolioService {
             image: './assets/img/projects/riot-presents.png',
             link: 'https://github.com/AXeL-dev/riot-presents',
             category: [
-                'Javascript',
                 'Riot.js'
+            ],
+            group: [
+                this.groups['Web apps']
             ]
         },
         {
@@ -29,8 +41,10 @@ export class PortfolioService {
             link: 'https://www.dolistore.com/en/search?orderby=position&orderway=desc&search_query=axel',
             category: [
                 'PHP',
-                'Javascript',
                 'Jquery'
+            ],
+            group: [
+                this.groups['Web apps']
             ]
         },
         {
@@ -40,6 +54,9 @@ export class PortfolioService {
             category: [
                 'PHP',
                 'CodeIgniter'
+            ],
+            group: [
+                this.groups['Web apps']
             ]
         },
         {
@@ -49,6 +66,9 @@ export class PortfolioService {
             category: [
                 'ASP.Net',
                 'MVC'
+            ],
+            group: [
+                this.groups['Web apps']
             ]
         },
         {
@@ -57,8 +77,10 @@ export class PortfolioService {
             link: 'https://github.com/AXeL-dev/ZTE-SAT-Tool',
             category: [
                 'PHP',
-                'Javascript',
                 'Jquery'
+            ],
+            group: [
+                this.groups['Web apps']
             ]
         },
         {
@@ -68,6 +90,9 @@ export class PortfolioService {
             category: [
                 'Python',
                 'GTK'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -77,6 +102,9 @@ export class PortfolioService {
             category: [
                 'Python',
                 'GTK'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -87,6 +115,9 @@ export class PortfolioService {
                 'Python',
                 'GTK',
                 'Linux'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -96,33 +127,21 @@ export class PortfolioService {
             category: [
                 'PHP',
                 'Javascript'
+            ],
+            group: [
+                this.groups['Web apps']
             ]
         },
-        // {
-        //     name: 'OVH CTI Dashboard',
-        //     image: './assets/img/projects/ovh-cti.png',
-        //     link: '#',
-        //     category: [
-        //         'Javascript',
-        //         'AngularJS'
-        //     ]
-        // },
-        // {
-        //     name: 'OVH CTI Dashboard Lite (for Raspberry Pi)',
-        //     image: './assets/img/projects/ovh-rp.png',
-        //     link: '#',
-        //     category: [
-        //         'Javascript',
-        //         'AngularJS'
-        //     ]
-        // },
         {
             name: 'Distract Me Not',
             image: './assets/img/projects/distract-me-not.png',
             link: 'https://github.com/AXeL-dev/distract-me-not',
             category: [
-                'Javascript',
-                'WebExtension'
+                'Javascript'
+            ],
+            group: [
+                this.groups['Web apps'],
+                this.groups['Web extensions']
             ]
         },
         {
@@ -130,8 +149,33 @@ export class PortfolioService {
             image: './assets/img/projects/easy-image-downloader.png',
             link: 'https://github.com/AXeL-dev/easy-image-downloader',
             category: [
-                'Javascript',
-                'WebExtension'
+                'Javascript'
+            ],
+            group: [
+                this.groups['Web apps'],
+                this.groups['Web extensions']
+            ]
+        },
+        {
+            name: 'OVH CTI Dashboard',
+            image: './assets/img/projects/ovh-cti.png',
+            link: '#',
+            category: [
+                'AngularJS'
+            ],
+            group: [
+                this.groups['Web apps']
+            ]
+        },
+        {
+            name: 'OVH CTI Dashboard Lite (for Raspberry Pi)',
+            image: './assets/img/projects/ovh-rp.png',
+            link: '#',
+            category: [
+                'AngularJS'
+            ],
+            group: [
+                this.groups['Web apps']
             ]
         },
         {
@@ -141,8 +185,10 @@ export class PortfolioService {
             category: [
                 'PHP',
                 'ASP.Net',
-                'Javascript',
                 'Jquery'
+            ],
+            group: [
+                this.groups['Web apps']
             ]
         },
         {
@@ -151,48 +197,66 @@ export class PortfolioService {
             link: 'https://github.com/AXeL-dev/design-helper-site',
             category: [
                 'Javascript'
-            ]
-        },
-        {
-            name: 'Mendicity website',
-            image: './assets/img/projects/mendicity-site.png',
-            link: 'https://github.com/AXeL-dev/mendicity-site',
-            category: [
-                'Javascript'
+            ],
+            group: [
+                this.groups['Web apps']
             ]
         },
         // {
-        //     name: 'MM Portfolio',
-        //     image: './assets/img/projects/mm-portfolio.png',
-        //     link: '#',
+        //     name: 'Mendicity website',
+        //     image: './assets/img/projects/mendicity-site.png',
+        //     link: 'https://github.com/AXeL-dev/mendicity-site',
         //     category: [
-        //         'HTML',
-        //         'CSS',
         //         'Javascript'
+        //     ],
+        //     group: [
+        //         this.groups['Web apps']
         //     ]
         // },
+        {
+            name: 'MM Portfolio',
+            image: './assets/img/projects/mm-portfolio.png',
+            link: '#',
+            category: [
+                'HTML',
+                'CSS',
+                'Javascript'
+            ],
+            group: [
+                this.groups['Web apps']
+            ]
+        },
         // {
         //     name: 'C.N. Blog',
         //     image: './assets/img/projects/cn-blog.png',
         //     link : 'https://chimenaij.blogspot.com/',
         //     category: [
         //         'Blogger'
+        //     ],
+        //     group: [
+        //         this.groups['Web apps']
         //     ]
         // },
-        // {
-        //     name: 'Dirassa Plus Blog',
-        //     image: './assets/img/projects/dirassaplus-blog.png',
-        //     link : 'http://dirassaplus.blogspot.com/',
-        //     category: [
-        //         'Blogger'
-        //     ]
-        // },
+        {
+            name: 'Dirassa Plus Blog',
+            image: './assets/img/projects/dirassaplus-blog.png',
+            link : 'http://dirassaplus.blogspot.com/',
+            category: [
+                'Blogger'
+            ],
+            group: [
+                this.groups['Web apps']
+            ]
+        },
         {
             name: 'Ubuntu Themes',
             image: 'https://cn.opendesktop.org/img/2/a/e/a/83bf56f927c7e7fa33e0995fd91e72ffeced.png',
             link: 'https://github.com/AXeL-dev/ubuntu-themes',
             category: [
                 'Linux'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -202,6 +266,9 @@ export class PortfolioService {
             category: [
                 'C++',
                 'Qt Framework'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -212,6 +279,9 @@ export class PortfolioService {
                 'C++',
                 'wxWidgets',
                 'Linux'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -220,6 +290,9 @@ export class PortfolioService {
             link: 'https://github.com/AXeL-dev/Pixus-Bot',
             category: [
                 'C#'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -228,6 +301,9 @@ export class PortfolioService {
             link: 'https://github.com/AXeL-dev/app_steganographie',
             category: [
                 'C#'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -236,6 +312,9 @@ export class PortfolioService {
             link: 'https://github.com/AXeL-dev/Gestion-Client',
             category: [
                 'C#'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -247,6 +326,9 @@ export class PortfolioService {
                 'Windows API',
                 'Java',
                 'Android'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -256,6 +338,9 @@ export class PortfolioService {
             category: [
                 'C',
                 'SDL'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -265,6 +350,9 @@ export class PortfolioService {
             category: [
                 'C',
                 'Windows API'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -274,6 +362,9 @@ export class PortfolioService {
             category: [
                 'C',
                 'Windows API'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -283,6 +374,9 @@ export class PortfolioService {
             category: [
                 'C',
                 'Windows API'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -292,6 +386,9 @@ export class PortfolioService {
             category: [
                 'C',
                 'Windows API'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -301,6 +398,9 @@ export class PortfolioService {
             category: [
                 'C',
                 'Windows API'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -310,6 +410,9 @@ export class PortfolioService {
             category: [
                 'C',
                 'SDL'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         },
         {
@@ -319,21 +422,12 @@ export class PortfolioService {
             category: [
                 'C',
                 'SDL'
+            ],
+            group: [
+                this.groups['Desktop apps']
             ]
         }
     ];
-
-    // List of projects categories
-    categories = {
-        'Python': 'python',
-        'C': 'c',
-        'C++': 'cplusplus',
-        'C#': 'csharp',
-        'PHP': 'php',
-        'Javascript': 'js',
-        //'Blogger': 'blogger',
-        'ASP.Net': 'asp'
-    };
 
     getProjects() {
         return this.projects.slice();

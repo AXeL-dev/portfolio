@@ -27,7 +27,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   education: Education[];
   experience: Experience[];
   funFact: Reference[];
-  portfolioFilters: any[];
 
   constructor(private titleService: Title, private homeService: HomeService, private appComponent: AppComponent) { }
 
@@ -40,12 +39,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.education = this.homeService.education;
     this.experience = this.homeService.experience;
     this.funFact = this.homeService.funFact;
-    this.portfolioFilters = [
-      { name: 'Python', filter: 'python' },
-      { name: 'PHP', filter: 'php' },
-      { name: 'Javascript', filter: 'js' },
-      { name: 'ASP.Net', filter: 'asp' }
-    ];
   }
 
   ngAfterViewInit() {
