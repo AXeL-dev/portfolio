@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, Input } from '@angular/core';
+import { Component, OnInit, HostListener, Input, OnChanges } from '@angular/core';
 import { HeaderService } from '../../../services/header.service';
 import { Menu } from 'src/app/models/menu.model';
 
@@ -7,7 +7,7 @@ import { Menu } from 'src/app/models/menu.model';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnChanges {
 
   title: string;
   menu: Menu[];
@@ -20,6 +20,10 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.title = this.headerService.title;
     this.menu = this.headerService.menu;
+  }
+
+  ngOnChanges() {
+    this.isSticky = false;
   }
 
   @HostListener('window:scroll') checkScroll() {
