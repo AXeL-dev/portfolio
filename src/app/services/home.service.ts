@@ -43,7 +43,7 @@ export class HomeService {
         { name: 'PHP', progress: 95 },
         { name: 'SQL', progress: 85 },
         { name: 'Python', progress: 70 },
-        { name: 'Javascript / ES6', progress: 80 },
+        { name: 'Javascript / ES6', progress: 90 },
         { name: 'C', progress: 80, position: 'right' },
         { name: 'C++', progress: 60, position: 'right' },
         { name: 'Java', progress: 40, position: 'right' },
