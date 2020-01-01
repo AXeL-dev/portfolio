@@ -1468,9 +1468,33 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 	margin: 1%;
 }
 
+.portfolio-content__inner {
+	position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.aspect {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+.aspect__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.aspect--4x3 {
+	padding-bottom: 67%;
+}
+
 .portfolio-content img{
 	width: 100%;
-	height: 250px;
+	height: 100%;
 	display: block;
 	position: relative;
 	-webkit-transform: scale(1);
@@ -1668,7 +1692,7 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 	transition: all 0.5s;
 }
 
-.all-portfolio-section{
+.portfolio-section.all{
 	margin-top: 112px;
 }
 
@@ -2184,7 +2208,7 @@ textarea.c-form-input{
 	17. All Blog Page
  ============================================= */
 
- .all-blog-section{
+.blog-section.all{
 	margin-top: 90px;
 }
 
