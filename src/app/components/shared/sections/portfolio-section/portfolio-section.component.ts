@@ -11,6 +11,7 @@ import { Project } from 'src/app/models/project.model';
 })
 export class PortfolioSectionComponent implements OnInit, AfterViewInit {
 
+  @Input() id: string = 'portfolio-section';
   @Input() title: string;
   @Input() filters: any[];
   @Input() max: number = 0;

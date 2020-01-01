@@ -1,5 +1,6 @@
 <section id="blog-section"
-    [ngClass]="{'blog-section': maxPosts, 'all-blog-section': !maxPosts && posts.length}">
+    class="blog-section"
+    [ngClass]="{'all': !maxPosts && posts.length}">
     <div class="container">
         <div class="row">
             <div *ngIf="title"

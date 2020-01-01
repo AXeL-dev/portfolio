@@ -1,5 +1,6 @@
-<section id="portfolio-section"
-    [ngClass]="{'portfolio-section': title, 'all-portfolio-section': !title}">
+<section id="{{ id }}"
+    class="portfolio-section"
+    [ngClass]="{'all': !title}">
     <div class="container">
         <div class="row">
             <div *ngIf="title"
@@ -63,11 +64,11 @@
                 </div>
                 <div *ngIf="max"
                     class="col s12 portfolio-all al-center">
-                    <a routerLink="/all-portfolio"
+                    <a routerLink="/featured-work"
                         class="btn-circle waves-effect tooltipped"
                         data-position="top"
                         data-delay="50"
-                        data-tooltip="All Portfolio"><span></span><span></span></a>
+                        data-tooltip="All Featured Work"><span></span><span></span></a>
                 </div>
             </div>
         </div>

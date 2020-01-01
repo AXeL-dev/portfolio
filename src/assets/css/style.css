@@ -1668,7 +1668,7 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 	transition: all 0.5s;
 }
 
-.all-portfolio-section{
+.portfolio-section.all{
 	margin-top: 112px;
 }
 
@@ -2184,7 +2184,7 @@ textarea.c-form-input{
 	17. All Blog Page
  ============================================= */
 
- .all-blog-section{
+.blog-section.all{
 	margin-top: 90px;
 }
 
