@@ -3,6 +3,8 @@ import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AppComponent } from 'src/app/app.component';
 
+declare var WOW: any;
+
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
@@ -33,6 +35,7 @@ export class BlogComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.appComponent.initTooltips();
     this.appComponent.disablePreloader();
+    new WOW().init();
   }
 
 }

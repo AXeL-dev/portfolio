@@ -2,6 +2,8 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AppComponent } from 'src/app/app.component';
 
+declare var WOW: any;
+
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
@@ -23,6 +25,7 @@ export class PostComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.appComponent.initTooltips();
     this.appComponent.disablePreloader();
+    new WOW().init();
   }
 
 }

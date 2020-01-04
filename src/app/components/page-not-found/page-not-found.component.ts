@@ -2,6 +2,8 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { AppComponent } from 'src/app/app.component';
 
+declare var WOW: any;
+
 @Component({
   selector: 'app-page-not-found',
   templateUrl: './page-not-found.component.html',
@@ -18,6 +20,7 @@ export class PageNotFoundComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.appComponent.initTooltips();
     this.appComponent.disablePreloader();
+    new WOW().init();
   }
 
 }

@@ -12,6 +12,7 @@ import { Tool } from 'src/app/models/tool.model';
 
 declare var M: any;
 declare var imagesLoaded: any;
+declare var WOW: any;
 
 @Component({
   selector: 'app-home',
@@ -44,6 +45,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.appComponent.initTooltips();
     this.appComponent.disablePreloader(true);
+    new WOW().init();
   }
 
 }
