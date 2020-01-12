@@ -27,6 +27,9 @@ export class ReferenceSectionComponent implements OnInit {
       },
       768: {
         items: 1
+      },
+      1400: {
+        items: 1
       }
     }
   };

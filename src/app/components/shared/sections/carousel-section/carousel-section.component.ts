@@ -25,6 +25,9 @@ export class CarouselSectionComponent implements OnInit {
       },
       768: {
         items: 5
+      },
+      1400: {
+        items: 5
       }
     }
   };
