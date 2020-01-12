@@ -191,15 +191,15 @@ export class HomeService {
     funFact: Reference[] = [
         {
             title: 'Baka.. 🙄',
-            content: 'In my childhood, i often mixed left and right directions 😅'
+            content: 'In my childhood, i often mixed left and right directions ⬅️ 🤔 ➡️'
         },
         {
-            title: 'Geek? 🤓',
-            content: 'I spent too much time coding in <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C</a> (2012 to 2018) than i did with any other programming language'
+            title: 'Warrior or Geek? 🤓',
+            content: 'I spent too much time coding in <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C</a> (2012 to 2018). I think i was addicted.. 💊'
         },
         {
             title: 'Lazy 🤫',
-            content: 'Failed 1 year in University for no reason 👀'
+            content: 'Failed my 1st year of University for no reason 👀'
         }
     ];
 
