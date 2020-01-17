@@ -36,13 +36,14 @@ export class AppComponent implements OnInit {
     let instances = M.Tooltip.init(tooltips);
   }
 
-  disablePreloader(scroll: boolean = false) {
+  disablePreloader(scroll: boolean = false, then: Function = () => {}) {
     //console.log('Disable preloader');
     let _self = this;
     // Wait for background images to load before removing the preloader
     imagesLoaded('.image-bg', { background: true }, function () {
       //console.log('all images are loaded');
       _self.isLoading = false;
+      then();
       if (scroll) {
         _self.scrollToRouteFragment();
       }

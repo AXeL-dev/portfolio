@@ -19,11 +19,11 @@
                                 (click)="applyFilter(item.filter)">{{ item.name }}</a></li>
                     </ul>
 
-                    <ul class="portfolio-items wow fadeInUp animated">
+                    <ul class="portfolio-items">
 
                         <!-- Single Portfolio -->
                         <ng-container *ngFor="let project of projects; let i = index">
-                            <li class="portfolio-content shadow-bg"
+                            <li class="portfolio-content shadow-bg wow zoomIn animated"
                                 attr.data-groups="{{ project.group.join(',') }}">
                                 <figure class="portfolio-content__inner">
                                     <div class="aspect aspect--4x3">

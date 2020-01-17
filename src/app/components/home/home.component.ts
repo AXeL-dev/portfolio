@@ -44,8 +44,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.appComponent.initTooltips();
-    this.appComponent.disablePreloader(true);
-    new WOW().init();
+    this.appComponent.disablePreloader(true, () => {
+      new WOW().init();
+    });
   }
 
 }

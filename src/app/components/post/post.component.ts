@@ -24,8 +24,9 @@ export class PostComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.appComponent.initTooltips();
-    this.appComponent.disablePreloader();
-    new WOW().init();
+    this.appComponent.disablePreloader(false, () => {
+      new WOW().init();
+    });
   }
 
 }
