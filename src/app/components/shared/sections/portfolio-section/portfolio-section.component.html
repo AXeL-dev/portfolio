@@ -23,9 +23,9 @@
 
                         <!-- Single Portfolio -->
                         <ng-container *ngFor="let project of projects; let i = index">
-                            <li class="portfolio-content shadow-bg wow zoomIn animated"
+                            <li class="portfolio-content"
                                 attr.data-groups="{{ project.group.join(',') }}">
-                                <figure class="portfolio-content__inner">
+                                <figure class="portfolio-content__inner shadow-bg wow zoomIn animated">
                                     <div class="aspect aspect--4x3">
                                         <div class="aspect__inner">
                                             <img src="{{ project.image }}" alt="{{ project.name }}" />
