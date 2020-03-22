@@ -12,6 +12,18 @@ export class PortfolioService {
     // List of projects
     private projects: Project[] = [
         {
+            name: 'FireAdmin',
+            image: './assets/img/projects/FireAdmin.png',
+            link: 'https://github.com/AXeL-dev/FireAdmin',
+            category: [
+                'Typescript',
+                'Angular'
+            ],
+            group: [
+                this.groups['Web apps']
+            ]
+        },
+        {
             name: 'Firestore Manager',
             image: './assets/img/projects/firestore-manager.png',
             link: 'https://github.com/AXeL-dev/firestore-manager',
@@ -22,6 +34,41 @@ export class PortfolioService {
             group: [
                 this.groups['Web apps'],
                 this.groups['Web extensions']
+            ]
+        },
+        {
+            name: 'Youtube Viewer',
+            image: './assets/img/projects/youtube-viewer.png',
+            link: 'https://github.com/AXeL-dev/youtube-viewer',
+            category: [
+                'Typescript',
+                'React'
+            ],
+            group: [
+                this.groups['Web extensions']
+            ]
+        },
+        {
+            name: 'Distract Me Not',
+            image: './assets/img/projects/distract-me-not.png',
+            link: 'https://github.com/AXeL-dev/distract-me-not',
+            category: [
+                'Javascript'
+            ],
+            group: [
+                this.groups['Web extensions']
+            ]
+        },
+        {
+            name: 'ngx-diff2html',
+            image: './assets/img/projects/ngx-diff2html.png',
+            link: 'https://github.com/AXeL-dev/ngx-diff2html',
+            category: [
+                'Typescript',
+                'Angular'
+            ],
+            group: [
+                this.groups['Web apps']
             ]
         },
         {
@@ -42,43 +89,6 @@ export class PortfolioService {
             category: [
                 'PHP',
                 'MySQL',
-                'Jquery'
-            ],
-            group: [
-                this.groups['Web apps']
-            ]
-        },
-        {
-            name: 'CodeIgniter Starter',
-            image: './assets/img/projects/codeigniter-starter.png',
-            link: 'https://github.com/AXeL-dev/CodeIgniter-Starter',
-            category: [
-                'PHP',
-                'CodeIgniter',
-                'MySQL'
-            ],
-            group: [
-                this.groups['Web apps']
-            ]
-        },
-        {
-            name: 'Dental Care',
-            image: './assets/img/projects/dental-care.png',
-            link: 'https://github.com/AXeL-dev/Dental-Care',
-            category: [
-                'ASP.Net MVC',
-                'Entity Framework'
-            ],
-            group: [
-                this.groups['Web apps']
-            ]
-        },
-        {
-            name: 'ZTE SAT Tool',
-            image: './assets/img/projects/zte-sat-tool.png',
-            link: 'https://github.com/AXeL-dev/ZTE-SAT-Tool',
-            category: [
-                'PHP',
                 'Jquery'
             ],
             group: [
@@ -134,18 +144,6 @@ export class PortfolioService {
             ]
         },
         {
-            name: 'Distract Me Not',
-            image: './assets/img/projects/distract-me-not.png',
-            link: 'https://github.com/AXeL-dev/distract-me-not',
-            category: [
-                'Javascript'
-            ],
-            group: [
-                this.groups['Web apps'],
-                this.groups['Web extensions']
-            ]
-        },
-        {
             name: 'Easy Image Downloader',
             image: './assets/img/projects/easy-image-downloader.png',
             link: 'https://github.com/AXeL-dev/easy-image-downloader',
@@ -153,8 +151,44 @@ export class PortfolioService {
                 'Javascript'
             ],
             group: [
-                this.groups['Web apps'],
                 this.groups['Web extensions']
+            ]
+        },
+        {
+            name: 'CodeIgniter Starter',
+            image: './assets/img/projects/codeigniter-starter.png',
+            link: 'https://github.com/AXeL-dev/CodeIgniter-Starter',
+            category: [
+                'PHP',
+                'CodeIgniter',
+                'MySQL'
+            ],
+            group: [
+                this.groups['Web apps']
+            ]
+        },
+        {
+            name: 'Dental Care',
+            image: './assets/img/projects/dental-care.png',
+            link: 'https://github.com/AXeL-dev/Dental-Care',
+            category: [
+                'ASP.Net MVC',
+                'Entity Framework'
+            ],
+            group: [
+                this.groups['Web apps']
+            ]
+        },
+        {
+            name: 'ZTE SAT Tool',
+            image: './assets/img/projects/zte-sat-tool.png',
+            link: 'https://github.com/AXeL-dev/ZTE-SAT-Tool',
+            category: [
+                'PHP',
+                'Jquery'
+            ],
+            group: [
+                this.groups['Web apps']
             ]
         },
         {
