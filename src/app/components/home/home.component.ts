@@ -10,8 +10,6 @@ import { Experience } from 'src/app/models/experience.model';
 import { Reference } from 'src/app/models/reference.model';
 import { Tool } from 'src/app/models/tool.model';
 
-declare var M: any;
-declare var imagesLoaded: any;
 declare var WOW: any;
 
 @Component({
