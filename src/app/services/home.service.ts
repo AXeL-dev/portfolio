@@ -31,7 +31,7 @@ export class HomeService {
     ];
 
     services: Service[] = [
-        { title: 'Front End Development', icon: 'desktop', description: 'AnuglarJS, Angular 6+, Vue.js, Jquery, VanillaJS, HTML5, CSS / SASS, JavaScript / ES6, TypeScript, SPA, PWA, Web Sockets' },
+        { title: 'Front End Development', icon: 'desktop', description: 'Angular, Vue.js, Jquery, VanillaJS, HTML5, CSS / SASS, JavaScript / ES6, TypeScript, SPA, PWA, Web Sockets' },
         { title: 'Back End Development', icon: 'cubes', description: 'PHP (CodeIgniter, Symfony), MySQL / SQL Server / MongoDB, CMS (Wordpress, Drupal), Python, C#, ASP.NET, Rest API, OOP' },
         { title: 'Mobile Development', icon: 'mobile', description: 'Java, PhoneGap, Ionic, Android Studio' },
         { title: 'Web Hosting', icon: 'server', description: 'FTP, SSH, cPanel, Linux, VM, Cloud' },
