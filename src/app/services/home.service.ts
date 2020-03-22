@@ -87,6 +87,7 @@ export class HomeService {
         { name: 'Firebase', image: './assets/img/tech/firebase.png' },
         { name: 'Ionic', image: './assets/img/tech/ionic.png' },
         { name: 'Vue.js', image: './assets/img/tech/vue.png' },
+        { name: 'React', image: './assets/img/tech/react.png' },
         { name: 'Riot JS', image: './assets/img/tech/riot.png' },
         { name: '.Net', image: './assets/img/tech/dotnet.png' },
         { name: 'SQL Server', image: './assets/img/tech/sql-server.png' },
