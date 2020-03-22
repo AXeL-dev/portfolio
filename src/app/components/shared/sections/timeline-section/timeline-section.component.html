@@ -10,8 +10,8 @@
 
                         <!-- Single Timeline Item -->
                         <li *ngFor="let item of items"
-                            class="wow fadeIn animated"
-                            [ngClass]="{'timeline-inverted': item.position === 'right'}">
+                            class="wow animated"
+                            [ngClass]="item.position === 'right' ? 'timeline-inverted fadeInRight' : 'fadeInLeft'">
                             <div class="timeline-badge">
                                 <a><i class="fa fa-circle"></i></a>
                             </div>
