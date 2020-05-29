@@ -26,8 +26,8 @@ export class HomeService {
         { icon: 'gitlab', link: 'https://gitlab.com/AXeL-dev' },
         { icon: 'youtube-play', link: 'https://www.youtube.com/channel/UCctMROLcvkiqpOyF98_WUYg' },
         { icon: 'twitter', link: 'https://twitter.com/AXeL87749763' },
-        { icon: 'facebook', link: '#' },
-        { icon: 'linkedin', link: '#' }
+        { icon: 'facebook', link: 'https://www.facebook.com/anass.shido.9' },
+        { icon: 'linkedin', link: 'https://www.linkedin.com/in/anass-denna-119b1118b' }
     ];
 
     services: Service[] = [
