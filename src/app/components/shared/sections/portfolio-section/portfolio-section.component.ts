@@ -15,6 +15,7 @@ export class PortfolioSectionComponent implements OnInit, AfterViewInit {
   @Input() title: string;
   @Input() filters: any[];
   @Input() max: number = 0;
+  @Input() animation: string = 'slideInUp';
   projects: Project[];
   currentFilter: string = 'all';
   private _album: any[] = [];
