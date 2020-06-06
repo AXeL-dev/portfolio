@@ -21,6 +21,20 @@ export class BlogService {
 
     private posts: Post[] = [
         {
+            title: 'Ionic vs NativeScript',
+            date: '2020/06/06',
+            author: this.authors['AXeL'],
+            image: './assets/img/posts/ionic-vs-native-script.png',
+            content: './assets/blog/ionic-vs-native-script.md',
+            tags: [
+                'Javascript',
+                'Mobile Apps',
+                'Ionic',
+                'NativeScript',
+                'Angular'
+            ]
+        },
+        {
             title: 'Ant Design',
             date: '2019/11/30',
             author: this.authors['AXeL'],
@@ -28,7 +42,9 @@ export class BlogService {
             content: './assets/blog/ant-design.md',
             tags: [
                 'Design',
-                'Front-end'
+                'Front-end',
+                'Angular',
+                'React'
             ]
         },
         {
@@ -40,7 +56,10 @@ export class BlogService {
             tags: [
                 'Comparison',
                 'Javascript',
-                'Front-end'
+                'Front-end',
+                'Angular',
+                'React',
+                'Vue'
             ]
         },
         {
