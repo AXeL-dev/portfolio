@@ -132,6 +132,18 @@ export class PortfolioService {
             ]
         },
         {
+            name: 'Nightlight Indicator',
+            image: './assets/img/projects/nightlight-indicator.png',
+            link: 'https://github.com/AXeL-dev/nightlight-indicator',
+            category: [
+                'Python',
+                'GTK'
+            ],
+            group: [
+                this.groups['Desktop apps']
+            ]
+        },
+        {
             name: 'Dolibase Framework',
             image: './assets/img/projects/dolibase.png',
             link: 'https://github.com/AXeL-dev/dolibase',
@@ -247,19 +259,19 @@ export class PortfolioService {
         //         this.groups['Web apps']
         //     ]
         // },
-        {
-            name: 'MM Portfolio',
-            image: './assets/img/projects/mm-portfolio.png',
-            link: '#',
-            category: [
-                'HTML',
-                'CSS',
-                'Javascript'
-            ],
-            group: [
-                this.groups['Web apps']
-            ]
-        },
+        // {
+        //     name: 'MM Portfolio',
+        //     image: './assets/img/projects/mm-portfolio.png',
+        //     link: '#',
+        //     category: [
+        //         'HTML',
+        //         'CSS',
+        //         'Javascript'
+        //     ],
+        //     group: [
+        //         this.groups['Web apps']
+        //     ]
+        // },
         // {
         //     name: 'C.N. Blog',
         //     image: './assets/img/projects/cn-blog.png',
