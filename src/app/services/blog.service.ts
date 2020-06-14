@@ -27,6 +27,7 @@ export class BlogService {
             image: './assets/img/posts/ionic-vs-native-script.png',
             content: './assets/blog/ionic-vs-native-script.md',
             tags: [
+                'Comparison',
                 'Javascript',
                 'Mobile Apps',
                 'Ionic',
