@@ -14,7 +14,7 @@ export class HomeService {
         name: 'Denna Anass',
         image: './assets/img/coder.jpg',
         job: 'Full Stack Developer',
-        bio: 'My name is Anass or just call me AXeL. I was 17 when i took my first steps into the fascinating world of programming. Since then, I have acquired good taste in areas like front-end & back-end development, database management, dev-ops and graphic design.<br> I like challenges, discovering new stuff and contributing to open source.',
+        bio: 'My name is Anass or just call me AXeL. Started coding since age 17, interested in ethical hacking, thoughtful coding, collaboration, and open source.<br> I\'m seeking for deep knowledge & new challenges. I generally spend my days doing some code, reading mangas, watching animes or playing video games.',
         age: this.calculateAge('1995-02-25'),
         location: 'Rabat, Morocco',
         email: 'contact.axel.dev@gmail.com',
@@ -32,21 +32,21 @@ export class HomeService {
 
     services: Service[] = [
         { title: 'Front End Development', icon: 'desktop', description: 'Angular, Vue.js, Jquery, VanillaJS, HTML5, CSS / SASS, JavaScript / ES6, TypeScript, SPA, PWA, Web Sockets' },
-        { title: 'Back End Development', icon: 'cubes', description: 'PHP (CodeIgniter, Symfony), MySQL / SQL Server / MongoDB, CMS (Wordpress, Drupal), Python, C#, ASP.NET, Rest API, OOP' },
-        { title: 'Mobile Development', icon: 'mobile', description: 'Java, PhoneGap, Ionic, Android Studio' },
-        { title: 'Web Hosting', icon: 'server', description: 'FTP, SSH, cPanel, Linux, VM, Cloud' },
+        { title: 'Back End Development', icon: 'cubes', description: 'PHP (CodeIgniter, Symfony), MySQL / SQL Server / MongoDB, CMS (Wordpress, Drupal), Python, Node.js, C#, ASP.NET, Rest API, OOP' },
+        { title: 'Mobile Development', icon: 'mobile', description: 'Ionic, PhoneGap, Android SDK' },
+        { title: 'Web Hosting', icon: 'server', description: 'FTP, SSH, cPanel, Linux shell' },
         { title: 'Data Mining', icon: 'search-plus', description: 'CasperJS, PhantomJS, Web Scraper' },
-        { title: 'Dev-ops', icon: 'code-fork', description: 'Git / Github / Gitlab, CI / CD, Gulp, Webpack, NPM' }
+        { title: 'Dev-ops', icon: 'code-fork', description: 'Git / Github / Gitlab, CI / CD, Gulp, Webpack, npm' }
     ];
 
     skills: Skill[] = [
-        { name: 'PHP', progress: 95 },
-        { name: 'SQL', progress: 85 },
-        { name: 'Python', progress: 70 },
         { name: 'Javascript / ES6', progress: 90 },
+        { name: 'PHP', progress: 95 },
+        { name: 'SQL / NoSQL', progress: 85 },
+        { name: 'Node.js', progress: 70 },
+        { name: 'Python', progress: 70, position: 'right' },
         { name: 'C', progress: 80, position: 'right' },
         { name: 'C++', progress: 60, position: 'right' },
-        { name: 'Java', progress: 40, position: 'right' },
         { name: '.NET / C#', progress: 50, position: 'right' }
     ];
 

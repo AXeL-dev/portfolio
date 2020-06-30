@@ -45,6 +45,7 @@ export class PortfolioService {
                 'React'
             ],
             group: [
+                this.groups['Web apps'],
                 this.groups['Web extensions']
             ]
         },
