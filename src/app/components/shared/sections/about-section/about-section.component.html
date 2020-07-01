@@ -22,8 +22,12 @@
                                     <div><span>Location</span>{{ author.location }}</div>
                                     <div>
                                         <span>Email</span>
-                                        <a href="mailto:{{ author.email }}">{{ author.email }}</a>
-                                        <span class="fa fa-info-circle tooltipped" data-position="top" data-delay="50" data-tooltip="I might be slow to respond"></span>
+                                        <a href="mailto:{{ author.email }}"
+                                           class="tooltipped"
+                                           data-position="bottom"
+                                           data-delay="50"
+                                           data-tooltip="I might be slow to respond"
+                                        >{{ author.email }}</a>
                                     </div>
                                     <div>
                                         <span>Website</span>
