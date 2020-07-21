@@ -38,8 +38,11 @@ export class PortfolioSectionComponent implements OnInit, AfterViewInit {
     // Generate filters when not provided
     if (!this.filters) {
       this.filters = [];
-      Object.keys(this.portfolioService.groups).forEach(function (group) {
-        _self.filters.push({ name: group, filter: _self.portfolioService.groups[group] });
+      Object.keys(this.portfolioService.groups).forEach((group) => {
+        const value = _self.portfolioService.groups[group];
+        if (_self.projects.find((project: Project) => project.group.indexOf(value) !== -1)) {
+          _self.filters.push({ name: group, filter: value });
+        }
       });
     }
 

@@ -6,6 +6,7 @@ export class PortfolioService {
     groups = {
         'Web apps': 'web-apps',
         'Desktop apps': 'desktop-apps',
+        'Mobile apps': 'mobile-apps',
         'Web extensions': 'web-extensions'
     };
 
@@ -61,23 +62,24 @@ export class PortfolioService {
             ]
         },
         {
+            name: 'Anime Tracker',
+            image: './assets/img/projects/anime-tracker.png',
+            link: 'https://github.com/AXeL-dev/anime-tracker',
+            category: [
+                'Typescript',
+                'Angular'
+            ],
+            group: [
+                this.groups['Web extensions']
+            ]
+        },
+        {
             name: 'ngx-diff2html',
             image: './assets/img/projects/ngx-diff2html.png',
             link: 'https://github.com/AXeL-dev/ngx-diff2html',
             category: [
                 'Typescript',
                 'Angular'
-            ],
-            group: [
-                this.groups['Web apps']
-            ]
-        },
-        {
-            name: 'Riot Presents',
-            image: './assets/img/projects/riot-presents.png',
-            link: 'https://github.com/AXeL-dev/riot-presents',
-            category: [
-                'Riot.js'
             ],
             group: [
                 this.groups['Web apps']
@@ -99,7 +101,7 @@ export class PortfolioService {
         {
             name: 'Dindo Bot',
             image: './assets/img/projects/dindo-bot.gif',
-            link: 'https://github.com/AXeL-dev/Dindo-Bot/tree/v1.x',
+            link: 'https://github.com/AXeL-dev/Dindo-Bot',
             category: [
                 'Python',
                 'GTK'
@@ -121,9 +123,42 @@ export class PortfolioService {
             ]
         },
         {
-            name: 'XAMPP Indicator',
-            image: './assets/img/projects/xampp-indicator.png',
-            link: 'https://github.com/AXeL-dev/xampp-indicator',
+            name: 'OVH CTI Dashboard',
+            image: './assets/img/projects/ovh-cti.png',
+            link: '#',
+            category: [
+                'AngularJS'
+            ],
+            group: [
+                this.groups['Web apps']
+            ]
+        },
+        {
+            name: 'OVH CTI Dashboard Lite (for Raspberry Pi)',
+            image: './assets/img/projects/ovh-rp.png',
+            link: '#',
+            category: [
+                'AngularJS'
+            ],
+            group: [
+                this.groups['Web apps']
+            ]
+        },
+        {
+            name: 'Riot Presents',
+            image: './assets/img/projects/riot-presents.png',
+            link: 'https://github.com/AXeL-dev/riot-presents',
+            category: [
+                'Riot.js'
+            ],
+            group: [
+                this.groups['Web apps']
+            ]
+        },
+        {
+            name: 'Nightlight Indicator',
+            image: './assets/img/projects/nightlight-indicator.png',
+            link: 'https://github.com/AXeL-dev/nightlight-indicator',
             category: [
                 'Python',
                 'GTK'
@@ -133,9 +168,9 @@ export class PortfolioService {
             ]
         },
         {
-            name: 'Nightlight Indicator',
-            image: './assets/img/projects/nightlight-indicator.png',
-            link: 'https://github.com/AXeL-dev/nightlight-indicator',
+            name: 'XAMPP Indicator',
+            image: './assets/img/projects/xampp-indicator.png',
+            link: 'https://github.com/AXeL-dev/xampp-indicator',
             category: [
                 'Python',
                 'GTK'
@@ -199,28 +234,6 @@ export class PortfolioService {
             category: [
                 'PHP',
                 'Jquery'
-            ],
-            group: [
-                this.groups['Web apps']
-            ]
-        },
-        {
-            name: 'OVH CTI Dashboard',
-            image: './assets/img/projects/ovh-cti.png',
-            link: '#',
-            category: [
-                'AngularJS'
-            ],
-            group: [
-                this.groups['Web apps']
-            ]
-        },
-        {
-            name: 'OVH CTI Dashboard Lite (for Raspberry Pi)',
-            image: './assets/img/projects/ovh-rp.png',
-            link: '#',
-            category: [
-                'AngularJS'
             ],
             group: [
                 this.groups['Web apps']
@@ -365,14 +378,24 @@ export class PortfolioService {
             ]
         },
         {
+            name: 'TCP server',
+            image: './assets/img/projects/tcpserver.jpg',
+            link : 'https://github.com/AXeL-dev/WinSk/tree/master/android',
+            category: [
+                'Java',
+                'Android SDK'
+            ],
+            group: [
+                this.groups['Mobile apps']
+            ]
+        },
+        {
             name: 'WinSk',
             image: './assets/img/projects/winsk.png',
             link: 'https://github.com/AXeL-dev/WinSk',
             category: [
                 'C',
-                'Windows API',
-                'Java',
-                'Android'
+                'Windows API'
             ],
             group: [
                 this.groups['Desktop apps']
@@ -385,6 +408,18 @@ export class PortfolioService {
             category: [
                 'C',
                 'SDL'
+            ],
+            group: [
+                this.groups['Desktop apps']
+            ]
+        },
+        {
+            name: 'Alice',
+            image: './assets/img/projects/alice.png',
+            link: 'https://github.com/AXeL-dev/Alice',
+            category: [
+                'C',
+                'Windows API'
             ],
             group: [
                 this.groups['Desktop apps']
