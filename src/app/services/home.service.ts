@@ -14,7 +14,7 @@ export class HomeService {
         name: 'Denna Anass',
         image: './assets/img/coder.jpg',
         job: 'Full Stack Developer',
-        bio: 'My name is Anass or just call me AXeL. Started coding since age 17, interested in ethical hacking, thoughtful coding, collaboration, and open source.<br> I\'m seeking for deep knowledge & new challenges. I generally spend my days doing some code, reading mangas, watching animes or playing video games.',
+        bio: 'My name is Anass or just call me AXeL. I started coding when i was 17, since then, i have acquired a good taste in areas like front-end & back-end development, database management, devOps, ethical hacking & security.<br> I like challenges, discovering new stuff and contributing to open source on my free time.',
         age: this.calculateAge('1995-02-25'),
         location: 'Rabat, Morocco',
         email: 'contact.axel.dev@gmail.com',
@@ -36,7 +36,7 @@ export class HomeService {
         { title: 'Mobile Development', icon: 'mobile', description: 'Ionic, PhoneGap, Android SDK' },
         { title: 'Web Hosting', icon: 'server', description: 'FTP, SSH, cPanel, Linux shell' },
         { title: 'Data Mining', icon: 'search-plus', description: 'CasperJS, PhantomJS, Web Scraper' },
-        { title: 'Dev-ops', icon: 'code-fork', description: 'Git / Github / Gitlab, CI / CD, Gulp, Webpack, npm' }
+        { title: 'DevOps', icon: 'code-fork', description: 'Git / Github / Gitlab, CI / CD, Gulp, Webpack, npm' }
     ];
 
     skills: Skill[] = [
@@ -67,8 +67,8 @@ export class HomeService {
         // { name: 'HTML', image: './assets/img/tech/html.png' },
         // { name: 'CSS', image: './assets/img/tech/css.png' },
         { name: 'Bootstrap', image: './assets/img/tech/bootstrap.png' },
-        { name: 'Semantic UI', image: './assets/img/tech/semantic-ui.png' },
-        { name: 'Materialize', image: './assets/img/tech/materialize-css.png' },
+        // { name: 'Semantic UI', image: './assets/img/tech/semantic-ui.png' },
+        // { name: 'Materialize', image: './assets/img/tech/materialize-css.png' },
         { name: 'Sass', image: './assets/img/tech/sass.png' },
         { name: 'Jekyll', image: './assets/img/tech/jekyll.png' },
         // { name: 'PHP', image: './assets/img/tech/php.png' },
@@ -81,7 +81,7 @@ export class HomeService {
         // { name: 'Javascript', image: './assets/img/tech/js.png' },
         { name: 'jQuery', image: './assets/img/tech/jquery.png' },
         // { name: 'Ajax', image: './assets/img/tech/ajax.png' },
-        // { name: 'TypeScript', image: './assets/img/tech/ts.png' },
+        { name: 'TypeScript', image: './assets/img/tech/ts.png' },
         { name: 'Gulp', image: './assets/img/tech/gulp.png' },
         { name: 'Angular', image: './assets/img/tech/angular.png' },
         { name: 'Firebase', image: './assets/img/tech/firebase.png' },
@@ -89,6 +89,7 @@ export class HomeService {
         { name: 'Vue.js', image: './assets/img/tech/vue.png' },
         { name: 'React', image: './assets/img/tech/react.png' },
         { name: 'Riot JS', image: './assets/img/tech/riot.png' },
+        { name: 'Node.js', image: './assets/img/tech/nodejs.png' },
         { name: '.Net', image: './assets/img/tech/dotnet.png' },
         { name: 'SQL Server', image: './assets/img/tech/sql-server.png' },
         // { name: 'Docker', image: './assets/img/tech/docker.png' },
@@ -128,8 +129,8 @@ export class HomeService {
             tag: 'eCapital',
             title: 'Full Stack Developer',
             description: [
-                '✔ Developing & maintaining web apps/websites using Symfony2/3, Wordpress, Angular & Firebase.',
-                '✔ Building mobile apps with Ionic and Angular.'
+                '✔ Developing & maintaining web apps/websites using Symfony, Wordpress, Angular & Firebase.',
+                '✔ Building mobile apps with Ionic.'
             ],
             period: 'September 2019 - present'
         },
