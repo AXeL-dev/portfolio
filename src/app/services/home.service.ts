@@ -14,7 +14,7 @@ export class HomeService {
         name: 'Denna Anass',
         image: './assets/img/coder.jpg',
         job: 'Full Stack Developer',
-        bio: 'My name is Anass or just call me AXeL. I started coding when i was 17, since then, i have acquired a good taste in areas like front-end & back-end development, database management, devOps, ethical hacking & security.<br> I like challenges, discovering new stuff and contributing to open source on my free time.',
+        bio: 'My name is Anass or just call me AXeL. I started coding when i was 17, since then, i have acquired a good taste in areas like front-end & back-end development, database management, devOps, ethical hacking & network security.<br> I like challenges, discovering new stuff and contributing to open source on my free time.',
         age: this.calculateAge('1995-02-25'),
         location: 'Rabat, Morocco',
         email: 'contact.axel.dev@gmail.com',
@@ -35,7 +35,7 @@ export class HomeService {
         { title: 'Back End Development', icon: 'cubes', description: 'PHP (CodeIgniter, Symfony), MySQL / SQL Server / MongoDB, CMS (Wordpress, Drupal), Python, Node.js, C#, ASP.NET, Rest API, OOP' },
         { title: 'Mobile Development', icon: 'mobile', description: 'Ionic, PhoneGap, Android SDK' },
         { title: 'Web Hosting', icon: 'server', description: 'FTP, SSH, cPanel, Linux shell' },
-        { title: 'Data Mining', icon: 'search-plus', description: 'CasperJS, PhantomJS, Web Scraper' },
+        { title: 'Data Mining', icon: 'search-plus', description: 'CasperJS, PhantomJS, Puppeteer, Web Scraper' },
         { title: 'DevOps', icon: 'code-fork', description: 'Git / Github / Gitlab, CI / CD, Gulp, Webpack, npm' }
     ];
 
