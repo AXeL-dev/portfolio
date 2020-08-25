@@ -28,7 +28,6 @@ export class PortfolioSectionComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.projects = this.portfolioService.getProjects();
-    let _self = this;
 
     // Splice projects array if a max value is provided
     if (this.max) {
@@ -39,9 +38,9 @@ export class PortfolioSectionComponent implements OnInit, AfterViewInit {
     if (!this.filters) {
       this.filters = [];
       Object.keys(this.portfolioService.groups).forEach((group) => {
-        const value = _self.portfolioService.groups[group];
-        if (_self.projects.find((project: Project) => project.group.indexOf(value) !== -1)) {
-          _self.filters.push({ name: group, filter: value });
+        const value = this.portfolioService.groups[group];
+        if (this.projects.find((project: Project) => project.group.indexOf(value) !== -1)) {
+          this.filters.push({ name: group, filter: value });
         }
       });
     }

@@ -21,10 +21,9 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    // let _self = this;
-    // document.addEventListener('DOMContentLoaded', function () {
-    //   _self.initTooltips();
-    //   _self.disablePreloader(true);
+    // document.addEventListener('DOMContentLoaded', () => {
+    //   this.initTooltips();
+    //   this.disablePreloader(true);
     // });
     this.loadScripts();
   }
@@ -38,14 +37,13 @@ export class AppComponent implements OnInit {
 
   disablePreloader(scroll: boolean = false, then: Function = () => {}) {
     //console.log('Disable preloader');
-    let _self = this;
     // Wait for background images to load before removing the preloader
-    imagesLoaded('.image-bg', { background: true }, function () {
+    imagesLoaded('.image-bg', { background: true }, () => {
       //console.log('all images are loaded');
-      _self.isLoading = false;
+      this.isLoading = false;
       then();
       if (scroll) {
-        _self.scrollToRouteFragment();
+        this.scrollToRouteFragment();
       }
     });
   }
