@@ -4,9 +4,11 @@ export class PortfolioService {
 
     // List of projects groups
     groups = {
+        'Websites': 'websites',
         'Web apps': 'web-apps',
         'Desktop apps': 'desktop-apps',
         'Mobile apps': 'mobile-apps',
+        'Games': 'games',
         'Web extensions': 'web-extensions'
     };
 
@@ -224,7 +226,19 @@ export class PortfolioService {
                 'Entity Framework'
             ],
             group: [
-                this.groups['Web apps']
+                this.groups['Websites']
+            ]
+        },
+        {
+            name: 'City Checker.ma',
+            image: './assets/img/projects/city-checker.png',
+            link: 'https://github.com/AXeL-dev/City-Checker.ma',
+            category: [
+                'HTML',
+                'CSS'
+            ],
+            group: [
+                this.groups['Websites']
             ]
         },
         {
@@ -248,7 +262,7 @@ export class PortfolioService {
                 'Jquery'
             ],
             group: [
-                this.groups['Web apps']
+                this.groups['Websites']
             ]
         },
         {
@@ -270,7 +284,7 @@ export class PortfolioService {
         //         'Javascript'
         //     ],
         //     group: [
-        //         this.groups['Web apps']
+        //         this.groups['Websites']
         //     ]
         // },
         // {
@@ -283,7 +297,7 @@ export class PortfolioService {
         //         'Javascript'
         //     ],
         //     group: [
-        //         this.groups['Web apps']
+        //         this.groups['Websites']
         //     ]
         // },
         // {
@@ -294,7 +308,7 @@ export class PortfolioService {
         //         'Blogger'
         //     ],
         //     group: [
-        //         this.groups['Web apps']
+        //         this.groups['Websites']
         //     ]
         // },
         {
@@ -305,7 +319,7 @@ export class PortfolioService {
                 'Blogger'
             ],
             group: [
-                this.groups['Web apps']
+                this.groups['Websites']
             ]
         },
         {
@@ -390,24 +404,48 @@ export class PortfolioService {
             ]
         },
         {
-            name: 'WinSk',
-            image: './assets/img/projects/winsk.png',
-            link: 'https://github.com/AXeL-dev/WinSk',
-            category: [
-                'C',
-                'Windows API'
-            ],
-            group: [
-                this.groups['Desktop apps']
-            ]
-        },
-        {
             name: 'Super Naruto',
             image: './assets/img/projects/super-naruto.jpg',
             link: 'https://github.com/AXeL-dev/super-naruto',
             category: [
                 'C',
                 'SDL'
+            ],
+            group: [
+                this.groups['Games']
+            ]
+        },
+        {
+            name: 'Shooting Game',
+            image: './assets/img/projects/shooting-game.jpg',
+            link: 'https://github.com/AXeL-dev/Shooting-Game',
+            category: [
+                'C',
+                'SDL'
+            ],
+            group: [
+                this.groups['Games']
+            ]
+        },
+        {
+            name: 'Open The Box',
+            image: './assets/img/projects/open-the-box.png',
+            link: 'https://github.com/AXeL-dev/Open-The-Box',
+            category: [
+                'C',
+                'SDL'
+            ],
+            group: [
+                this.groups['Games']
+            ]
+        },
+        {
+            name: 'WinSk',
+            image: './assets/img/projects/winsk.png',
+            link: 'https://github.com/AXeL-dev/WinSk',
+            category: [
+                'C',
+                'Windows API'
             ],
             group: [
                 this.groups['Desktop apps']
