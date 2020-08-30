@@ -125,7 +125,7 @@ export class PortfolioService {
         {
             name: 'OVH CTI Dashboard',
             image: './assets/img/projects/ovh-cti.png',
-            link: '#',
+            link: 'https://github.com/ovh/telephony-example-cti-dashboard',
             category: [
                 'AngularJS'
             ],
