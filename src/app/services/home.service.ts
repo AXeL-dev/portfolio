@@ -31,7 +31,7 @@ export class HomeService {
     ];
 
     services: Service[] = [
-        { title: 'Front End Development', icon: 'desktop', description: 'Angular, Vue.js, Jquery, VanillaJS, HTML5, CSS / SASS, JavaScript / ES6, TypeScript, SPA, PWA, Web Sockets' },
+        { title: 'Front End Development', icon: 'desktop', description: 'Angular, React, Jquery, VanillaJS, HTML5, CSS / SASS, JavaScript / ES6, TypeScript, SPA, PWA, Web Sockets' },
         { title: 'Back End Development', icon: 'cubes', description: 'PHP (CodeIgniter, Symfony), MySQL / SQL Server / MongoDB, CMS (Wordpress, Drupal), Python, Node.js, C#, ASP.NET, Rest API, OOP' },
         { title: 'Mobile Development', icon: 'mobile', description: 'Ionic, PhoneGap, Android SDK' },
         { title: 'Web Hosting', icon: 'server', description: 'FTP, SSH, cPanel, Linux shell' },
@@ -90,6 +90,7 @@ export class HomeService {
         { name: 'React', image: './assets/img/tech/react.png' },
         { name: 'Riot JS', image: './assets/img/tech/riot.png' },
         { name: 'Node.js', image: './assets/img/tech/nodejs.png' },
+        { name: 'GSAP', image: './assets/img/tech/gsap.png' },
         { name: '.Net', image: './assets/img/tech/dotnet.png' },
         { name: 'SQL Server', image: './assets/img/tech/sql-server.png' },
         // { name: 'Docker', image: './assets/img/tech/docker.png' },
