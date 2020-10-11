@@ -311,15 +311,38 @@ export class PortfolioService {
         //         this.groups['Websites']
         //     ]
         // },
+        // {
+        //     name: 'Dirassa Plus Blog',
+        //     image: './assets/img/projects/dirassaplus-blog.png',
+        //     link : 'http://dirassaplus.blogspot.com/',
+        //     category: [
+        //         'Blogger'
+        //     ],
+        //     group: [
+        //         this.groups['Websites']
+        //     ]
+        // },
         {
-            name: 'Dirassa Plus Blog',
-            image: './assets/img/projects/dirassaplus-blog.png',
-            link : 'http://dirassaplus.blogspot.com/',
+            name: 'TCP server',
+            image: './assets/img/projects/tcpserver.jpg',
+            link : 'https://github.com/AXeL-dev/WinSk/tree/master/android',
             category: [
-                'Blogger'
+                'Java',
+                'Android SDK'
             ],
             group: [
-                this.groups['Websites']
+                this.groups['Mobile apps']
+            ]
+        },
+        {
+            name: 'QR code scanner',
+            image: './assets/img/projects/qr-code-scanner.jpg',
+            link : '#',
+            category: [
+                'Ionic'
+            ],
+            group: [
+                this.groups['Mobile apps']
             ]
         },
         {
@@ -389,18 +412,6 @@ export class PortfolioService {
             ],
             group: [
                 this.groups['Desktop apps']
-            ]
-        },
-        {
-            name: 'TCP server',
-            image: './assets/img/projects/tcpserver.jpg',
-            link : 'https://github.com/AXeL-dev/WinSk/tree/master/android',
-            category: [
-                'Java',
-                'Android SDK'
-            ],
-            group: [
-                this.groups['Mobile apps']
             ]
         },
         {
