@@ -17,7 +17,7 @@ export class PortfolioService {
         {
             name: 'FireAdmin',
             image: './assets/img/projects/FireAdmin.png',
-            link: 'https://github.com/AXeL-dev/FireAdmin',
+            link: 'https://github.com/FirebaseGoodies/FireAdmin',
             category: [
                 'Typescript',
                 'Angular'
@@ -29,7 +29,7 @@ export class PortfolioService {
         {
             name: 'Firestore Manager',
             image: './assets/img/projects/firestore-manager.png',
-            link: 'https://github.com/AXeL-dev/firestore-manager',
+            link: 'https://github.com/FirebaseGoodies/firestore-manager',
             category: [
                 'Typescript',
                 'Angular'
