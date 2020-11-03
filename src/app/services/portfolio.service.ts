@@ -19,8 +19,8 @@ export class PortfolioService {
             image: './assets/img/projects/FireAdmin.png',
             link: 'https://github.com/FirebaseGoodies/FireAdmin',
             category: [
-                'Typescript',
-                'Angular'
+                'Angular',
+                'Firebase'
             ],
             group: [
                 this.groups['Web apps']
@@ -31,8 +31,8 @@ export class PortfolioService {
             image: './assets/img/projects/firestore-manager.png',
             link: 'https://github.com/FirebaseGoodies/firestore-manager',
             category: [
-                'Typescript',
-                'Angular'
+                'Angular',
+                'Firebase'
             ],
             group: [
                 this.groups['Web apps'],
@@ -68,7 +68,6 @@ export class PortfolioService {
             image: './assets/img/projects/anime-tracker.png',
             link: 'https://github.com/AXeL-dev/anime-tracker',
             category: [
-                'Typescript',
                 'Angular'
             ],
             group: [
@@ -80,7 +79,6 @@ export class PortfolioService {
             image: './assets/img/projects/ngx-diff2html.png',
             link: 'https://github.com/AXeL-dev/ngx-diff2html',
             category: [
-                'Typescript',
                 'Angular'
             ],
             group: [
@@ -122,6 +120,18 @@ export class PortfolioService {
             ],
             group: [
                 this.groups['Desktop apps']
+            ]
+        },
+        {
+            name: 'Firestore Pentest',
+            image: './assets/img/projects/firestore-pentest.png',
+            link: 'https://github.com/FirebaseGoodies/firestore-pentest',
+            category: [
+                'Angular',
+                'Firebase'
+            ],
+            group: [
+                this.groups['Web apps']
             ]
         },
         {
@@ -345,17 +355,17 @@ export class PortfolioService {
                 this.groups['Mobile apps']
             ]
         },
-        {
-            name: 'Ubuntu Themes',
-            image: 'https://cn.opendesktop.org/img/2/a/e/a/83bf56f927c7e7fa33e0995fd91e72ffeced.png',
-            link: 'https://github.com/AXeL-dev/ubuntu-themes',
-            category: [
-                'Linux'
-            ],
-            group: [
-                this.groups['Desktop apps']
-            ]
-        },
+        // {
+        //     name: 'Ubuntu Themes',
+        //     image: 'https://cn.opendesktop.org/img/2/a/e/a/83bf56f927c7e7fa33e0995fd91e72ffeced.png',
+        //     link: 'https://github.com/AXeL-dev/ubuntu-themes',
+        //     category: [
+        //         'Linux'
+        //     ],
+        //     group: [
+        //         this.groups['Desktop apps']
+        //     ]
+        // },
         {
             name: 'QChat',
             image: './assets/img/projects/QChat.png',
