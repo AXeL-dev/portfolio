@@ -21,6 +21,17 @@ export class BlogService {
 
     private posts: Post[] = [
         {
+            title: 'Are you a lion or a hedgehog? 🤔',
+            date: '2020/11/06',
+            author: this.authors['AXeL'],
+            image: './assets/img/posts/lionhog.jpg',
+            content: './assets/blog/lion-or-hedgehog.md',
+            tags: [
+                'Story',
+                'Blogging'
+            ]
+        },
+        {
             title: 'Ionic vs NativeScript',
             date: '2020/06/06',
             author: this.authors['AXeL'],
