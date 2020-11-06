@@ -8,6 +8,7 @@ import { Service } from 'src/app/models/service.model';
 })
 export class ServiceSectionComponent implements OnInit {
 
+  @Input() id: string = 'service-section';
   @Input() title: string;
   @Input() services: Service[];
 
