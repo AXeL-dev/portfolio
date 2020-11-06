@@ -113,7 +113,7 @@ export class PortfolioService {
         {
             name: 'Silaty',
             image: './assets/img/projects/silaty.png',
-            link: 'https://github.com/AXeL-dev/Silaty',
+            link: 'https://github.com/LinuxForGeeks/Silaty',
             category: [
                 'Python',
                 'GTK'
@@ -170,7 +170,7 @@ export class PortfolioService {
         {
             name: 'Nightlight Indicator',
             image: './assets/img/projects/nightlight-indicator.png',
-            link: 'https://github.com/AXeL-dev/nightlight-indicator',
+            link: 'https://github.com/LinuxForGeeks/nightlight-indicator',
             category: [
                 'Python',
                 'GTK'
@@ -182,7 +182,7 @@ export class PortfolioService {
         {
             name: 'XAMPP Indicator',
             image: './assets/img/projects/xampp-indicator.png',
-            link: 'https://github.com/AXeL-dev/xampp-indicator',
+            link: 'https://github.com/LinuxForGeeks/xampp-indicator',
             category: [
                 'Python',
                 'GTK'
@@ -194,7 +194,7 @@ export class PortfolioService {
         {
             name: 'Dolibase Framework',
             image: './assets/img/projects/dolibase.png',
-            link: 'https://github.com/AXeL-dev/dolibase',
+            link: 'https://github.com/DolibarrLabs/dolibase',
             category: [
                 'PHP',
                 'Javascript'
@@ -335,7 +335,7 @@ export class PortfolioService {
         {
             name: 'TCP server',
             image: './assets/img/projects/tcpserver.jpg',
-            link : 'https://github.com/AXeL-dev/WinSk/tree/master/android',
+            link : 'https://github.com/PowerOfC/WinSk/tree/master/android',
             category: [
                 'Java',
                 'Android SDK'
@@ -358,7 +358,7 @@ export class PortfolioService {
         // {
         //     name: 'Ubuntu Themes',
         //     image: 'https://cn.opendesktop.org/img/2/a/e/a/83bf56f927c7e7fa33e0995fd91e72ffeced.png',
-        //     link: 'https://github.com/AXeL-dev/ubuntu-themes',
+        //     link: 'https://github.com/LinuxForGeeks/ubuntu-themes',
         //     category: [
         //         'Linux'
         //     ],
@@ -381,7 +381,7 @@ export class PortfolioService {
         {
             name: 'SufoBot',
             image: './assets/img/projects/SufoBot.png',
-            link: 'https://github.com/AXeL-dev/SufoBot',
+            link: 'https://github.com/LinuxForGeeks/SufoBot',
             category: [
                 'C++',
                 'wxWidgets',
@@ -427,7 +427,7 @@ export class PortfolioService {
         {
             name: 'Super Naruto',
             image: './assets/img/projects/super-naruto.jpg',
-            link: 'https://github.com/AXeL-dev/super-naruto',
+            link: 'https://github.com/PowerOfC/super-naruto',
             category: [
                 'C',
                 'SDL'
@@ -439,7 +439,7 @@ export class PortfolioService {
         {
             name: 'Shooting Game',
             image: './assets/img/projects/shooting-game.jpg',
-            link: 'https://github.com/AXeL-dev/Shooting-Game',
+            link: 'https://github.com/PowerOfC/Shooting-Game',
             category: [
                 'C',
                 'SDL'
@@ -451,7 +451,7 @@ export class PortfolioService {
         {
             name: 'Open The Box',
             image: './assets/img/projects/open-the-box.png',
-            link: 'https://github.com/AXeL-dev/Open-The-Box',
+            link: 'https://github.com/PowerOfC/Open-The-Box',
             category: [
                 'C',
                 'SDL'
@@ -463,7 +463,7 @@ export class PortfolioService {
         {
             name: 'WinSk',
             image: './assets/img/projects/winsk.png',
-            link: 'https://github.com/AXeL-dev/WinSk',
+            link: 'https://github.com/PowerOfC/WinSk',
             category: [
                 'C',
                 'Windows API'
@@ -475,7 +475,7 @@ export class PortfolioService {
         {
             name: 'Alice',
             image: './assets/img/projects/alice.png',
-            link: 'https://github.com/AXeL-dev/Alice',
+            link: 'https://github.com/PowerOfC/Alice',
             category: [
                 'C',
                 'Windows API'
@@ -487,7 +487,7 @@ export class PortfolioService {
         {
             name: 'ImpScreen',
             image: './assets/img/projects/ImpScreen.png',
-            link: 'https://github.com/AXeL-dev/ImpScreen',
+            link: 'https://github.com/PowerOfC/ImpScreen',
             category: [
                 'C',
                 'Windows API'
@@ -499,7 +499,7 @@ export class PortfolioService {
         {
             name: 'TimeToShutdown',
             image: './assets/img/projects/timetoshutdown.png',
-            link: 'https://github.com/AXeL-dev/TimeToShutdown',
+            link: 'https://github.com/PowerOfC/TimeToShutdown',
             category: [
                 'C',
                 'Windows API'
@@ -511,7 +511,7 @@ export class PortfolioService {
         {
             name: 'WebSiteBlocker',
             image: './assets/img/projects/websiteblocker.png',
-            link: 'https://github.com/AXeL-dev/WebSiteBlocker',
+            link: 'https://github.com/PowerOfC/WebSiteBlocker',
             category: [
                 'C',
                 'Windows API'
@@ -523,7 +523,7 @@ export class PortfolioService {
         {
             name: 'Locker',
             image: './assets/img/projects/locker.png',
-            link: 'https://github.com/AXeL-dev/Locker',
+            link: 'https://github.com/PowerOfC/Locker',
             category: [
                 'C',
                 'Windows API'
@@ -535,7 +535,7 @@ export class PortfolioService {
         {
             name: 'WinIDE',
             image: './assets/img/projects/WinIDE.png',
-            link: 'https://github.com/AXeL-dev/WinIDE',
+            link: 'https://github.com/PowerOfC/WinIDE',
             category: [
                 'C',
                 'Windows API'
@@ -547,7 +547,7 @@ export class PortfolioService {
         {
             name: 'MP3 Player',
             image: './assets/img/projects/mp3-player.png',
-            link: 'https://github.com/AXeL-dev/Lecteur-mp3',
+            link: 'https://github.com/PowerOfC/Lecteur-mp3',
             category: [
                 'C',
                 'SDL'
@@ -559,7 +559,7 @@ export class PortfolioService {
         {
             name: 'SyncPainter',
             image: './assets/img/projects/syncpainter.png',
-            link: 'https://github.com/AXeL-dev/syncpainter',
+            link: 'https://github.com/PowerOfC/syncpainter',
             category: [
                 'C',
                 'SDL'
