@@ -4,7 +4,7 @@ Okay, so that was one of the questions i was asked on a job interview & since it
 - what a lion does when it's on a jungle? he's the most of time offensive & everyone is scared of him since it's considered as a king (right?)
 - okay, what about the hedgehog? well.., he might be shy & fearful but when it comes to self-defense he's persistent & got some strong weapons! 🛡️
 
-Good, now let's imagine that a fight has started between Mr. L & Mr. H, who will be the winner in your opinion? of course the lion, come on!..
+Good, now let's imagine that a fight ⚔️ has started between Mr. L & Mr. H, who will be the winner in your opinion? of course the lion, come on!..
 
 Well, the answer is no! since the lion won't win against the hedgehog thorns.. 👀
 
