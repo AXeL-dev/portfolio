@@ -24,6 +24,7 @@ export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
   pages: number[] = [];
   paginationRoute: string = '/blog/';
   private subscriptions: Subscription[] = [];
+  enlargeFirstPost: boolean = false;
 
   constructor(private blogService: BlogService, private router: Router, private markdownService: MarkdownService, private slugifyPipe: SlugifyPipe) { }
 
@@ -46,6 +47,10 @@ export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
     // Splice posts array if a max value is provided
     if (this.maxPosts > 0) {
       this.posts.splice(this.maxPosts, this.posts.length - this.maxPosts);
+      // Enlarge first post if max posts number is odd
+      if (this.maxPosts % 2 !== 0) {
+        this.enlargeFirstPost = true;
+      }
     }
 
     // Generate posts links + clean and cut long posts text
@@ -57,10 +62,10 @@ export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
       const subscription = content.subscribe((text) => {
         post.text = this.markdownService.compile(text);
         post.text = post.text.replace(/(<[^>]*>)|(\s\s+)/g, '').trim(); // remove all html tags and outer/double spaces
-        if (post.text.length > 200) {
-          post.text = post.text.substr(0, 200);
-        }
-        post.text += '...';
+        // if (post.text.length > 200) {
+        //   post.text = post.text.substr(0, 200);
+        // }
+        // post.text += '...';
       });
       this.subscriptions.push(subscription);
     });

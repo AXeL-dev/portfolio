@@ -1,0 +1,30 @@
+
+.truncate-overflow {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.8em;
+  max-height: 5.4em;
+  text-align: justify;
+  /*margin-right: -1em;*/
+  padding-right: 1em;
+}
+
+.truncate-overflow:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.truncate-overflow:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+}
+
+.center-text {
+  text-align: center;
+}

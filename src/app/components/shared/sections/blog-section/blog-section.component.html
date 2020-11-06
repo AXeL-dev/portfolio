@@ -11,8 +11,8 @@
             <div class="col s12 masonry pd-0">
 
                 <!-- Single Blog -->
-                <div *ngFor="let post of posts"
-                    class="col m6 s12 mgt-20">
+                <div *ngFor="let post of posts; let i = index"
+                    class="col s12 mgt-20" [ngClass]="i === 0 && enlargeFirstPost ? 'center-text' : 'm6'">
                     <div class="col s12 blog-wrapper w-block shadow-bg pd-0 wow fadeIn animated">
                         <div class="col s12 blog-img pd-0 image-bg"
                             [ngStyle]="{'background': 'url(' + post.image + ')', 'background-position': 'center top', 'background-repeat': 'no-repeat', 'background-size': 'cover'}">
@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                             <div class="blog-content">
-                                <p [innerHTML]="post.text"></p>
+                                <p class="truncate-overflow" [innerHTML]="post.text"></p>
                             </div>
                             <div class="blog-more">
                                 <a [routerLink]="post.link"
