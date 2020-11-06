@@ -1,4 +1,4 @@
-<section id="{{ id }}">
+<section [id]="id">
     <div class="container">
         <div class="row">
             <div class="col s12 section-title">
@@ -11,12 +11,12 @@
                     <owl-carousel-o [options]="options">
                         <ng-container *ngFor="let item of items">
                             <ng-template carouselSlide>
-                                <img src="{{ item.image }}"
+                                <img [src]="item.image"
                                     class="tooltipped"
                                     data-position="top"
                                     data-delay="50"
-                                    attr.data-tooltip="{{ item.name }}"
-                                    alt="{{ item.name }}" />
+                                    [attr.data-tooltip]="item.name"
+                                    [alt]="item.name" />
                             </ng-template>
                         </ng-container>
                     </owl-carousel-o>

@@ -4,14 +4,14 @@
             <div class="col l8 s12 single-blog-wrapper">
                 <div class="col s12 w-block shadow-bg pd-0">
                     <div class="col s12 single-blog-thumbnail pd-0">
-                        <img src="{{ post.image }}"
-                            alt="{{ post.title }}" />
+                        <img [src]="post.image"
+                            [alt]="post.title" />
                     </div>
                     <div class="col s12 pd-50 pd-md-40 pd-sm-30">
                         <div class="single-blog-title">{{ post.title }}</div>
                         <div class="blog-data">
                             <div class="chip mgr-10">
-                                <img src="{{ post.author.image }}"
+                                <img [src]="post.author.image"
                                     alt="Author">
                                 {{ post.author.name }}
                             </div>
@@ -21,7 +21,7 @@
                             <div class="chip">
                                 <span class="fa fa-comments mgr-5"></span>
                                 <span class="disqus-comment-count"
-                                    attr.data-disqus-identifier="{{ post.disqusIdentifier }}">0 Comments</span>
+                                    [attr.data-disqus-identifier]="post.disqusIdentifier">0 Comments</span>
                             </div>
                         </div>
                         <div class="single-blog-content">
@@ -55,7 +55,7 @@
                 <div class="col s12 w-block shadow-bg pd-50 pd-md-40 pd-sm-30 mgt-50">
                     <div class="single-blog-author">
                         <h4>About Author</h4>
-                        <img src="{{ post.author.image }}" alt="">
+                        <img [src]="post.author.image" alt="">
                         <div class="author-data">
                             {{ post.author.name }}
                             <span>{{ post.author.email }}</span>
@@ -79,11 +79,11 @@
                         <div *ngFor="let recentPost of recentPosts" class="related-post-single">
                             <div class="related-post-img image-bg" [ngStyle]="{'background': 'url(' + recentPost.image + ')', 'background-position': 'center top', 'background-repeat': 'no-repeat', 'background-size': 'cover'}"></div>
                             <div class="related-post-title">
-                                <a routerLink="{{ recentPost.link }}">{{ recentPost.title }}</a>
+                                <a [routerLink]="recentPost.link">{{ recentPost.title }}</a>
                             </div>
                             <div class="related-post-author">
                                 <div class="chip">
-                                    <img src="{{ recentPost.author.image }}"
+                                    <img [src]="recentPost.author.image"
                                         alt="Author">
                                     {{ recentPost.author.name }}
                                 </div>

@@ -1,4 +1,4 @@
-<section id="{{ id }}"
+<section [id]="id"
     class="portfolio-section"
     [ngClass]="{'all': !title}">
     <div class="container">
@@ -24,11 +24,11 @@
                         <!-- Single Portfolio -->
                         <ng-container *ngFor="let project of projects; let i = index">
                             <li class="portfolio-content"
-                                attr.data-groups="{{ project.group.join(',') }}">
+                                [attr.data-groups]="project.group.join(',')">
                                 <figure class="portfolio-content__inner shadow-bg wow animated" [ngClass]="animation">
                                     <div class="aspect aspect--4x3">
                                         <div class="aspect__inner">
-                                            <img src="{{ project.image }}" alt="{{ project.name }}" />
+                                            <img [src]="project.image" [alt]="project.name" />
                                         </div>
                                     </div>
                                     <figcaption>
@@ -37,7 +37,7 @@
                                                 <p *ngFor="let category of project.category">{{ category }}</p>
                                             </div>
                                             <div class="portfolio-intro-title">
-                                                <a href="{{ project.link }}">{{ project.name }}</a>
+                                                <a [href]="project.link">{{ project.name }}</a>
                                             </div>
                                             <div class="portfolio-intro-image">
                                                 <a class="btn-circle waves-effect portfolio-mfp tooltipped"
@@ -45,7 +45,7 @@
                                                     data-delay="50"
                                                     data-tooltip="View Photo"
                                                     (click)="openImageGallery(i)"
-                                                    href="{{ project.image }}"><span class="fa fa-picture-o"></span></a>
+                                                    [href]="project.image"><span class="fa fa-picture-o"></span></a>
                                             </div>
                                             <div class="portfolio-intro-detail"
                                                 *ngIf="project.link && project.link != '#'">
@@ -53,7 +53,7 @@
                                                     data-position="top"
                                                     data-delay="50"
                                                     data-tooltip="View Project"
-                                                    href="{{ project.link }}"
+                                                    [href]="project.link"
                                                     target="_blank"><span class="fa fa-link"></span></a>
                                             </div>
                                         </div>

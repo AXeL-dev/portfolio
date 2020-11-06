@@ -31,7 +31,7 @@
                                     </div>
                                     <div>
                                         <span>Website</span>
-                                        <a href="{{ author.website }}">{{ author.website }}</a>
+                                        <a [href]="author.website">{{ author.website }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@
                         <div class="about-social col s12 pd-0">
                             <a *ngFor="let social of socials"
                                 class="waves-effect waves-light"
-                                href="{{ social.link }}"><span class="fa fa-{{ social.icon }}"></span></a>
+                                [href]="social.link"><span class="fa fa-{{ social.icon }}"></span></a>
                         </div>
                     </div>
                 </div>
