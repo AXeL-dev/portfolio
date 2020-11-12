@@ -27,7 +27,7 @@ export class HomeService {
         { icon: 'youtube-play', link: 'https://www.youtube.com/channel/UCctMROLcvkiqpOyF98_WUYg' },
         { icon: 'twitter', link: 'https://twitter.com/AXeL87749763' },
         { icon: 'facebook', link: '#' },
-        { icon: 'linkedin', link: 'https://www.linkedin.com/in/anass-denna-119b1118b' }
+        { icon: 'linkedin', link: 'https://www.linkedin.com/in/anass-denna' }
     ];
 
     services: Service[] = [
