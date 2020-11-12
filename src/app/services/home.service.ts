@@ -26,7 +26,7 @@ export class HomeService {
         { icon: 'gitlab', link: 'https://gitlab.com/AXeL-dev' },
         { icon: 'youtube-play', link: 'https://www.youtube.com/channel/UCctMROLcvkiqpOyF98_WUYg' },
         { icon: 'twitter', link: 'https://twitter.com/AXeL87749763' },
-        { icon: 'facebook', link: '#' },
+        { icon: 'facebook', link: '' },
         { icon: 'linkedin', link: 'https://www.linkedin.com/in/anass-denna' }
     ];
 
