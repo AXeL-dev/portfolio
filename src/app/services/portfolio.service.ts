@@ -157,6 +157,46 @@ export class PortfolioService {
             ]
         },
         {
+            name: 'Guepard Group',
+            image: './assets/img/projects/guepard.png',
+            link: 'https://guepardgroup.com',
+            category: [
+                'HTML',
+                'CSS',
+                'jQuery'
+            ],
+            group: [
+                this.groups['Websites']
+            ]
+        },
+        {
+            name: 'APlus Communication',
+            image: './assets/img/projects/aplus.png',
+            link: 'http://agence-aplus.fr',
+            category: [
+                'HTML',
+                'CSS',
+                'jQuery'
+            ],
+            group: [
+                this.groups['Websites']
+            ]
+        },
+        {
+            name: 'Enty Beauty',
+            image: './assets/img/projects/enty-beauty.png',
+            link: 'https://shop.entybeauty.com',
+            category: [
+                'PHP',
+                'CSS',
+                'JS',
+                'Google Sheets API'
+            ],
+            group: [
+                this.groups['Websites']
+            ]
+        },
+        {
             name: 'Riot Presents',
             image: './assets/img/projects/riot-presents.png',
             link: 'https://github.com/AXeL-dev/riot-presents',
@@ -200,7 +240,7 @@ export class PortfolioService {
                 'Javascript'
             ],
             group: [
-                this.groups['Web apps']
+                //this.groups['Web apps']
             ]
         },
         {
