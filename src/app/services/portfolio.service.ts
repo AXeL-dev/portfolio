@@ -44,8 +44,8 @@ export class PortfolioService {
             image: './assets/img/projects/youtube-viewer.png',
             link: 'https://github.com/AXeL-dev/youtube-viewer',
             category: [
-                'Typescript',
-                'React'
+                'React',
+                'Typescript'
             ],
             group: [
                 this.groups['Web apps'],
@@ -316,16 +316,28 @@ export class PortfolioService {
             ]
         },
         {
-            name: 'Design Helper',
-            image: './assets/img/projects/design-helper.png',
-            link: 'https://github.com/AXeL-dev/design-helper-site',
+            name: 'Angular WebExtension Starter',
+            image: './assets/img/projects/webextension.jpg',
+            link: 'https://github.com/AXeL-dev/angular-webextension-starter',
             category: [
-                'Javascript'
+                'Javascript',
+                'Gulp'
             ],
             group: [
-                this.groups['Web apps']
+                this.groups['Web extensions']
             ]
         },
+        // {
+        //     name: 'Design Helper',
+        //     image: './assets/img/projects/design-helper.png',
+        //     link: 'https://github.com/AXeL-dev/design-helper-site',
+        //     category: [
+        //         'Javascript'
+        //     ],
+        //     group: [
+        //         this.groups['Web apps']
+        //     ]
+        // },
         // {
         //     name: 'Mendicity website',
         //     image: './assets/img/projects/mendicity-site.png',
