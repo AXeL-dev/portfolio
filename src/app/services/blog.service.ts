@@ -21,6 +21,18 @@ export class BlogService {
 
     private posts: Post[] = [
         {
+            title: 'Codingame: A problematic question',
+            date: '2020/11/28',
+            author: this.authors['AXeL'],
+            image: './assets/img/posts/codingame.jpg',
+            content: './assets/blog/codingame-problematic-question.md',
+            tags: [
+                'Blogging',
+                'Codingame',
+                'Javascript'
+            ]
+        },
+        {
             title: 'Are you a lion or a hedgehog? 🤔',
             date: '2020/11/06',
             author: this.authors['AXeL'],
