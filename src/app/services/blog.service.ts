@@ -21,6 +21,17 @@ export class BlogService {
 
     private posts: Post[] = [
         {
+            title: 'Typescript decorators: Some practical examples',
+            date: '2020/12/03',
+            author: this.authors['AXeL'],
+            image: './assets/img/posts/ts.jpg',
+            content: './assets/blog/typescript-decorators.md',
+            tags: [
+                'Typescript',
+                'Javascript'
+            ]
+        },
+        {
             title: 'Codingame: A problematic question',
             date: '2020/11/28',
             author: this.authors['AXeL'],
