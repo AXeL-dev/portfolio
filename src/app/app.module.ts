@@ -34,8 +34,27 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ServiceSectionComponent } from './components/shared/sections/service-section/service-section.component';
 import { ReferenceSectionComponent } from './components/shared/sections/reference-section/reference-section.component';
 import { SlugifyPipe } from './pipes/slugify.pipe';
+import { MarkedOptions, MarkedRenderer } from 'ngx-markdown';
 
+// function that returns `MarkedOptions` with renderer override
+export function markedOptionsFactory(): MarkedOptions {
+  const renderer = new MarkedRenderer();
 
+  const linkRenderer = renderer.link;
+  renderer.link = (href, title, text) => {
+    const html = linkRenderer.call(renderer, href, title, text);
+    return html.replace(/^<a /, '<a target="_blank" rel="nofollow" ');
+  };
+
+  return {
+    renderer: renderer,
+    gfm: true,
+    breaks: false,
+    pedantic: false,
+    smartLists: true,
+    smartypants: false,
+  };
+}
 
 @NgModule({
   declarations: [
@@ -69,7 +88,13 @@ import { SlugifyPipe } from './pipes/slugify.pipe';
     CarouselModule,
     LightboxModule,
     HttpClientModule,
-    MarkdownModule.forRoot({ loader: HttpClient })
+    MarkdownModule.forRoot({
+      loader: HttpClient,
+      markedOptions: {
+        provide: MarkedOptions,
+        useFactory: markedOptionsFactory,
+      },
+    })
   ],
   providers: [
     HeaderService,
