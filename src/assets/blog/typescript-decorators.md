@@ -66,7 +66,10 @@ class Rocket {
 Let's set a minimum value for **fuel** using our property decorator:
 
 ```typescript
-const minValue = (min: number) => (target: Object, propertyKey: string) => {
+const minValue = (min: number) => (
+  target: Object,
+  propertyKey: string
+) => {
   let value: number;
   Object.defineProperty(target, propertyKey, {
     get: () => value,
@@ -133,14 +136,14 @@ class Rocket {
 Let’s say that to launch our rocket to Mars, the **fuel** level must be above 100.
 
 ```typescript
-const minimumFuel = (fuel: number) => (
+const minFuel = (fuel: number) => (
   target: Object,
   propertyKey: string,
   descriptor: PropertyDescriptor
 ) => {
   const originalMethod = descriptor.value; // save our original method
 
-  descriptor.value = function (...args) { // set a custom method (we use a normal function for "this" binding)
+  descriptor.value = function (...args) { // set a custom method (we use a regular function for "this" binding)
     if (this.fuel > fuel) {
       originalMethod.apply(this, args); // call original method
     } else {
@@ -154,7 +157,7 @@ const minimumFuel = (fuel: number) => (
 class Rocket {
   fuel = 50;
 
-  @minimumFuel(100)
+  @minFuel(100)
   launchToMars() {
     console.log("Launching to Mars in 3... 2... 1... 🚀");
   }
@@ -207,7 +210,11 @@ enum Roles {
   Guest = 'guest'
 }
 
-const Authorized = (...roles: Roles[]) => (target: Object, propertyKey: string, descriptor: PropertyDescriptor) => {
+const Authorized = (...roles: Roles[]) => (
+  target: Object,
+  propertyKey: string,
+  descriptor: PropertyDescriptor
+) => {
   const originalMethod = descriptor.value;
 
   descriptor.value = async function (...args) {
@@ -320,3 +327,7 @@ Trust me, with time your code will become more & more larger, & you'll slowly st
 - [Better errors handling for ES/Typescript classes](https://blog.bitsrc.io/errors-handling-for-vue-class-components-2f152f7c7515)
 - [A practical guide to TypeScript decorators](https://blog.logrocket.com/a-practical-guide-to-typescript-decorators/)
 - [TypeScript Decorators by Example](https://fireship.io/lessons/ts-decorators-by-example/)
+
+**Bonus**:
+
+You can test all the code examples above & have fun playing with typescript on [https://www.typescriptlang.org/play](https://www.typescriptlang.org/play).
