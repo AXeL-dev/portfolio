@@ -32,11 +32,11 @@ export class BlogService {
             ]
         },
         {
-            title: 'Codingame: A problematic question',
+            title: 'Codingame: A tricky question',
             date: '2020/11/28',
             author: this.authors['AXeL'],
             image: './assets/img/posts/codingame.jpg',
-            content: './assets/blog/codingame-problematic-question.md',
+            content: './assets/blog/codingame-tricky-question.md',
             tags: [
                 'Blogging',
                 'Codingame',
