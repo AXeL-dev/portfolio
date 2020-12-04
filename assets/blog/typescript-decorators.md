@@ -312,7 +312,7 @@ foo.asyncBar(); // 3000 ms
 <blockquote><h4>Do i really need all this?</h4></blockquote>
 
 In fact, following good practices & opting for design patterns, even if it may seems complex, would help you to boost up your skills & code in a cleaner & better way.
-Trust me, once your code will exceed the 1000 lines you'll slowly start to feel it complex to read & maintain, the reason why you, as a developer, have to take advantage of design patterns & keep your code easy to read as much as you can.
+Trust me, with time your code will become more & more larger, & you'll slowly start to feel it complex to read & maintain, the reason why you, as a developer, have to take advantage of design patterns & keep your code well organised & easy to read as much as you can.
 
 **Sources**:
 
