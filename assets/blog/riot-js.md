@@ -15,7 +15,7 @@
     This is why i'm trying to be more consistent when it comes to choices & this is why i chose Riot ;)
 </p>
 <p class="mgt-10">
-    Convinced & want to give it a try? <a href="https://riot.js.org/examples/wip/live-editor" target="_blank">here you go!</a>
+    Convinced & want to give it a try? <a href="https://riot.js.org/examples/live-editor" target="_blank">here you go!</a>
 </p>
 <p class="mgt-10">
     I recently introduced Riot to my portfolio, you will find the full source code <a href="https://github.com/AXeL-dev/riotjs-portfolio" target="_blank">here</a> (note that this is not the best example of what you could do with riot).

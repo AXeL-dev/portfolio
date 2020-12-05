@@ -1,0 +1,58 @@
+/**
+ * gist theme by kyubuns (https://kyubuns.dev)
+ * Inspired by GitHub Gist
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+
+  font-size: 12px;
+  line-height: 20px;
+  text-align: left;
+  direction: ltr;
+  color: #24292e;
+  /* color: #00ff00; */
+  word-wrap: normal;
+  white-space: pre;
+  tab-size: 4;
+}
+
+pre[class*="language-"] {
+  border: 1px solid;
+  border-color: #ddd #ddd #ccc;
+  border-radius: 3px;
+  padding: 1px 10px;
+}
+
+
+.token.punctuation
+{ color : #24292e; }
+
+.token.namespace,
+.token.class-name,
+.token.function
+{ color: #6f42c1; }
+
+.token.keyword,
+.token.operator
+{ color: #d73a49; }
+
+.token.comment
+{ color: #6a737d; }
+
+.token.string
+{ color: #032f62; }
+
+.token.shebang
+{ color: #6a737d; }
+
+.token.number
+{ color: #005cc5; }
+
+
+/* shell */
+
+*.language-shell >
+.token.builtin.class-name
+{ color: #005cc5; }

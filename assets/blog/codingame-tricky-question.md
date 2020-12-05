@@ -162,4 +162,4 @@ Generally not bad, but here is some things that should be reviewed in my opinion
 
 - Also, there is no way to pause the test or to get a 5 min rest during a test of 1 hour and half..
 
-**Suggestion**: Can add a prompt after the question timer end which asks the user if he want to continue or to take a rest for example (only for long time tests). Or even better: a rest system, which gives the user the option to freely take 2 / 3 rests during the test (but only after the end of the current question), the rest time may also be calculated in a way that the candidate get warned if ever he exceeded it.
+**Suggestions**: Can add a prompt after the question timer end which asks the user if he want to continue or to take a rest for example (only for long time tests). Or even better: a rest system, which gives the user the option to freely take 2 / 3 rests during the test (but only after the end of the current question), the rest time may also be calculated in a way that the candidate get warned if ever he exceeded it.

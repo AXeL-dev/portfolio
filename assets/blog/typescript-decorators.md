@@ -259,7 +259,7 @@ admin.add(); // User add success!
 
 <br>
 
-- **Duration**: calculate the execution time of a specific method.
+- **Duration** Decorator: calculate the execution time of a specific method.
 
 ```typescript
 const Duration = (target: Object, propertyKey: string, descriptor: PropertyDescriptor) => {
@@ -330,4 +330,4 @@ Trust me, with time your code will become more & more larger, & you'll slowly st
 
 **Bonus**:
 
-You can test all the code examples above & have fun playing with typescript on [https://www.typescriptlang.org/play](https://www.typescriptlang.org/play).
+You can test all the code examples above & have fun playing with typescript on [TypeScript Playground](https://www.typescriptlang.org/play).
