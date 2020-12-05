@@ -8,7 +8,7 @@
     If you are interested in LDAP & you want to give it a try, the links below could help you:
 </p>
 <ul class="disc-list mgt-10">
-    <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04">Install and Configure OpenLDAP on Ubuntu</a></li>
-    <li><a href="https://github.com/leenooks/phpLDAPadmin">phpLDAPadmin</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Active_Directory">Active Directory</a></li>
+    <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04" target="_blank">Install and Configure OpenLDAP on Ubuntu</a></li>
+    <li><a href="https://github.com/leenooks/phpLDAPadmin" target="_blank">phpLDAPadmin</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Active_Directory" target="_blank">Active Directory</a></li>
 </ul>

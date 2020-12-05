@@ -259,7 +259,7 @@ admin.add(); // User add success!
 
 <br>
 
-- **Duration**: calculate the execution time of a specific method.
+- **Duration** Decorator: calculate the execution time of a specific method.
 
 ```typescript
 const Duration = (target: Object, propertyKey: string, descriptor: PropertyDescriptor) => {
