@@ -1,5 +1,5 @@
 <div class="header shadow-bg"
-    [ngClass]="{'header-visible': isSticky, 'header-hidden': !isSticky}">
+    [ngClass]="isSticky ? 'header-visible' : 'header-hidden'">
     <div class="site-logo">
         <a href="#"
             (click)="scroll(null)">{{ title }}</a>
@@ -9,19 +9,18 @@
 </div>
 
 <div class="main-nav hero-height"
-    [ngClass]="{'active': showMenu, 'hidden': !showMenu}"
+    [ngClass]="showMenu ? 'active' : 'hidden'"
     (click)="stopPropagation($event)">
     <div class="menu-close waves-effect waves-light"
         (click)="closeMenu()"><span class="fa fa-times"></span></div>
     <ul>
         <li *ngFor="let item of menu">
-            <a *ngIf="isHomePage"
-                href="#{{ item.id }}"
-                (click)="scroll(item.id)">{{ item.name }}</a>
-            <a *ngIf="!isHomePage"
-                [routerLink]="item.link"
-                [fragment]="item.id"
-                (click)="closeMenu()">{{ item.name }}</a>
+            <ng-container *ngIf="isHomePage else routerLinkAnchorTpl">
+                <a href="#{{ item.id }}" (click)="scroll(item.id)">{{ item.name }}</a>
+            </ng-container>
+            <ng-template #routerLinkAnchorTpl>
+                <a [routerLink]="item.link" [fragment]="item.id" (click)="closeMenu()">{{ item.name }}</a>
+            </ng-template>
         </li>
     </ul>
 </div>
