@@ -29,7 +29,10 @@ export class BlogService {
             tags: [
                 'Typescript',
                 'Javascript'
-            ]
+            ],
+            // syntaxHighlighting: {
+            //     showLineNumbers: true
+            // }
         },
         {
             title: 'Codingame: A tricky question',

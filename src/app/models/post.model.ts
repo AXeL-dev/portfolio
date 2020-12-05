@@ -12,4 +12,7 @@ export interface Post {
     content: string;
     tags?: string[];
     disqusIdentifier?: string;
+    syntaxHighlighting?: {
+        showLineNumbers?: boolean,
+    }
 }
