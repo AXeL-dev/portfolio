@@ -146,6 +146,11 @@ function numberToDigits(n) {
 function hasDifferentDigits(numberDigits, nextDigits) {
   return nextDigits.find(d => numberDigits.indexOf(d) !== -1) === undefined;
 }
+
+console.log(next(2)); // 3
+console.log(next(3025)); // 4111
+console.log(next(999)); // 1000
+console.log(next(654321)); // 700000
 ```
 
 This is for sure not the only or best solution, it's my own implementation & you may find a better one! If so, please let me know in the comment section below 😉.
