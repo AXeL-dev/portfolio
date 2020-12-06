@@ -173,12 +173,12 @@ pre[class*="language-"].line-numbers > code {
 .line-numbers .line-numbers-rows {
   position: absolute;
   pointer-events: none;
-  top: -0.16em; /* 0; */
+  top: 0;
   font-size: 100%;
   left: -3.8em;
   width: 3em; /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
-  border-right: none;/* 1px solid var(--alloy-foreground-darker-2); */
+  border-right: 1px solid var(--alloy-foreground-darker-2);
 
   -webkit-user-select: none;
   -moz-user-select: none;
