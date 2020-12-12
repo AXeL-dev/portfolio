@@ -321,9 +321,14 @@ foo.asyncBar(); // 3000 ms
 In fact, following good practices & opting for design patterns, even if it may seems complex, would help you to boost up your skills & code in a cleaner & better way.
 Trust me, with time your code will become more & more larger, & you'll slowly start to feel it complex to read & maintain, the reason why you, as a developer, have to take advantage of design patterns & keep your code well organised & easy to read as much as you can.
 
+<blockquote><h4>Conclusion</h4></blockquote>
+
+We just saw some few decorator examples, but there is much more to [learn about them](https://www.google.com/search?q=typescript+decorators). I also recommand you to look at the [Angular](https://angular.io/) framework, which comes with plenty of built-in decorators.
+
 **Sources**:
 
 - [Angular decorators](https://ultimatecourses.com/blog/angular-decorators#angular-decorators)
+- [6 Useful Angular Decorators](https://blog.bitsrc.io/6-useful-decorators-to-use-in-your-angular-projects-777e9b4c8c62)
 - [Better errors handling for ES/Typescript classes](https://blog.bitsrc.io/errors-handling-for-vue-class-components-2f152f7c7515)
 - [A practical guide to TypeScript decorators](https://blog.logrocket.com/a-practical-guide-to-typescript-decorators/)
 - [TypeScript Decorators by Example](https://fireship.io/lessons/ts-decorators-by-example/)
