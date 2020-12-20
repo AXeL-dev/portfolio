@@ -69,7 +69,7 @@ Notice that trying to update the **text** property directly using something like
 
 Okay, now let's imagine that we want to change **10** properties from within the child component, do you see how much properties we have to add to the parent component to achieve this? Yeah, we'll have to add **10** other properties & we'll easily find ourselves with a huge component of **20** properties in the total 😆, in addition that the state update logic will always land on the parent component which is not handy in my opinion.
 
-No worries, here comes shared state management to the rescue! but wait a minute.. which method/library to choose? 🤔 In fact, it all depends on your app scale & needs, if you're working on a large scale app, i recommand you to go with a robust state management library like **redux** or **recoil**, if not then you can use any library or method that fits well to your needs.
+No worries, here comes shared state management to the rescue! but wait a minute.. which method/library to choose? 🤔 In fact, it all depends on your app scale & needs, if you're working on a large scale app, i recommend you to go with a robust state management library like **redux** or **recoil**, if not then you can use any library or method that fits well to your needs.
 
 In my case i tried 2 libraries ([hookstate](https://hookstate.js.org/) & [jotai](https://github.com/pmndrs/jotai)) & finally decided to go with **jotai** 'cause it has a simple API, supports [Typescript](https://www.typescriptlang.org/) & suits to my app needs.
 
@@ -114,9 +114,54 @@ ReactDOM.render((
 ), document.getElementById('root'));
 ```
 
-The biggest advantage is that we don't need to delegate our props update tasks to the parent component anymore! 🎉 Which seems more readable & maintainable, especially when dealing with multiple components.
+Bingo! 🎉 We have now a shared state that can be easily accessed or updated from any component.
 
-That's it! you arrived to the end of this post, i hope that you learned something new & hope to see you in a next one!
+💡 Notice that there is no need to pass the **text** property to our child component anymore, we can directly access the global state/atom:
+
+```javascript
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import { Provider, atom, useAtom } from 'jotai';
+
+// Create our atom
+const textAtom = atom('Hello World!');
+
+// Create our parent component
+function App() {
+  const [text] = useAtom(textAtom);
+
+  return (
+    <div>
+      <h3>{text}</h3>
+      <Welcome />
+    </div>
+  );
+}
+
+// Create our child component
+function Welcome() {
+  const [value, setValue] = useState('');
+  const [text, setText] = useAtom(textAtom);
+
+  return (
+    <div>
+      <h1>{text}</h1>
+      <input type="text" placeholder="type some text" value={value} onChange={(e) => setValue(e.target.value)} />
+      &nbsp;
+      <button type="button" onClick={() => setText(value)}>Change text</button>
+    </div>
+  );
+}
+
+// Render our parent component
+ReactDOM.render((
+  <Provider>
+    <App />
+  </Provider>
+), document.getElementById('root'));
+```
+
+That's it! you arrived to the end of this post, i hope you learned something new & hope to see you in a next one!
 
 You can also check out:
 
