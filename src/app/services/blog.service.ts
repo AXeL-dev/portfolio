@@ -21,6 +21,17 @@ export class BlogService {
 
     private posts: Post[] = [
         {
+            title: 'Shared state management in React',
+            date: '2020/12/20',
+            author: this.authors['AXeL'],
+            image: './assets/img/posts/react-state.jpg',
+            content: './assets/blog/shared-state-management-in-react.md',
+            tags: [
+                'Javascript',
+                'React'
+            ],
+        },
+        {
             title: 'Typescript decorators: Some practical examples',
             date: '2020/12/03',
             author: this.authors['AXeL'],
