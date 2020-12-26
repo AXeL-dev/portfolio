@@ -28,3 +28,11 @@
 .center-text {
   text-align: center;
 }
+
+.blog-title a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  line-height: 1.3;
+}
