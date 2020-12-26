@@ -67,7 +67,7 @@
                 <div id="comment-section"
                     class="col s12 single-blog-comment comments-area w-block shadow-bg pd-50 pd-md-40 pd-sm-30 mgt-50">
                     <div class="comment-title"><span class="fa fa-comments"></span> Comments</div>
-                    <disqus [identifier]="post.disqusIdentifier"></disqus>
+                    <disqus *ngIf="isProdEnv" [identifier]="post.disqusIdentifier"></disqus>
                 </div>
             </div>
             <div class="col l4 s12 sidebar-wrapper">

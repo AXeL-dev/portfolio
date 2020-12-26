@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { fadeOutAnimation } from './animations/fade-out.animation';
 import { Router, UrlTree } from '@angular/router';
 import { DisqusConfig } from './services/blog.service';
+import { environment } from 'src/environments/environment';
 
 declare var M: any;
 declare var imagesLoaded: any;
@@ -58,13 +59,13 @@ export class AppComponent implements OnInit {
 
   // stolen from: https://stackoverflow.com/a/49981918
   private loadScripts() {
-    const dynamicScripts = [
+    const dynamicScripts = environment.production ? [
       '//' + DisqusConfig.shortname + '.disqus.com/count.js'
-    ];
-    for (let i = 0; i < dynamicScripts.length; i++) {
+    ] : [];
+    for (let script of dynamicScripts) {
       const node = document.createElement('script');
       node.id = 'dsq-count-scr';
-      node.src = dynamicScripts[i];
+      node.src = script;
       node.type = 'text/javascript';
       node.async = true;
       node.charset = 'utf-8';

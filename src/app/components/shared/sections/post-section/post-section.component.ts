@@ -3,6 +3,7 @@ import { BlogService } from '../../../../services/blog.service';
 import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Post } from 'src/app/models/post.model';
+import { environment } from 'src/environments/environment';
 
 declare var DISQUSWIDGETS: any;
 
@@ -18,8 +19,11 @@ export class PostSectionComponent implements OnInit, AfterViewInit {
   recentPosts: Post[];
   prevPost: Post;
   nextPost: Post;
+  isProdEnv: boolean;
 
-  constructor(private blogService: BlogService, private router: Router, private titleService: Title) { }
+  constructor(private blogService: BlogService, private router: Router, private titleService: Title) {
+    this.isProdEnv = environment.production;
+  }
 
   ngOnInit() {
     this.post = this.blogService.getPostBySlug(this.slug) || this.blogService.getPostById(+this.slug) || null;
