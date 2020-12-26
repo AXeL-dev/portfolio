@@ -79,7 +79,7 @@
                         <div *ngFor="let recentPost of recentPosts" class="related-post-single">
                             <div class="related-post-img image-bg" [ngStyle]="{'background': 'url(' + recentPost.image + ')', 'background-position': 'center top', 'background-repeat': 'no-repeat', 'background-size': 'cover'}"></div>
                             <div class="related-post-title">
-                                <a [routerLink]="recentPost.link">{{ recentPost.title }}</a>
+                                <a [routerLink]="recentPost.link" [title]="recentPost.title">{{ recentPost.title }}</a>
                             </div>
                             <div class="related-post-author">
                                 <div class="chip">
