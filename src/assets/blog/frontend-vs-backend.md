@@ -4,7 +4,7 @@ A front-end developer deals primarily with the outside appearance of a websiteâ€
 
 *[source](https://www.rasmussen.edu/degrees/technology/blog/front-end-versus-back-end-development/)*
 
-<div class="text-align: center">
+<div class="center-align">
 
 ![frontend-vs-backend](./assets/img/posts/frontend-vs-backend.png)
 

@@ -21,6 +21,18 @@ export class BlogService {
 
     private posts: Post[] = [
         {
+            title: 'Distract Me Not v2 is coming soon!',
+            date: '2021/01/01',
+            author: this.authors['AXeL'],
+            image: './assets/img/posts/distract-me-not-v2.jpg',
+            content: './assets/blog/distract-me-not-v2.md',
+            tags: [
+                'Teasing',
+                'Javascript',
+                'React'
+            ],
+        },
+        {
             title: 'Shared state management in React',
             date: '2020/12/20',
             author: this.authors['AXeL'],
@@ -52,7 +64,6 @@ export class BlogService {
             image: './assets/img/posts/codingame.jpg',
             content: './assets/blog/codingame-tricky-question.md',
             tags: [
-                'Blogging',
                 'Codingame',
                 'Javascript'
             ]
@@ -65,7 +76,7 @@ export class BlogService {
             content: './assets/blog/lion-or-hedgehog.md',
             tags: [
                 'Story',
-                'Blogging'
+                'Memory'
             ]
         },
         {
