@@ -57,6 +57,7 @@ export class PortfolioService {
             image: './assets/img/projects/distract-me-not.png',
             link: 'https://github.com/AXeL-dev/distract-me-not',
             category: [
+                'React',
                 'Javascript'
             ],
             group: [

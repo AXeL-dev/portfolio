@@ -29,7 +29,8 @@ export class BlogService {
             tags: [
                 'Teasing',
                 'Javascript',
-                'React'
+                'React',
+                'Web extension'
             ],
         },
         {
