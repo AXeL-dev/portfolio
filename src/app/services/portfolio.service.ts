@@ -159,6 +159,18 @@ export class PortfolioService {
             ]
         },
         {
+            name: 'Firestore Pentest',
+            image: './assets/img/projects/firestore-pentest.png',
+            link: 'https://github.com/FirebaseGoodies/firestore-pentest',
+            category: [
+                'Angular',
+                'Firebase'
+            ],
+            group: [
+                this.groups['Web apps']
+            ]
+        },
+        {
             name: 'CodeIgniter Starter',
             image: './assets/img/projects/codeigniter-starter.png',
             link: 'https://github.com/AXeL-dev/CodeIgniter-Starter',
@@ -166,18 +178,6 @@ export class PortfolioService {
                 'PHP',
                 'CodeIgniter',
                 'MySQL'
-            ],
-            group: [
-                this.groups['Web apps']
-            ]
-        },
-        {
-            name: 'Firestore Pentest',
-            image: './assets/img/projects/firestore-pentest.png',
-            link: 'https://github.com/FirebaseGoodies/firestore-pentest',
-            category: [
-                'Angular',
-                'Firebase'
             ],
             group: [
                 this.groups['Web apps']
