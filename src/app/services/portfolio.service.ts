@@ -124,12 +124,13 @@ export class PortfolioService {
             ]
         },
         {
-            name: 'Firestore Pentest',
-            image: './assets/img/projects/firestore-pentest.png',
-            link: 'https://github.com/FirebaseGoodies/firestore-pentest',
+            name: 'Process Watch',
+            image: './assets/img/projects/process-watch.png',
+            link: '#',
             category: [
-                'Angular',
-                'Firebase'
+                'React',
+                'node.js',
+                'socket.io'
             ],
             group: [
                 this.groups['Web apps']
@@ -152,6 +153,42 @@ export class PortfolioService {
             link: '#',
             category: [
                 'AngularJS'
+            ],
+            group: [
+                this.groups['Web apps']
+            ]
+        },
+        {
+            name: 'CodeIgniter Starter',
+            image: './assets/img/projects/codeigniter-starter.png',
+            link: 'https://github.com/AXeL-dev/CodeIgniter-Starter',
+            category: [
+                'PHP',
+                'CodeIgniter',
+                'MySQL'
+            ],
+            group: [
+                this.groups['Web apps']
+            ]
+        },
+        {
+            name: 'Firestore Pentest',
+            image: './assets/img/projects/firestore-pentest.png',
+            link: 'https://github.com/FirebaseGoodies/firestore-pentest',
+            category: [
+                'Angular',
+                'Firebase'
+            ],
+            group: [
+                this.groups['Web apps']
+            ]
+        },
+        {
+            name: 'Riot Presents',
+            image: './assets/img/projects/riot-presents.png',
+            link: 'https://github.com/AXeL-dev/riot-presents',
+            category: [
+                'Riot.js'
             ],
             group: [
                 this.groups['Web apps']
@@ -195,17 +232,6 @@ export class PortfolioService {
             ],
             group: [
                 this.groups['Websites']
-            ]
-        },
-        {
-            name: 'Riot Presents',
-            image: './assets/img/projects/riot-presents.png',
-            link: 'https://github.com/AXeL-dev/riot-presents',
-            category: [
-                'Riot.js'
-            ],
-            group: [
-                this.groups['Web apps']
             ]
         },
         {
@@ -256,19 +282,6 @@ export class PortfolioService {
             ]
         },
         {
-            name: 'CodeIgniter Starter',
-            image: './assets/img/projects/codeigniter-starter.png',
-            link: 'https://github.com/AXeL-dev/CodeIgniter-Starter',
-            category: [
-                'PHP',
-                'CodeIgniter',
-                'MySQL'
-            ],
-            group: [
-                this.groups['Web apps']
-            ]
-        },
-        {
             name: 'Dental Care',
             image: './assets/img/projects/dental-care.png',
             link: 'https://github.com/AXeL-dev/Dental-Care',
@@ -287,6 +300,41 @@ export class PortfolioService {
             category: [
                 'HTML',
                 'CSS'
+            ],
+            group: [
+                this.groups['Websites']
+            ]
+        },
+        {
+            name: 'MM Portfolio',
+            image: './assets/img/projects/mm-portfolio.png',
+            link: '#',
+            category: [
+                'HTML',
+                'CSS',
+                'Javascript'
+            ],
+            group: [
+                this.groups['Websites']
+            ]
+        },
+        // {
+        //     name: 'C.N. Blog',
+        //     image: './assets/img/projects/cn-blog.png',
+        //     link : 'https://chimenaij.blogspot.com/',
+        //     category: [
+        //         'Blogger'
+        //     ],
+        //     group: [
+        //         this.groups['Websites']
+        //     ]
+        // },
+        {
+            name: 'Dirassa Plus Blog',
+            image: './assets/img/projects/dirassaplus-blog.png',
+            link : 'http://dirassaplus.blogspot.com/',
+            category: [
+                'Blogger'
             ],
             group: [
                 this.groups['Websites']
@@ -345,41 +393,6 @@ export class PortfolioService {
         //     link: 'https://github.com/AXeL-dev/mendicity-site',
         //     category: [
         //         'Javascript'
-        //     ],
-        //     group: [
-        //         this.groups['Websites']
-        //     ]
-        // },
-        // {
-        //     name: 'MM Portfolio',
-        //     image: './assets/img/projects/mm-portfolio.png',
-        //     link: '#',
-        //     category: [
-        //         'HTML',
-        //         'CSS',
-        //         'Javascript'
-        //     ],
-        //     group: [
-        //         this.groups['Websites']
-        //     ]
-        // },
-        // {
-        //     name: 'C.N. Blog',
-        //     image: './assets/img/projects/cn-blog.png',
-        //     link : 'https://chimenaij.blogspot.com/',
-        //     category: [
-        //         'Blogger'
-        //     ],
-        //     group: [
-        //         this.groups['Websites']
-        //     ]
-        // },
-        // {
-        //     name: 'Dirassa Plus Blog',
-        //     image: './assets/img/projects/dirassaplus-blog.png',
-        //     link : 'http://dirassaplus.blogspot.com/',
-        //     category: [
-        //         'Blogger'
         //     ],
         //     group: [
         //         this.groups['Websites']
