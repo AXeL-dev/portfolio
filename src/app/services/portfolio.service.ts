@@ -129,8 +129,9 @@ export class PortfolioService {
             link: '#',
             category: [
                 'React',
-                'node.js',
-                'socket.io'
+                'Node.js',
+                'MongoDB',
+                'Socket.io'
             ],
             group: [
                 this.groups['Web apps']
@@ -171,19 +172,6 @@ export class PortfolioService {
             ]
         },
         {
-            name: 'CodeIgniter Starter',
-            image: './assets/img/projects/codeigniter-starter.png',
-            link: 'https://github.com/AXeL-dev/CodeIgniter-Starter',
-            category: [
-                'PHP',
-                'CodeIgniter',
-                'MySQL'
-            ],
-            group: [
-                this.groups['Web apps']
-            ]
-        },
-        {
             name: 'Riot Presents',
             image: './assets/img/projects/riot-presents.png',
             link: 'https://github.com/AXeL-dev/riot-presents',
@@ -192,6 +180,17 @@ export class PortfolioService {
             ],
             group: [
                 this.groups['Web apps']
+            ]
+        },
+        {
+            name: 'Easy Image Downloader',
+            image: './assets/img/projects/easy-image-downloader.png',
+            link: 'https://github.com/AXeL-dev/easy-image-downloader',
+            category: [
+                'Javascript'
+            ],
+            group: [
+                this.groups['Web extensions']
             ]
         },
         {
@@ -221,6 +220,19 @@ export class PortfolioService {
             ]
         },
         {
+            name: 'T.L. Chasse',
+            image: './assets/img/projects/tlchasse.jpg',
+            link: 'https://tlchasse.com',
+            category: [
+                'PHP',
+                'CSS',
+                'jQuery'
+            ],
+            group: [
+                this.groups['Websites']
+            ]
+        },
+        {
             name: 'Enty Beauty',
             image: './assets/img/projects/enty-beauty.png',
             link: 'https://shop.entybeauty.com',
@@ -235,50 +247,16 @@ export class PortfolioService {
             ]
         },
         {
-            name: 'Nightlight Indicator',
-            image: './assets/img/projects/nightlight-indicator.png',
-            link: 'https://github.com/LinuxForGeeks/nightlight-indicator',
-            category: [
-                'Python',
-                'GTK'
-            ],
-            group: [
-                this.groups['Desktop apps']
-            ]
-        },
-        {
-            name: 'XAMPP Indicator',
-            image: './assets/img/projects/xampp-indicator.png',
-            link: 'https://github.com/LinuxForGeeks/xampp-indicator',
-            category: [
-                'Python',
-                'GTK'
-            ],
-            group: [
-                this.groups['Desktop apps']
-            ]
-        },
-        {
-            name: 'Dolibase Framework',
-            image: './assets/img/projects/dolibase.png',
-            link: 'https://github.com/DolibarrLabs/dolibase',
+            name: 'CodeIgniter Starter',
+            image: './assets/img/projects/codeigniter-starter.png',
+            link: 'https://github.com/AXeL-dev/CodeIgniter-Starter',
             category: [
                 'PHP',
-                'Javascript'
+                'CodeIgniter',
+                'MySQL'
             ],
             group: [
-                //this.groups['Web apps']
-            ]
-        },
-        {
-            name: 'Easy Image Downloader',
-            image: './assets/img/projects/easy-image-downloader.png',
-            link: 'https://github.com/AXeL-dev/easy-image-downloader',
-            category: [
-                'Javascript'
-            ],
-            group: [
-                this.groups['Web extensions']
+                this.groups['Web apps']
             ]
         },
         {
@@ -329,17 +307,17 @@ export class PortfolioService {
         //         this.groups['Websites']
         //     ]
         // },
-        {
-            name: 'Dirassa Plus Blog',
-            image: './assets/img/projects/dirassaplus-blog.png',
-            link : 'http://dirassaplus.blogspot.com/',
-            category: [
-                'Blogger'
-            ],
-            group: [
-                this.groups['Websites']
-            ]
-        },
+        // {
+        //     name: 'Dirassa Plus Blog',
+        //     image: './assets/img/projects/dirassaplus-blog.png',
+        //     link : 'http://dirassaplus.blogspot.com/',
+        //     category: [
+        //         'Blogger'
+        //     ],
+        //     group: [
+        //         this.groups['Websites']
+        //     ]
+        // },
         {
             name: 'ZTE SAT Tool',
             image: './assets/img/projects/zte-sat-tool.png',
@@ -374,6 +352,42 @@ export class PortfolioService {
             ],
             group: [
                 this.groups['Web extensions']
+            ]
+        },
+        {
+            name: 'Nightlight Indicator',
+            image: './assets/img/projects/nightlight-indicator.png',
+            link: 'https://github.com/LinuxForGeeks/nightlight-indicator',
+            category: [
+                'Python',
+                'GTK'
+            ],
+            group: [
+                this.groups['Desktop apps']
+            ]
+        },
+        {
+            name: 'XAMPP Indicator',
+            image: './assets/img/projects/xampp-indicator.png',
+            link: 'https://github.com/LinuxForGeeks/xampp-indicator',
+            category: [
+                'Python',
+                'GTK'
+            ],
+            group: [
+                this.groups['Desktop apps']
+            ]
+        },
+        {
+            name: 'Dolibase Framework',
+            image: './assets/img/projects/dolibase.png',
+            link: 'https://github.com/DolibarrLabs/dolibase',
+            category: [
+                'PHP',
+                'Javascript'
+            ],
+            group: [
+                //this.groups['Web apps']
             ]
         },
         // {
