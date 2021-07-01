@@ -20,6 +20,14 @@ export class BlogService {
 
   private posts: Post[] = [
     {
+      title: 'Emote: A modern emoji picker for Linux 🚀',
+      date: '2021/07/01',
+      author: this.authors['AXeL'],
+      image: './assets/img/posts/emoji-linux.jpg',
+      content: './assets/blog/emote-emoji-picker.md',
+      tags: ['Linux', 'Emoji'],
+    },
+    {
       title: 'React: Cancel axios requests the right way!',
       date: '2021/06/19',
       author: this.authors['AXeL'],
