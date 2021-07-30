@@ -20,6 +20,14 @@ export class BlogService {
 
   private posts: Post[] = [
     {
+      title: 'My list of top 10 animes that worth watching',
+      date: '2021/07/30',
+      author: this.authors['AXeL'],
+      image: './assets/img/posts/top-10-animes.jpg',
+      content: './assets/blog/top-10-animes.md',
+      tags: ['Anime', 'Top 10'],
+    },
+    {
       title: 'Emote: A modern emoji picker for Linux 🚀',
       date: '2021/07/01',
       author: this.authors['AXeL'],
