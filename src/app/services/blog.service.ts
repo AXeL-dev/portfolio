@@ -20,6 +20,14 @@ export class BlogService {
 
   private posts: Post[] = [
     {
+      title: 'VirtualBox: Setup a shared network between your Guest & Host machines',
+      date: '2021/08/07',
+      author: this.authors['AXeL'],
+      image: './assets/img/posts/virtualbox.jpg',
+      content: './assets/blog/virtualbox-setup-shared-network.md',
+      tags: ['Linux', 'VirtualBox'],
+    },
+    {
       title: 'My list of top 10 animes that worth watching',
       date: '2021/07/30',
       author: this.authors['AXeL'],
