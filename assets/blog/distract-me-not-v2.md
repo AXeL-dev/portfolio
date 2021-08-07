@@ -14,9 +14,9 @@ I'm also planning to improve the url detection mechanism & to fix the remaining 
 
 Finally, here are some previews of the new UI:
 
-![preview1](./assets/img/posts/distract-me-not-v2-preview1.jpg)
+![preview1](./assets/img/posts/distract-me-not-v2/preview1.jpg)
 
-![preview2](./assets/img/posts/distract-me-not-v2-preview2.jpg)
+![preview2](./assets/img/posts/distract-me-not-v2/preview2.jpg)
 
 <div class="center-align">
 
