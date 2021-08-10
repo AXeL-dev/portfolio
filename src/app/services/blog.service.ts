@@ -20,6 +20,14 @@ export class BlogService {
 
   private posts: Post[] = [
     {
+      title: 'Linux distributions you should try!',
+      date: '2021/08/10',
+      author: this.authors['AXeL'],
+      image: './assets/img/posts/best-linux-distros.png',
+      content: './assets/blog/best-linux-distros.md',
+      tags: ['Linux', 'Ubuntu'],
+    },
+    {
       title: 'VirtualBox: Setup a shared network between your Guest & Host machines',
       date: '2021/08/07',
       author: this.authors['AXeL'],
