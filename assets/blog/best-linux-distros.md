@@ -57,4 +57,10 @@ Probably the most complete & full-featured DE out there. You can find KDE on:
 - [Kubuntu](https://kubuntu.org/)
 - [KDE Neon](https://neon.kde.org/)
 
+> <h4>UKUI</h4>
+
+![ukui](./assets/img/posts/linux-DE/ukui.jpg)
+
+A chinese made DE which claims modernity & simplicity, in addition that it's widely inspired from Windows 10 user interface. UKUI is available on [Ubuntu Kylin](https://www.ubuntukylin.com/index.php?lang=en).
+
 As a last word/advice, i highly recommend you to stick with a [Ubuntu flavor](https://ubuntu.com/download/flavours) due to the huge community that stands behind Ubuntu, so even if you end up with unexpected issues, you'ld probably find help/solutions a way faster than if you were on any other Linux distribution.
