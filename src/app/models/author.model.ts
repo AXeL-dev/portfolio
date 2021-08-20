@@ -1,6 +1,6 @@
 export interface Author {
     name: string;
-    image: string;
+    image: string | string[];
     job?: string;
     bio?: string;
     age?: number;
