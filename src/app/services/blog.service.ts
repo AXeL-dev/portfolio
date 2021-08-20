@@ -20,6 +20,14 @@ export class BlogService {
 
   private posts: Post[] = [
     {
+      title: 'Best Drag & Drop libraries for React',
+      date: '2021/08/20',
+      author: this.authors['AXeL'],
+      image: './assets/img/posts/react-dnd.jpg',
+      content: './assets/blog/react-dnd.md',
+      tags: ['Javascript', 'React', 'DnD'],
+    },
+    {
       title: 'Linux distributions you should try!',
       date: '2021/08/10',
       author: this.authors['AXeL'],
