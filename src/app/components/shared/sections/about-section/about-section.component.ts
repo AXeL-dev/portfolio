@@ -21,10 +21,12 @@ export class AboutSectionComponent implements OnInit {
 
   ngOnInit() {
     this.author = this.homeService.author;
-    const hasManyImages = this.author.image instanceof Array;
-    this.image = {
-      path: hasManyImages ? this.author.image[0] : this.author.image as string,
-      index: hasManyImages ? 0 : null,
+    this.image = this.author.image instanceof Array ? {
+      path: this.author.image[0],
+      index: 0,
+    } : {
+      path: this.author.image as string,
+      index: null,
     };
     this.socials = this.homeService.socials;
   }
