@@ -828,6 +828,10 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 	margin: 0 auto;
 	position: relative;
 	border-radius: 50%;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: crosshair;
 }
 
 .about-img-content > a{
