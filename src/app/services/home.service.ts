@@ -45,7 +45,7 @@ export class HomeService {
       description:
         'PHP (CodeIgniter, Symfony), MySQL / SQL Server / MongoDB, CMS (Wordpress, Drupal), Python, Node.js, C#, ASP.NET, Rest API, OOP',
     },
-    { title: 'Mobile Development', icon: 'mobile', description: 'Ionic, PhoneGap, Android SDK' },
+    { title: 'Mobile Development', icon: 'mobile', description: 'Ionic, Cordova, Android SDK' },
     { title: 'Web Hosting', icon: 'server', description: 'FTP, SSH, cPanel, Linux shell' },
     { title: 'Data Mining', icon: 'search-plus', description: 'CasperJS, PhantomJS, Puppeteer, Web Scraper' },
     { title: 'DevOps', icon: 'code-fork', description: 'Git / Github / Gitlab, CI / CD, Gulp, Webpack, npm' },
