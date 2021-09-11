@@ -9,7 +9,7 @@ So, let's see how you can setup a shared network in VirtualBox:
 
 <br>
 
-### 1. Using the regular NAT Adapter
+### 1. Setup the NAT Adapter
 
 First, go to your VM settings, then **Network**, & then go to the **Adapter 1** tab & choose **NAT** in the **Attached to** field, and finally hit `save/ok`.
 
@@ -19,30 +19,25 @@ First, go to your VM settings, then **Network**, & then go to the **Adapter 1** 
 
 Now, if you turn on your virtual machine you should be able to:
 
-- Connect to the Guest machine (VM) from your Host machine on the **10.0.2.2** IP address. To test it you can simply open a terminal & type:
-> ping 10.0.2.2
+- Access the internet.
 
-- Connect to the Host machine from the Guest (VM) via the **10.0.2.15** IP address.
+- Connect to the Host machine on the **10.0.2.2** IP address. To test it you can simply open a terminal on your VM & type:
 
-**Note**: In case you wanna verify that the IP address of the Guest machine (VM) is correct you can simply get this information from the bottom panel of your VM, by hovering on the network icon as below:
+```bash
+ping 10.0.2.2
+```
 
-![network-popup](./assets/img/posts/virtualbox/network-popup.png)
+<br>
 
-### 2. Using the NAT Network Adapter
+### 2. Setup port forwarding
 
-In some cases, the connection from the Host machine to the Guest (VM) may not work as expected, in that case there is an another solution that we can use & it's called port forwarding. Therefore, let's go back to the VM settings, **Network** section & choose the **NAT Network** option under the **Attached to** field & hit `ok`.
+In case you want to get access to the local network of your Guest machine (VM) from the Host machine, you'll need to setup the port forwarding, which simply consists of forwarding the Guest machine ports to the Host machine.
 
-![NAT-network](./assets/img/posts/virtualbox/NAT-network.png)
+Therefore, let's go back to the VM settings, **Network** section & open the **Advanced** settings collapse under the **Adapter 1** tab then click on the **Port Forwarding** button.
 
-Next, let's open the **VirtualBox** preferences this time (from the menu `File > Preferences`), then go to **Network** section & edit the **NatNetwork**:
+![NAT-network](./assets/img/posts/virtualbox/NAT-advanced.png)
 
-![network-preferences](./assets/img/posts/virtualbox/network-preferences.png)
-
-Next step is to open the **Port Forwarding** settings:
-
-![edit-nat-network](./assets/img/posts/virtualbox/edit-nat-network.png)
-
-Finally, let's setup the port forwarding rules, for example, if you want to forward the port 80 from your Guest machine (VM) to your Host machine you need to add the following rule:
+Next, let's setup the port forwarding rules, for example, if you want to forward the port 80 from your Guest machine (VM) to your Host machine you need to add the following rule:
 
 ![port-forwarding](./assets/img/posts/virtualbox/port-forwarding.png)
 
@@ -50,6 +45,10 @@ Finally, let's setup the port forwarding rules, for example, if you want to forw
 - The Host IP address would always be **127.0.0.1**.
 - You can get the Guest/VM IP address by opening a terminal & typing **ifconfig** command on Linux, or **ipconfig** command on Windows.
 - & of course you can do the same manipulation with any other port.
+
+**Note**: You can also get the Guest machine IP address from the bottom panel of your VM window, by hovering on the network icon as below:
+
+![network-popup](./assets/img/posts/virtualbox/network-popup.png)
 
 Once the port forwarding setup is finished, you can go on your Host machine & access the Guest machine using the IP address 127.0.0.1 followed by the port(s) you've forwarded.
 
