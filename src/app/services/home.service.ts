@@ -11,10 +11,7 @@ import { Tool } from '../models/tool.model';
 export class HomeService {
   author: Author = {
     name: 'Denna Anass',
-    image: [
-      './assets/img/me.jpg',
-      './assets/img/me2.jpg'
-    ],
+    image: './assets/img/me.jpg',
     job: 'Full Stack Developer',
     bio: 'My name is Anass or just call me AXeL. I started coding when i was 17, since then, i have acquired a good taste in areas like front-end & back-end development, database management, devOps, ethical hacking & network security.<br> I like challenges, discovering new stuff and contributing to open source on my free time.',
     age: this.calculateAge('1995-02-25'),
