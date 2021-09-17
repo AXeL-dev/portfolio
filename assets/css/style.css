@@ -101,6 +101,10 @@ textarea:hover:-ms-input-placeholder{color: #666666 !important;}
 .ds-inline-block{display: inline-block !important;}
 .vs-hidden{visibility: hidden !important;}
 .vs-visible{visibility: visible !important;}
+.twitter-tweet{
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .clearfix::after{
 	clear: both;
