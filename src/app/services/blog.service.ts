@@ -20,6 +20,14 @@ export class BlogService {
 
   private posts: Post[] = [
     {
+      title: 'Material-UI 5 is out!',
+      date: '2021/09/16',
+      author: this.authors['AXeL'],
+      image: './assets/img/posts/mui-v5.jpeg',
+      content: './assets/blog/mui-v5.md',
+      tags: ['Javascript', 'React', 'Material-UI'],
+    },
+    {
       title: 'Best Drag & Drop libraries for React',
       date: '2021/08/20',
       author: this.authors['AXeL'],

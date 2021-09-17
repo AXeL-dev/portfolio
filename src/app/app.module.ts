@@ -53,6 +53,7 @@ export function markedOptionsFactory(): MarkedOptions {
     pedantic: false,
     smartLists: true,
     smartypants: false,
+    //sanitize: false,
   };
 }
 

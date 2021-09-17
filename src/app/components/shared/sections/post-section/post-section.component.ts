@@ -5,7 +5,7 @@ import { Title } from '@angular/platform-browser';
 import { Post } from 'src/app/models/post.model';
 import { environment } from 'src/environments/environment';
 
-declare var DISQUSWIDGETS: any;
+declare var DISQUSWIDGETS, twttr: any;
 
 @Component({
   selector: 'app-post-section',
@@ -51,6 +51,13 @@ export class PostSectionComponent implements OnInit, AfterViewInit {
     // source: https://help.disqus.com/en/articles/1717274-adding-comment-count-links-to-your-home-page#updating-counts
     if (this.post && typeof DISQUSWIDGETS !== 'undefined') {
       DISQUSWIDGETS.getCount({ reset: true });
+    }
+  }
+
+  onReady() {
+    if (this.post && typeof twttr !== 'undefined') {
+      const content = document.getElementById('post-content');
+      twttr.widgets.load(content);
     }
   }
 

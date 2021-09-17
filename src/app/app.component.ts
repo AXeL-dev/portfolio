@@ -60,12 +60,15 @@ export class AppComponent implements OnInit {
   // stolen from: https://stackoverflow.com/a/49981918
   private loadScripts() {
     const dynamicScripts = environment.production ? [
-      '//' + DisqusConfig.shortname + '.disqus.com/count.js'
+      {
+        id: 'dsq-count-scr',
+        src: '//' + DisqusConfig.shortname + '.disqus.com/count.js',
+      },
     ] : [];
     for (let script of dynamicScripts) {
       const node = document.createElement('script');
-      node.id = 'dsq-count-scr';
-      node.src = script;
+      node.id = script.id;
+      node.src = script.src;
       node.type = 'text/javascript';
       node.async = true;
       node.charset = 'utf-8';
