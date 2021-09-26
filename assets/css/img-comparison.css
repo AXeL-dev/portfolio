@@ -1,0 +1,39 @@
+.comparison-before,
+.comparison-after {
+  margin: 0;
+}
+
+.comparison-before figcaption,
+.comparison-after figcaption {
+  background: #666;
+  /*border: 1px solid #666;*/
+  border-radius: 4px;
+  color: #fff;
+  opacity: 0.9;
+  padding: 10px 14px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 100%;
+}
+
+.comparison-before figcaption {
+  left: 12px;
+}
+
+.comparison-after figcaption {
+  right: 12px;
+}
+
+.comparison-slider-opacity-and-size {
+  --default-handle-width: 100px;
+}
+
+.comparison-slider-opacity-and-size:focus {
+  --default-handle-opacity: 0;
+}
+
+.coloured-comparison-slider {
+  --divider-color: #666;
+  --default-handle-color: #666;
+}
