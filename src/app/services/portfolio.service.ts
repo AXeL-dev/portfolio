@@ -28,8 +28,8 @@ export class PortfolioService {
       group: ['Web apps', 'Web extensions'],
     },
     {
-      name: 'Youtube Viewer',
-      image: './assets/img/projects/youtube-viewer.png',
+      name: 'YouTube Viewer',
+      image: './assets/img/projects/youtube-viewer.jpg',
       link: 'https://github.com/AXeL-dev/youtube-viewer',
       category: ['React', 'Typescript'],
       group: ['Web apps', 'Web extensions'],
@@ -87,14 +87,14 @@ export class PortfolioService {
       name: 'OVH CTI Dashboard',
       image: './assets/img/projects/ovh-cti.png',
       link: 'https://github.com/ovh/telephony-example-cti-dashboard',
-      category: ['AngularJS'],
+      category: ['AngularJS', 'OVH API'],
       group: ['Web apps'],
     },
     {
       name: 'OVH CTI Dashboard Lite (for Raspberry Pi)',
       image: './assets/img/projects/ovh-rp.png',
       link: '#',
-      category: ['AngularJS'],
+      category: ['AngularJS', 'OVH API'],
       group: ['Web apps'],
     },
     {

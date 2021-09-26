@@ -20,6 +20,14 @@ export class BlogService {
 
   private posts: Post[] = [
     {
+      title: 'YouTube viewer got a new look 🎉',
+      date: '2021/09/26',
+      author: this.authors['AXeL'],
+      image: './assets/img/posts/youtube-viewer/home-dark.jpg',
+      content: './assets/blog/youtube-viewer-new-look.md',
+      tags: ['Teasing', 'Typescript', 'React', 'Material-UI', 'Web extension'],
+    },
+    {
       title: 'Material-UI 5 is out!',
       date: '2021/09/16',
       author: this.authors['AXeL'],
@@ -44,7 +52,8 @@ export class BlogService {
       tags: ['Linux', 'Ubuntu'],
     },
     {
-      title: 'VirtualBox: Setup a shared network between your Guest & Host machines',
+      title:
+        'VirtualBox: Setup a shared network between your Guest & Host machines',
       date: '2021/08/07',
       author: this.authors['AXeL'],
       image: './assets/img/posts/virtualbox.jpg',
@@ -124,7 +133,14 @@ export class BlogService {
       author: this.authors['AXeL'],
       image: './assets/img/posts/ionic-vs-native-script.png',
       content: './assets/blog/ionic-vs-native-script.md',
-      tags: ['Comparison', 'Javascript', 'Mobile Apps', 'Ionic', 'NativeScript', 'Angular'],
+      tags: [
+        'Comparison',
+        'Javascript',
+        'Mobile Apps',
+        'Ionic',
+        'NativeScript',
+        'Angular',
+      ],
     },
     {
       title: 'Ant Design',
@@ -140,7 +156,14 @@ export class BlogService {
       author: this.authors['AXeL'],
       image: './assets/img/posts/R-V-A.jpg',
       content: './assets/blog/react-vue-or-angular.md',
-      tags: ['Comparison', 'Javascript', 'Front-end', 'Angular', 'React', 'Vue'],
+      tags: [
+        'Comparison',
+        'Javascript',
+        'Front-end',
+        'Angular',
+        'React',
+        'Vue',
+      ],
     },
     {
       title: '!! (not not) operator in JavaScript',

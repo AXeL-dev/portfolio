@@ -30,6 +30,7 @@
               "./node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
               "./node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "./node_modules/ngx-lightbox/lightbox.css",
+              "./node_modules/img-comparison-slider/dist/styles.css",
               "src/assets/css/prism-themes/material-darker.css",
               "src/assets/css/prism-themes/prism-line-numbers.css",
               "src/assets/css/css_002.css",
@@ -37,7 +38,8 @@
               "src/assets/css/css.css",
               "src/assets/css/style.css",
               "src/assets/css/color.scss",
-              "src/assets/css/responsive.css"
+              "src/assets/css/responsive.css",
+              "src/assets/css/img-comparison.css"
             ],
             "scripts": [
               "./node_modules/materialize-css/dist/js/materialize.min.js",
@@ -48,7 +50,8 @@
               "./node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js",
               "./node_modules/prismjs/components/prism-csharp.min.js",
               "./node_modules/prismjs/components/prism-css.min.js",
-              "./node_modules/prismjs/components/prism-typescript.min.js"
+              "./node_modules/prismjs/components/prism-typescript.min.js",
+              "./node_modules/img-comparison-slider/dist/index.js"
             ]
           },
           "configurations": {
