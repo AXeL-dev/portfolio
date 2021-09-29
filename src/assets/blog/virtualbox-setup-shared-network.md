@@ -42,6 +42,7 @@ Next, let's setup the port forwarding rules, for example, if you want to forward
 ![port-forwarding](./assets/img/posts/virtualbox/port-forwarding.png)
 
 **To know:**
+
 - The Host IP address would always be **127.0.0.1**.
 - You can get the Guest/VM IP address by opening a terminal & typing **ifconfig** command on Linux, or **ipconfig** command on Windows.
 - & of course you can do the same manipulation with any other port.
@@ -51,6 +52,24 @@ Next, let's setup the port forwarding rules, for example, if you want to forward
 ![network-popup](./assets/img/posts/virtualbox/network-popup.png)
 
 Once the port forwarding setup is finished, you can go on your Host machine & access the Guest machine using the IP address 127.0.0.1 followed by the port(s) you've forwarded.
+
+<br>
+
+### [Alternative] The Host-only Adapter
+
+To access the Guest machine from your Host machine (unidirectionally), no need to setup a port forwarding then, you can simply use the **Host-only Adapter**.
+
+First, go to the top menu **File**, open the **Host Network Manager**, then create a new network & enable the **DHCP Server** option.
+
+![network-manager](./assets/img/posts/virtualbox/network-manager.png)
+
+Next, go to your VM settings, **Network** section & choose the **Host-only Adapter** + choose the name of the network you just created on the previous step.
+
+![host-only-adapter](./assets/img/posts/virtualbox/host-only-adapter.png)
+
+You can now access your VM machine from the Host, using the VM IP address (probably something like: **192.168.56.x**).
+
+**Warning**: Better know that you won't have access to the internet on your Guest machine.
 
 That's all i have to mention in this post, i hope you find it useful & in case you have any thoughts or remarks let me know in the comment section below.
 
