@@ -20,6 +20,15 @@ export class BlogService {
 
   private posts: Post[] = [
     {
+      title:
+        'A handy tip to get your saved passwords without revealing them 🔒',
+      date: '2021/09/30',
+      author: this.authors['AXeL'],
+      image: './assets/img/posts/password.png',
+      content: './assets/blog/copy-password-tip.md',
+      tags: ['Tip', 'Javascript'],
+    },
+    {
       title: 'YouTube viewer got a new look 🎉',
       date: '2021/09/26',
       author: this.authors['AXeL'],
