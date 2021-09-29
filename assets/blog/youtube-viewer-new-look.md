@@ -30,7 +30,7 @@ Cool! Let's now discover what has been added, but also what was removed.
 - Unit tests (should help on detecting bugs/regressions)
 - ... You can leave your suggestions in the comment section below!
 
-Finally, let's have a look on the new app design.
+Finally, let's take a closer look on the new app design.
 
 - Home page:
 
