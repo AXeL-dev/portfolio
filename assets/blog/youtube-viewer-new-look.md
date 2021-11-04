@@ -1,4 +1,4 @@
-Oh yeah, finally a new release of YouTube viewer but that's not all! This release comes with a new design, some exciting features & so many improvements ✨.
+Oh yeah, finally a new release of [YouTube viewer](https://github.com/AXeL-dev/youtube-viewer) but that's not all! This release comes with a new design, some exciting features & so many improvements ✨.
 
 <blockquote><h4>Motivation 🔥</h4></blockquote>
 
