@@ -20,6 +20,14 @@ export class BlogService {
 
   private posts: Post[] = [
     {
+      title: 'React: Build a detachable component with Dnd-kit',
+      date: '2022/02/06',
+      author: this.authors['AXeL'],
+      image: './assets/img/posts/dnd-kit.png',
+      content: './assets/blog/dnd-kit-detachable-component.md',
+      tags: ['React', 'Typescript', 'DnD', 'Dnd-kit'],
+    },
+    {
       title:
         'A handy tip to get your saved passwords without revealing them 🔒',
       date: '2021/09/30',
