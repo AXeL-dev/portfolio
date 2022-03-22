@@ -79,7 +79,7 @@ export class PortfolioService {
     {
       name: 'Process Watch',
       image: './assets/img/projects/process-watch.png',
-      link: '#',
+      link: 'https://app.process.watch',
       category: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
       group: ['Web apps'],
     },

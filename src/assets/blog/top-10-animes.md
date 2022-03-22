@@ -51,6 +51,7 @@ I feel like i needed to add this section to mention other animes that i didn't i
 - Owari no Seraph
 - Re:Zero
 - Tokyo Ghoul
+- Black Bullet
 - Violet evergarden
 - Alice in Borderland
 - Darling in the FranXX
