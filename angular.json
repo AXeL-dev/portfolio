@@ -21,7 +21,8 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/.nojekyll"
             ],
             "styles": [
               "./node_modules/font-awesome/css/font-awesome.min.css",
