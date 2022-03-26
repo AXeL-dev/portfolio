@@ -20,6 +20,14 @@ export class BlogService {
 
   private posts: Post[] = [
     {
+      title: 'Git: Ignore files locally',
+      date: '2022/03/26',
+      author: this.authors['AXeL'],
+      image: './assets/img/posts/git.jpg',
+      content: './assets/blog/git-ignore-files.md',
+      tags: ['Git'],
+    },
+    {
       title: 'React: Build a detachable component with Dnd-kit',
       date: '2022/02/06',
       author: this.authors['AXeL'],
