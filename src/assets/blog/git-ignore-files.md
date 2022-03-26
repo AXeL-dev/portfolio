@@ -43,4 +43,4 @@ git update-index --skip-worktree <file>
 
 Unlike **--assume-unchanged**, the **--skip-worktree** persists your ignored files over upstream changes, so even if the ignored file was changed on the upstream branch, your local file(s) won't be affected when you pull changes from that branch.
 
-To revert the previous operation, simply use the "**--no-skip-worktree**" instead.
+To revert the previous operation, simply use "**--no-skip-worktree**" instead.
