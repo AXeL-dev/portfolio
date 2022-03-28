@@ -4,9 +4,9 @@ Therefore, let's check today how to use git to ignore specific files repository-
 
 <blockquote><h4>The .gitignore way</h4></blockquote>
 
-Adding a **.gitignore** file to the root of you repository & listing the files/directories that you want to ignore inside is one of the most know ways to ignore files in git. Still this is applied repository-wide & forces the same ignore rules on the other developers in your team.
+Adding a **.gitignore** file to the root of your repository & listing the files/directories that you want to ignore inside is one of the most know ways to ignore files in git. Still this is applied repository-wide & forces the same ignore rules on the other developers in your team.
 
-Example of a .gitgnore file:
+Example of a .gitignore file:
 
 ```
 file1
@@ -43,4 +43,4 @@ git update-index --skip-worktree <file>
 
 Unlike **--assume-unchanged**, the **--skip-worktree** persists your ignored files over upstream changes, so even if the ignored file was changed on the upstream branch, your local file(s) won't be affected when you pull changes from that branch.
 
-To revert the previous operation, simply use "**--no-skip-worktree**" instead.
+To revert the previous operation, simply use the "**--no-skip-worktree**" argument instead.
