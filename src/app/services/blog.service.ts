@@ -20,6 +20,14 @@ export class BlogService {
 
   private posts: Post[] = [
     {
+      title: 'Lite XL: A lightweight, fast & extensible text editor',
+      date: '2022/04/17',
+      author: this.authors['AXeL'],
+      image: './assets/img/posts/lite-xl.png',
+      content: './assets/blog/lite-xl.md',
+      tags: ['Linux', 'Text editor', 'Apps'],
+    },
+    {
       title: 'Git: Ignore files locally',
       date: '2022/03/26',
       author: this.authors['AXeL'],
@@ -99,7 +107,7 @@ export class BlogService {
       author: this.authors['AXeL'],
       image: './assets/img/posts/emoji-linux.jpg',
       content: './assets/blog/emote-emoji-picker.md',
-      tags: ['Linux', 'Emoji'],
+      tags: ['Linux', 'Emoji', 'Apps'],
     },
     {
       title: 'React: Cancel axios requests the right way!',
@@ -268,7 +276,7 @@ export class BlogService {
       author: this.authors['AXeL'],
       image: './assets/img/posts/photoshop.jpg',
       content: './assets/blog/photoshop-on-linux.md',
-      tags: ['Software', 'Photoshop', 'Linux', 'Wine'],
+      tags: ['Software', 'Photoshop', 'Linux', 'Wine', 'Apps'],
     },
     {
       title: 'Gitflow: A successful branching model',
