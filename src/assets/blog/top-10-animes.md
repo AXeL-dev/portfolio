@@ -56,6 +56,7 @@ I feel like i needed to add this section to mention other animes that i didn't i
 - Alice in Borderland
 - Darling in the FranXX
 - Horimiya
+- Anohana
 - Koi wa Ameagari no You ni
 - Orange
 - Seishun Buta Yarou
@@ -65,6 +66,7 @@ I feel like i needed to add this section to mention other animes that i didn't i
 - Mob Psycho 100
 - Steins;Gate
 - Hataraku Maou-sama!
+- Aku no Hana
 - Hyouka
 - Just Because
 - Nagi no Asukara
