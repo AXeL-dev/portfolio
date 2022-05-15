@@ -20,6 +20,14 @@ export class BlogService {
 
   private posts: Post[] = [
     {
+      title: 'Javascript - The proxy pattern',
+      date: '2022/05/15',
+      author: this.authors['AXeL'],
+      image: './assets/img/posts/js-proxy.png',
+      content: './assets/blog/js-proxy-pattern.md',
+      tags: ['Javascript', 'Proxy', 'Design pattern'],
+    },
+    {
       title: 'Lite XL: A lightweight, fast & extensible text editor',
       date: '2022/04/17',
       author: this.authors['AXeL'],
@@ -139,7 +147,7 @@ export class BlogService {
       author: this.authors['AXeL'],
       image: './assets/img/posts/ts.jpg',
       content: './assets/blog/typescript-decorators.md',
-      tags: ['Typescript', 'Javascript'],
+      tags: ['Typescript', 'Javascript', 'Decorator', 'Design pattern'],
       // syntaxHighlighting: {
       //     showLineNumbers: true
       // }
@@ -212,7 +220,7 @@ export class BlogService {
       author: this.authors['AXeL'],
       image: './assets/img/posts/design-patterns.jpeg',
       content: './assets/blog/some-useful-design-patterns.md',
-      tags: ['Design patterns', 'Architecture', 'Back-end', 'PHP'],
+      tags: ['Design pattern', 'Architecture', 'Back-end', 'PHP'],
     },
     {
       title: 'Why i switched to Angular',
