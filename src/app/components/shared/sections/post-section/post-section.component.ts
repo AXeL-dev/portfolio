@@ -1,9 +1,11 @@
-import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
+import { Component, OnInit, Input, AfterViewInit, HostListener } from '@angular/core';
 import { BlogService } from '../../../../services/blog.service';
 import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Post } from 'src/app/models/post.model';
 import { environment } from 'src/environments/environment';
+import { MarkdownService } from 'ngx-markdown';
+import { Lightbox, LightboxConfig } from 'ngx-lightbox';
 
 declare var DISQUSWIDGETS, twttr: any;
 
@@ -21,8 +23,17 @@ export class PostSectionComponent implements OnInit, AfterViewInit {
   nextPost: Post;
   isProdEnv: boolean;
 
-  constructor(private blogService: BlogService, private router: Router, private titleService: Title) {
+  constructor(
+    private blogService: BlogService,
+    private router: Router,
+    private titleService: Title,
+    private markdownService: MarkdownService,
+    private _lightbox: Lightbox,
+    private _lightboxConfig: LightboxConfig,
+  ) {
     this.isProdEnv = environment.production;
+    this._lightboxConfig.showImageNumberLabel = true;
+    this._lightboxConfig.centerVertically = true;
   }
 
   ngOnInit() {
@@ -44,6 +55,24 @@ export class PostSectionComponent implements OnInit, AfterViewInit {
       // Get previous & next posts
       this.prevPost = this.blogService.getPostById(this.post.id - 1);
       this.nextPost = this.blogService.getPostById(this.post.id + 1);
+    }
+
+    // Override images renderer
+    const imageRenderer = this.markdownService.renderer.image;
+    this.markdownService.renderer.image = (href, title, text) => {
+      const html = imageRenderer.call(this.markdownService.renderer, href, title, text);
+      return html.replace(/^<img /, '<img class="open-in-popup" ');
+    };
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: Event) {
+    if (event.target instanceof HTMLImageElement && event.target.classList.contains('open-in-popup')) {
+      this._lightbox.open([{
+        src: event.target.src,
+        caption: event.target.title || event.target.alt,
+        thumb: event.target.src,
+      }]);
     }
   }
 

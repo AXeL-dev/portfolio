@@ -34,7 +34,7 @@
                                 <span class="single-blog-taxonomy-item fa fa-tags"></span>
                                 <div>
                                     <a *ngFor="let tag of post.tags"
-                                        routerLink="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
+                                        routerLink="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +97,7 @@
                     </div>
                     <ul>
                         <li *ngFor="let tag of post.tags">
-                            <a routerLink="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
+                            <a routerLink="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
                         </li>
                     </ul>
                 </div>
