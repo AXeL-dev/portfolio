@@ -1,10 +1,9 @@
-import { Component, OnInit, Input, AfterViewInit, HostListener } from '@angular/core';
+import { Component, OnInit, Input, AfterViewInit, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { BlogService } from '../../../../services/blog.service';
 import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Post } from 'src/app/models/post.model';
 import { environment } from 'src/environments/environment';
-import { MarkdownService } from 'ngx-markdown';
 import { Lightbox, LightboxConfig } from 'ngx-lightbox';
 
 declare var DISQUSWIDGETS, twttr: any;
@@ -16,6 +15,7 @@ declare var DISQUSWIDGETS, twttr: any;
 })
 export class PostSectionComponent implements OnInit, AfterViewInit {
 
+  @ViewChild('postContent', { static: false }) postContent: ElementRef;
   @Input() slug: string;
   post: Post;
   recentPosts: Post[];
@@ -27,7 +27,6 @@ export class PostSectionComponent implements OnInit, AfterViewInit {
     private blogService: BlogService,
     private router: Router,
     private titleService: Title,
-    private markdownService: MarkdownService,
     private _lightbox: Lightbox,
     private _lightboxConfig: LightboxConfig,
   ) {
@@ -56,23 +55,22 @@ export class PostSectionComponent implements OnInit, AfterViewInit {
       this.prevPost = this.blogService.getPostById(this.post.id - 1);
       this.nextPost = this.blogService.getPostById(this.post.id + 1);
     }
-
-    // Override images renderer
-    const imageRenderer = this.markdownService.renderer.image;
-    this.markdownService.renderer.image = (href, title, text) => {
-      const html = imageRenderer.call(this.markdownService.renderer, href, title, text);
-      return html.replace(/^<img /, '<img class="open-in-popup" ');
-    };
   }
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: Event) {
-    if (event.target instanceof HTMLImageElement && event.target.classList.contains('open-in-popup')) {
-      this._lightbox.open([{
-        src: event.target.src,
-        caption: event.target.title || event.target.alt,
-        thumb: event.target.src,
-      }]);
+    if (this.postContent.nativeElement.contains(event.target)) {
+      // handle click on images
+      if (event.target instanceof HTMLImageElement) {
+        if (event.target.parentElement.tagName === 'IMG-COMPARISON-SLIDER') {
+          return;
+        }
+        this._lightbox.open([{
+          src: event.target.src,
+          caption: event.target.title || event.target.alt,
+          thumb: event.target.src,
+        }]);
+      }
     }
   }
 
@@ -85,8 +83,7 @@ export class PostSectionComponent implements OnInit, AfterViewInit {
 
   onReady() {
     if (this.post && typeof twttr !== 'undefined') {
-      const content = document.getElementById('post-content');
-      twttr.widgets.load(content);
+      twttr.widgets.load(this.postContent.nativeElement);
     }
   }
 

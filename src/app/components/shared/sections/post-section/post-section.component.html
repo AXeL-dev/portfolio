@@ -24,7 +24,7 @@
                                     [attr.data-disqus-identifier]="post.disqusIdentifier">0 Comments</span>
                             </div>
                         </div>
-                        <div id="post-content" class="single-blog-content">
+                        <div id="post-content" class="single-blog-content" #postContent>
                             <markdown [src]="post.content" [lineNumbers]="post.syntaxHighlighting?.showLineNumbers" (ready)="onReady()"></markdown>
                         </div>
 

@@ -7,6 +7,10 @@
   -webkit-box-orient: vertical;
 }
 
-.single-blog-section ::ng-deep img.open-in-popup {
+#post-content ::ng-deep img {
   cursor: pointer;
+}
+
+#post-content ::ng-deep img-comparison-slider > img {
+  cursor: default;
 }
