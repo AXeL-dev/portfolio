@@ -2,7 +2,7 @@
     Well.. this is a big discussion subject but i'll try to be short & focus on the points i wanna talk about.
 </p>
 <p class="mgt-10">
-    So.. it have been 2 years now or maybe a little more since i'm doing some freelancing tasks & compared to my previous jobs career "especially in my country" i could say that i was <b>a loser</b>.. okay, so why am i saying this? what's the point?
+    So.. it has been 2 years now or maybe a little more since i'm doing some freelancing tasks & compared to my previous jobs career "especially in my country" i could say that i was <b>a loser</b>.. okay, so why am i saying this? what's the point?
 </p>
 <p class="mgt-10">
     The point is if you don't work hard to achieve your dreams, someone else will hire you to achieve theirs. And when it comes to dreams they could ask you to build a plane while you don't even know how to build a car.. You get me, right?
