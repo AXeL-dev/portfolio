@@ -1,4 +1,4 @@
-If you didn't hear before of the [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) & [Reflect](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect) APIs in javascript, then you are in the right place, let's discover them!
+If you didn't hear before about the [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) & [Reflect](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect) APIs in javascript, then you are in the right place, let's discover them!
 
 <blockquote><h4>So.. What is the Proxy pattern?</h4></blockquote>
 
