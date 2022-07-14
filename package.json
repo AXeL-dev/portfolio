@@ -27,7 +27,7 @@
     "img-comparison-slider": "^7.6.0",
     "materialize-css": "^1.0.0",
     "ngx-disqus": "^2.4.3",
-    "ngx-lightbox": "^2.1.2",
+    "ngx-lightbox": "^2.5.2",
     "ngx-markdown": "^8.2.2",
     "ngx-owl-carousel-o": "^2.1.1",
     "rxjs": "~6.4.0",
