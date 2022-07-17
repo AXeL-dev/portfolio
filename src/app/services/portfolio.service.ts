@@ -284,7 +284,7 @@ export class PortfolioService {
     {
       name: 'Pixus Bot',
       image: './assets/img/projects/pixus-bot.png',
-      link: 'https://github.com/AXeL-dev/Pixus-Bot',
+      link: 'https://github.com/Gamerium/Pixus-Bot',
       category: ['C#'],
       group: ['Desktop apps'],
     },
