@@ -23,7 +23,10 @@ export class HomeService {
   socials: SocialLink[] = [
     { icon: 'github', link: 'https://github.com/AXeL-dev' },
     { icon: 'gitlab', link: 'https://gitlab.com/AXeL-dev' },
-    { icon: 'youtube-play', link: 'https://www.youtube.com/channel/UCctMROLcvkiqpOyF98_WUYg' },
+    {
+      icon: 'youtube-play',
+      link: 'https://www.youtube.com/channel/UCctMROLcvkiqpOyF98_WUYg',
+    },
     { icon: 'twitter', link: 'https://twitter.com/AXeL87749763' },
     { icon: 'facebook', link: '' },
     { icon: 'linkedin', link: 'https://www.linkedin.com/in/anass-denna' },
@@ -42,10 +45,26 @@ export class HomeService {
       description:
         'PHP (CodeIgniter, Symfony), MySQL / SQL Server / MongoDB, CMS (Wordpress, Drupal), Python, Node.js, C#, ASP.NET, Rest API, OOP',
     },
-    { title: 'Mobile Development', icon: 'mobile', description: 'Ionic, Cordova, Android SDK' },
-    { title: 'Web Hosting', icon: 'server', description: 'FTP, SSH, cPanel, Linux shell' },
-    { title: 'Data Mining', icon: 'search-plus', description: 'CasperJS, PhantomJS, Puppeteer, Web Scraper' },
-    { title: 'DevOps', icon: 'code-fork', description: 'Git / Github / Gitlab, CI / CD, Gulp, Webpack, npm' },
+    {
+      title: 'Mobile Development',
+      icon: 'mobile',
+      description: 'Ionic, Cordova, Android SDK',
+    },
+    {
+      title: 'Web Hosting',
+      icon: 'server',
+      description: 'FTP, SSH, cPanel, Linux shell',
+    },
+    {
+      title: 'Data Mining',
+      icon: 'search-plus',
+      description: 'CasperJS, PhantomJS, Puppeteer, Web Scraper',
+    },
+    {
+      title: 'DevOps',
+      icon: 'code-fork',
+      description: 'Git / Github / Gitlab, CI / CD, Gulp, Webpack, npm',
+    },
   ];
 
   skills: Skill[] = [
@@ -166,7 +185,7 @@ export class HomeService {
       title: 'Freelancer',
       description: [
         '✔ Developing custom <a href="https://www.dolistore.com/en/search?orderby=position&orderway=desc&search_query=axel" target="_blank">modules</a> for Dolibarr.',
-        '✔ Publishing some of my own projects like <a href="https://github.com/AXeL-dev/Dindo-Bot" target="_blank">Dindo Bot</a>, <a href="https://github.com/AXeL-dev/distract-me-not" target="_blank">Distract Me Not</a>, <a href="https://github.com/AXeL-dev/dolibase" target="_blank">Dolibase</a>, <a href="https://github.com/AXeL-dev/riot-presents" target="_blank">Riot Presents</a>.',
+        '✔ Publishing some of my own projects like <a href="https://github.com/Gamerium/Dindo-Bot" target="_blank">Dindo Bot</a>, <a href="https://github.com/AXeL-dev/distract-me-not" target="_blank">Distract Me Not</a>, <a href="https://github.com/AXeL-dev/dolibase" target="_blank">Dolibase</a>, <a href="https://github.com/AXeL-dev/riot-presents" target="_blank">Riot Presents</a>.',
         '✔ Contributing to open-source community. <a href="https://github.com/Jessewb786/Silaty/graphs/contributors" target="_blank">#Silaty</a> <a href="https://github.com/Dolibarr/dolibarr/graphs/contributors" target="_blank">#Dolibarr</a>',
         '✔ Learning & discovering new technologies, design patterns, best code practices.',
       ],
@@ -196,7 +215,9 @@ export class HomeService {
     {
       tag: 'ZTE CORPORATION',
       title: 'Traineeship',
-      description: ['Creating a web application in PHP to simplify script generation and execution from Excel sheets.'],
+      description: [
+        'Creating a web application in PHP to simplify script generation and execution from Excel sheets.',
+      ],
       period: 'February 2015 - April 2015',
       position: 'right',
     },

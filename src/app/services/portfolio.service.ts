@@ -65,7 +65,7 @@ export class PortfolioService {
     {
       name: 'Dindo Bot',
       image: './assets/img/projects/dindo-bot.gif',
-      link: 'https://github.com/AXeL-dev/Dindo-Bot',
+      link: 'https://github.com/Gamerium/Dindo-Bot',
       category: ['Python', 'GTK'],
       group: ['Desktop apps'],
     },
@@ -277,7 +277,7 @@ export class PortfolioService {
     {
       name: 'SufoBot',
       image: './assets/img/projects/SufoBot.png',
-      link: 'https://github.com/LinuxForGeeks/SufoBot',
+      link: 'https://github.com/Gamerium/SufoBot',
       category: ['C++', 'wxWidgets', 'Linux'],
       group: ['Desktop apps'],
     },
