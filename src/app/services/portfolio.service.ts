@@ -132,18 +132,32 @@ export class PortfolioService {
       category: ['HTML', 'CSS', 'jQuery'],
       group: ['Websites'],
     },
-    // {
-    //   name: 'T.L. Chasse',
-    //   image: './assets/img/projects/tlchasse.jpg',
-    //   link: 'https://tlchasse.com',
-    //   category: ['PHP', 'CSS', 'jQuery'],
-    //   group: ['Websites'],
-    // },
     {
       name: 'Enty Beauty',
       image: './assets/img/projects/enty-beauty.png',
       link: 'https://shop.entybeauty.com',
       category: ['PHP', 'CSS', 'JS', 'Google Sheets API'],
+      group: ['Websites'],
+    },
+    {
+      name: 'FM6E',
+      image: './assets/img/projects/fm6e.png',
+      link: 'https://fm6e.org/en/',
+      category: ['PHP', 'Wordpress', 'GSAP'],
+      group: ['Websites'],
+    },
+    {
+      name: 'FM6E Prize',
+      image: './assets/img/projects/fm6e-prize.png',
+      link: 'https://prize-fm6e.org/home',
+      category: ['Angular', 'Firebase', 'GSAP'],
+      group: ['Websites'],
+    },
+    {
+      name: 'T.L. Chasse',
+      image: './assets/img/projects/tlchasse.jpg',
+      link: 'https://tlchasse.com',
+      category: ['PHP', 'CSS', 'jQuery'],
       group: ['Websites'],
     },
     {
@@ -229,7 +243,7 @@ export class PortfolioService {
       link: 'https://github.com/DolibarrLabs/dolibase',
       category: ['PHP', 'Javascript'],
       group: [
-        //'Web apps']
+        //'Web apps'
       ],
     },
     // {
