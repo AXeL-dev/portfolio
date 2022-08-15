@@ -16,4 +16,8 @@ export class TimelineSectionComponent implements OnInit {
   ngOnInit() {
   }
 
+  isMobile() {
+    return window.innerWidth <= 600;
+  }
+
 }
