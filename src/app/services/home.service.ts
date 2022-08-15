@@ -30,6 +30,7 @@ export class HomeService {
     { icon: 'twitter', link: 'https://twitter.com/AXeL87749763' },
     { icon: 'facebook', link: '' },
     { icon: 'linkedin', link: 'https://www.linkedin.com/in/anass-denna' },
+    { icon: 'paypal', link: 'https://www.paypal.me/axeldev' },
   ];
 
   services: Service[] = [
