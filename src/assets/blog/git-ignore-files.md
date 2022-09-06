@@ -4,7 +4,7 @@ Therefore, let's check today how to use git to ignore specific files repository-
 
 <blockquote><h4>The .gitignore way</h4></blockquote>
 
-Adding a **.gitignore** file to the root of your repository & listing the files/directories that you want to ignore inside is one of the most know ways to ignore files in git. Still this is applied repository-wide & forces the same ignore rules on the other developers in your team.
+Adding a **.gitignore** file to the root of your repository & listing the files/directories that you want to ignore inside it, is one of the most known ways to ignore files in git. Still it is applied repository-wide & imposes the same ignore rules to all the developers in your team.
 
 Example of a .gitignore file:
 
