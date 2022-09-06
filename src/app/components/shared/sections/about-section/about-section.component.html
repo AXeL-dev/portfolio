@@ -34,7 +34,7 @@
                         </div>
                         <div class="about-social col s12 pd-0">
                             <ng-container *ngFor="let social of socials">
-                                <a *ngIf="social.link && social.link.length" class="waves-effect waves-light" [href]="social.link">
+                                <a *ngIf="social.link && social.link.length" class="waves-effect waves-light" [href]="social.link" target="_blank">
                                     <span class="fa fa-{{ social.icon }}"></span>
                                 </a>
                             </ng-container>
