@@ -3,7 +3,7 @@ import { BlogService } from '../../../../services/blog.service';
 import { Router } from '@angular/router';
 import { MarkdownService } from 'ngx-markdown';
 import { Subscription } from 'rxjs';
-import { Post } from 'src/app/models/post.model';
+import { Post, PostFlags } from 'src/app/models/post.model';
 import { SlugifyPipe } from 'src/app/pipes/slugify.pipe';
 
 declare var DISQUSWIDGETS: any;
@@ -20,6 +20,7 @@ export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
   @Input() postsPerPage: number = 6;
   @Input() currentPage: number = 1;
   @Input() tagFilter: string = '';
+  @Input() flags: PostFlags = {};
   posts: Post[];
   pages: number[] = [];
   paginationRoute: string = '/blog/';
@@ -29,7 +30,7 @@ export class BlogSectionComponent implements OnInit, OnDestroy, AfterViewInit {
   constructor(private blogService: BlogService, private router: Router, private markdownService: MarkdownService, private slugifyPipe: SlugifyPipe) { }
 
   ngOnInit() {
-    this.posts = this.blogService.getPosts();
+    this.posts = this.blogService.getPosts(this.flags);
 
     if (this.posts.length === 0) {
       return;

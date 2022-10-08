@@ -1,5 +1,5 @@
 import { Author } from '../models/author.model';
-import { Post } from '../models/post.model';
+import { Post, PostFlags } from '../models/post.model';
 import { SlugifyPipe } from '../pipes/slugify.pipe';
 import { Injectable } from '@angular/core';
 
@@ -26,6 +26,9 @@ export class BlogService {
       image: './assets/img/posts/js-proxy.png',
       content: './assets/blog/js-proxy-pattern.md',
       tags: ['Javascript', 'Proxy', 'Design pattern'],
+      flags: {
+        starred: true,
+      },
     },
     {
       title: 'Lite XL: A lightweight, fast & extensible text editor',
@@ -67,6 +70,9 @@ export class BlogService {
       image: './assets/img/posts/youtube-viewer/home-dark.jpg',
       content: './assets/blog/youtube-viewer-new-look.md',
       tags: ['Teasing', 'Typescript', 'React', 'Material-UI', 'Web extension'],
+      flags: {
+        starred: true,
+      },
     },
     {
       title: 'Material-UI 5 is out!',
@@ -132,6 +138,9 @@ export class BlogService {
       image: './assets/img/posts/distract-me-not-v2.jpg',
       content: './assets/blog/distract-me-not-v2.md',
       tags: ['Teasing', 'Javascript', 'React', 'Web extension'],
+      flags: {
+        starred: true,
+      },
     },
     {
       title: 'Shared state management in React',
@@ -148,6 +157,9 @@ export class BlogService {
       image: './assets/img/posts/ts.jpg',
       content: './assets/blog/typescript-decorators.md',
       tags: ['Typescript', 'Javascript', 'Decorator', 'Design pattern'],
+      flags: {
+        starred: true,
+      },
       // syntaxHighlighting: {
       //     showLineNumbers: true
       // }
@@ -159,6 +171,9 @@ export class BlogService {
       image: './assets/img/posts/codingame.jpg',
       content: './assets/blog/codingame-tricky-question.md',
       tags: ['Codingame', 'Javascript'],
+      flags: {
+        starred: true,
+      },
     },
     {
       title: 'Are you a lion or a hedgehog? 🤔',
@@ -205,6 +220,9 @@ export class BlogService {
         'React',
         'Vue',
       ],
+      flags: {
+        starred: true,
+      },
     },
     {
       title: '!! (not not) operator in JavaScript',
@@ -253,6 +271,9 @@ export class BlogService {
       image: './assets/img/posts/vuejs.jpg',
       content: './assets/blog/vuejs.md',
       tags: ['Front-end', 'Javascript', 'Vue.js'],
+      flags: {
+        starred: true,
+      },
     },
     {
       title: 'Phoenix OS: use Android as a desktop OS',
@@ -349,6 +370,9 @@ export class BlogService {
       image: './assets/img/posts/dolibarr.png',
       content: './assets/blog/dolibarr.md',
       tags: ['ERP', 'CRM', 'PHP', 'Dolibarr'],
+      flags: {
+        starred: true,
+      },
     },
     {
       title: 'Get a free account on lynda.com',
@@ -380,8 +404,17 @@ export class BlogService {
     });
   }
 
-  getPosts() {
-    return this.posts.slice();
+  getPosts(flags?: PostFlags) {
+    const posts = this.posts.slice();
+    if (!flags || Object.keys(flags).length === 0) {
+      return posts;
+    }
+    const flagsEntries = Object.entries(flags);
+    return posts.filter((post) =>
+      flagsEntries.every(([flag, value]) =>
+        post.flags ? post.flags[flag] === value : false
+      )
+    );
   }
 
   getPostBySlug(slug: string) {
