@@ -32,27 +32,27 @@ Cool! Let's now discover what has been added, but also what was removed.
 
 Finally, let's take a closer look on the new app design.
 
-- Home page (old vs new):
+- Home page (new vs old):
 
 <img-comparison-slider class="custom-comparison-slider">
-  <img  slot="first" src="./assets/img/posts/youtube-viewer/home-before.jpg" width="100%">
-  <img  slot="second" src="./assets/img/posts/youtube-viewer/home.jpg" width="100%">
+  <img  slot="first" src="./assets/img/posts/youtube-viewer/home.jpg" width="100%">
+  <img  slot="second" src="./assets/img/posts/youtube-viewer/home-before.jpg" width="100%">
   <span slot="handle" class="custom-comparison-handle"></span>
 </img-comparison-slider>
 
 - Channels page:
 
 <img-comparison-slider class="custom-comparison-slider">
-  <img  slot="first" src="./assets/img/posts/youtube-viewer/channels-before.jpg" width="100%">
-  <img  slot="second" src="./assets/img/posts/youtube-viewer/channels.jpg" width="100%">
+  <img  slot="first" src="./assets/img/posts/youtube-viewer/channels.jpg" width="100%">
+  <img  slot="second" src="./assets/img/posts/youtube-viewer/channels-before.jpg" width="100%">
   <span slot="handle" class="custom-comparison-handle"></span>
 </img-comparison-slider>
 
 - Settings page:
 
 <img-comparison-slider class="custom-comparison-slider">
-  <img  slot="first" src="./assets/img/posts/youtube-viewer/settings-before.jpg" width="100%">
-  <img  slot="second" src="./assets/img/posts/youtube-viewer/settings.jpg" width="100%">
+  <img  slot="first" src="./assets/img/posts/youtube-viewer/settings.jpg" width="100%">
+  <img  slot="second" src="./assets/img/posts/youtube-viewer/settings-before.jpg" width="100%">
   <span slot="handle" class="custom-comparison-handle"></span>
 </img-comparison-slider>
 
