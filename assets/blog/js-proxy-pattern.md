@@ -34,7 +34,7 @@ console.log(carProxy.model); // 'Volkswagen'
 console.log(carProxy.image); // Uncaught Error: Property "image" does not exist.
 ```
 
-In the example above, we first created a simple car object with a single property "model", then created a proxy for our car object & passed a custom getter to our proxy, the getter simply returns the properties of the car object when it finds them, otherwise it throws an error.
+In the example above, we first created a simple car object with a single property "model", then created a proxy for our car object & passed a custom getter to our proxy, the getter simply returns the properties of the car object if found, otherwise it throws an error.
 
 Without the proxy, our script returns an "undefined" value by default, but when using the proxy we can customize how our object will behave in different cases like when calling an unexisting property.
 
