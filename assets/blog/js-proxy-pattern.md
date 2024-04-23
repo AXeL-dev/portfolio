@@ -65,7 +65,7 @@ const carProxy = new Proxy(car, {
 car.model = true;
 console.log(car.model); // true
 
-carProxy.model = true; // Uncaught Error: Property "image" does not exist.
+carProxy.model = true; // Uncaught Error: Property "model" only accepts string values.
 console.log(carProxy.model); // 'Volkswagen'
 ```
 
